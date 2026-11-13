@@ -2,7 +2,7 @@
 
 - Product: `w-erp` / W-ERP
 - Style: dark
-- Source generated file: `ig_0c47948295f3560c016a2fe27096a48191b9f6fbd426ed9f6d.png` (original generation output, private receipt retained)
+- Source generated file: `ig_0c47948295f3560c016a2fe27096a48191b9f6fbd426ed9f6d.png` (historical output filename; original output folder unavailable)
 - Project image: `_images/generated/dark/w-erp-key-art-dark.png`
 - Dimensions: 1672x941
 

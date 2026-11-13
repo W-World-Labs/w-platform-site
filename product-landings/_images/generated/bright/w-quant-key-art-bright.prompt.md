@@ -2,7 +2,7 @@
 
 - Product: `w-quant` / W-Quant
 - Style: bright
-- Source generated file: `ig_0c47948295f3560c016a2fe82422348191bf38d26264cf7b84.png` (original generation output, private receipt retained)
+- Source generated file: `ig_0c47948295f3560c016a2fe82422348191bf38d26264cf7b84.png` (historical output filename; original output folder unavailable)
 - Project image: `_images/generated/bright/w-quant-key-art-bright.png`
 - Dimensions: 1672x941
 

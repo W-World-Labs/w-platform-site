@@ -2,7 +2,7 @@
 
 - Product: `w-design` / W-Design
 - Style: bright
-- Source generated file: `ig_0c47948295f3560c016a2fe72ea6ac8191aaaebefbdeda1eda.png` (original generation output, private receipt retained)
+- Source generated file: `ig_0c47948295f3560c016a2fe72ea6ac8191aaaebefbdeda1eda.png` (historical output filename; original output folder unavailable)
 - Project image: `_images/generated/bright/w-design-key-art-bright.png`
 - Dimensions: 1672x941
 

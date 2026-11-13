@@ -2,7 +2,7 @@
 
 - Product: `w-modelgw` / W-ModelGW
 - Style: dark
-- Source generated file: `ig_0c47948295f3560c016a2fdf644f688191a7524e88b3374ae0.png` (original generation output, private receipt retained)
+- Source generated file: `ig_0c47948295f3560c016a2fdf644f688191a7524e88b3374ae0.png` (historical output filename; original output folder unavailable)
 - Project image: `_images/generated/dark/w-modelgw-key-art-dark.png`
 - Dimensions: 1672x941
 

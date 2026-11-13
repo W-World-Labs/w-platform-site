@@ -2,7 +2,7 @@
 
 - Product: `w-radar` / W-Radar
 - Style: dark
-- Source generated file: `ig_0c47948295f3560c016a2fde0f079c819198d44601a73f7699.png` (original generation output, private receipt retained)
+- Source generated file: `ig_0c47948295f3560c016a2fde0f079c819198d44601a73f7699.png` (historical output filename; original output folder unavailable)
 - Project image: `_images/generated/dark/w-radar-key-art-dark.png`
 - Dimensions: 1672x941
 

@@ -71,8 +71,8 @@
       "sha256": "d81b46dda139e099ee8e5958da7402a8171a10510f010ba7a1966b4e59dcd3a2"
     },
     "package.json": {
-      "bytes": 4508,
-      "sha256": "13934014490da45286be7fd35058a35b651510989ecfb7f212e1e4ac387ff23e"
+      "bytes": 4550,
+      "sha256": "5b1229002b33b161bbd3ecd46bcdbbb45858e10a8919d79a4f60ce022a1f5aab"
     },
     "product-landings/.gitignore": {
       "bytes": 31,
@@ -107,336 +107,336 @@
       "sha256": "1dced7e27e017e45bd55bbd68236dcdb30b70afcec3f683ccbb30cffe08336f7"
     },
     "product-landings/_images/generated/MANIFEST.md": {
-      "bytes": 9516,
-      "sha256": "5a091fe30cc9a23aec3c3426fff065bd94e00ac653cf1b2f63f5375a79a1f961"
+      "bytes": 9555,
+      "sha256": "b286895659d80d7c67828ccd0672d52a5e9de7566e5bb398dc97f0fc57423366"
     },
     "product-landings/_images/generated/bright/w-collect-key-art-bright.png": {
       "bytes": 1975389,
       "sha256": "66149fc12d6cda0646621afa1bb83b412f0fe520073545b454a16eb422d28ba9"
     },
     "product-landings/_images/generated/bright/w-collect-key-art-bright.prompt.md": {
-      "bytes": 1243,
-      "sha256": "75d5de87d3031ba550a3b9703693f2d0c0878b10ad6d2ae67c93f59c2e4f5c23"
+      "bytes": 1253,
+      "sha256": "f10fa85322699cf5b0d67f2f8e9297be3ae15f9efd03521ad93223cf8f59f813"
     },
     "product-landings/_images/generated/bright/w-daas-key-art-bright.png": {
       "bytes": 1657410,
       "sha256": "c40c465b93fad3de78a554aa84cb13a272b458fdc6c9a160d847a53b7d6454d0"
     },
     "product-landings/_images/generated/bright/w-daas-key-art-bright.prompt.md": {
-      "bytes": 1240,
-      "sha256": "2ce9cb91e93b119173a7980ee9ca73428c82b344c05323171961665ed553b4af"
+      "bytes": 1250,
+      "sha256": "b1411b80586eafddb55810a151209ca68789b7d11c832a5cda35cc37aa61ca8a"
     },
     "product-landings/_images/generated/bright/w-design-key-art-bright.png": {
       "bytes": 1567402,
       "sha256": "343261d22b8f8256d2fb4def6acaf5b05e0b5cf31c1cf534151d79c05f8babd6"
     },
     "product-landings/_images/generated/bright/w-design-key-art-bright.prompt.md": {
-      "bytes": 1197,
-      "sha256": "eda7a69aa6ea9b35f0612e76f629259fb378284455375c7c2343e43104a6e9ee"
+      "bytes": 1207,
+      "sha256": "67d53853d456890611eb6aeac182e3ce1a5be2b4ae183c1e7935c0f86669cfc2"
     },
     "product-landings/_images/generated/bright/w-domain-key-art-bright.png": {
       "bytes": 1888580,
       "sha256": "2707a2b73792b5b513cacc4cdd6317f35dfc2e5b85ff5c4fd611b346787347b9"
     },
     "product-landings/_images/generated/bright/w-domain-key-art-bright.prompt.md": {
-      "bytes": 1268,
-      "sha256": "83697a270ad870993c884bea3665866b9d8624d1243d581dcc02cbd47106d60e"
+      "bytes": 1278,
+      "sha256": "9ab4dd08857153cb62a4e62072283a3cfa769a7765a0abff2e87bfc507a3e3f1"
     },
     "product-landings/_images/generated/bright/w-erp-key-art-bright.png": {
       "bytes": 1835782,
       "sha256": "83b190896d5a6e424e861122e652cac44442a06cea1563a43e3e45def1505468"
     },
     "product-landings/_images/generated/bright/w-erp-key-art-bright.prompt.md": {
-      "bytes": 1257,
-      "sha256": "21ead93ffb106535e280242351641bae62db8a61833ffb4db50a63cc81fbbff1"
+      "bytes": 1267,
+      "sha256": "25717fb360efcb40424e050dc65b5bd34529d05092f0b9df247e4b7d27734987"
     },
     "product-landings/_images/generated/bright/w-hospital-key-art-bright.png": {
       "bytes": 1740689,
       "sha256": "ec320d60c7b64c9cbd9de1e708ae80b3eef8d13ccd865edd5933383669a82177"
     },
     "product-landings/_images/generated/bright/w-hospital-key-art-bright.prompt.md": {
-      "bytes": 1264,
-      "sha256": "77a4c3a9eceeb72e19d51cdd4129b03e4eea9b16b0acf38543c26f74c5b9b257"
+      "bytes": 1274,
+      "sha256": "315e17c2a9110be29a97129b77e0c2ec01f175d0e24129ea3c3a392ab9d7e758"
     },
     "product-landings/_images/generated/bright/w-id-key-art-bright.png": {
       "bytes": 1629045,
       "sha256": "76e92227649b4543c791aea64ed775b79f9eb5fe44afd7b6dd7aafa11f2ef9d7"
     },
     "product-landings/_images/generated/bright/w-id-key-art-bright.prompt.md": {
-      "bytes": 1199,
-      "sha256": "ab8be608f952573519f058652fdd178e5369d6bc9ed13b5b4e584feb36d344f2"
+      "bytes": 1209,
+      "sha256": "540580d421561afd380a5978ab8df9adbb4053a43f286a7b44612942afe45378"
     },
     "product-landings/_images/generated/bright/w-imagetrace-key-art-bright.png": {
       "bytes": 1770915,
       "sha256": "03be2b2aea00b320f05eac307645bef3fdfbfd333b5e736ae00416d0d867b6c8"
     },
     "product-landings/_images/generated/bright/w-imagetrace-key-art-bright.prompt.md": {
-      "bytes": 1284,
-      "sha256": "9aa7e31518b4744a11b987c3d8822d86d7d33999bbbc6e215b0a961e622a2954"
+      "bytes": 1294,
+      "sha256": "1015b4e7d3a2912174de2bb73cd3ba7626a33a7dd9d1d248d36766016a8768c3"
     },
     "product-landings/_images/generated/bright/w-inspector-key-art-bright.png": {
       "bytes": 1732157,
       "sha256": "dcc9b2558d8e60f3342418a641e2706e6d4de365d2703aadc0e21a81c7e2e53e"
     },
     "product-landings/_images/generated/bright/w-inspector-key-art-bright.prompt.md": {
-      "bytes": 1293,
-      "sha256": "7e16ab728154e427c42aacca02b01200434eec70f18055e2f2c1b8fb40dc1013"
+      "bytes": 1303,
+      "sha256": "b91c2cb4976c729210de36c208be98286da7ad3df779ed3e16356f916ddb642d"
     },
     "product-landings/_images/generated/bright/w-knowledge-key-art-bright.png": {
       "bytes": 1678944,
       "sha256": "cbfb35fccd4365bd6a1e716c021bd14a63291e504efa8c3440d4eb70bc64cfac"
     },
     "product-landings/_images/generated/bright/w-knowledge-key-art-bright.prompt.md": {
-      "bytes": 1286,
-      "sha256": "e9ece4a7fa8b1ca0f3bf74ba2123b6eacc5f9ce9f754cdfbbe88a58699848000"
+      "bytes": 1296,
+      "sha256": "035b036dc22587349f33b1f09c73939f63971a26167eb658c926554eb2a9ad29"
     },
     "product-landings/_images/generated/bright/w-maas-key-art-bright.png": {
       "bytes": 1866016,
       "sha256": "f415effeab8323d01530a9c7b84efff8e3e8f40898611a76945c595d6a3b5b24"
     },
     "product-landings/_images/generated/bright/w-maas-key-art-bright.prompt.md": {
-      "bytes": 1244,
-      "sha256": "a11f9a896487ae73243530d845d2c478739da9ce825ff567d05880922261ed2a"
+      "bytes": 1254,
+      "sha256": "cc59a0586b6472618d10c89b78c3063d1be69202380d5db4958af174c3e9fa37"
     },
     "product-landings/_images/generated/bright/w-medtwin-key-art-bright.png": {
       "bytes": 1662288,
       "sha256": "0ed5f0ee0ccdfa421a795e4c961a6e405e8686e381df979f16762989ee8215f9"
     },
     "product-landings/_images/generated/bright/w-medtwin-key-art-bright.prompt.md": {
-      "bytes": 1262,
-      "sha256": "2b2cf4101e4b09ab8dc8a283964ee70ea3491bebc31c5e795223d1695df4be02"
+      "bytes": 1272,
+      "sha256": "8777ee0e7407c87d71a54e45646f189723c1d01fc9c90f3203f861d444240366"
     },
     "product-landings/_images/generated/bright/w-modelgw-key-art-bright.png": {
       "bytes": 1787130,
       "sha256": "6568215f9671fc5c0a6305c7c389c5e8d9a779e98deac9952d042b02ed1f82b4"
     },
     "product-landings/_images/generated/bright/w-modelgw-key-art-bright.prompt.md": {
-      "bytes": 1272,
-      "sha256": "d0a55acd90b7175e50c45f8d9fbf94c04781c7313b0b75b1f798d766d45f5213"
+      "bytes": 1282,
+      "sha256": "1eb15eeffe43645727942ad9b77b657c17a217c9030a7aec0ca0fe1363c4667e"
     },
     "product-landings/_images/generated/bright/w-netsense-key-art-bright.png": {
       "bytes": 1912625,
       "sha256": "62c5b64402bd5b361d431f03798deb5532c2040322c2b60dd1de280a680d1dcb"
     },
     "product-landings/_images/generated/bright/w-netsense-key-art-bright.prompt.md": {
-      "bytes": 1263,
-      "sha256": "9b194746863c852a1ea08e6a0c4ee2a7a3b817c9443b8591ad84041c9a389cef"
+      "bytes": 1273,
+      "sha256": "45bc6e47ed9de80c066bc3139593a94753c64a72f58a24c44a75dda41ab9a860"
     },
     "product-landings/_images/generated/bright/w-nvr-key-art-bright.png": {
       "bytes": 1887538,
       "sha256": "47260a8389081064a7cef19d9d248bfa836c582d98ef5c0e8474668cd784a140"
     },
     "product-landings/_images/generated/bright/w-nvr-key-art-bright.prompt.md": {
-      "bytes": 1215,
-      "sha256": "b4c790f6ae85aaff0a2eca57e73fb76e42253363d4bdd90443babae763d0ccdd"
+      "bytes": 1225,
+      "sha256": "c9ceb239f4d96b2f3a88d05768c39392cc5d6b6c50aa872c8689433e417d138a"
     },
     "product-landings/_images/generated/bright/w-omnisense-key-art-bright.png": {
       "bytes": 1767131,
       "sha256": "eb76facf368387736ba13dfa4598c1adaa4551b968dab21f93218f0852190337"
     },
     "product-landings/_images/generated/bright/w-omnisense-key-art-bright.prompt.md": {
-      "bytes": 1284,
-      "sha256": "18e25f9d0bdb44189b8b6865f47b6bdbf2a273deb076033519502eb32c78366f"
+      "bytes": 1294,
+      "sha256": "510d85f89a8e4237de0d46f387d3bf34266090b6decaf1aea663991dcb9141a2"
     },
     "product-landings/_images/generated/bright/w-quant-key-art-bright.png": {
       "bytes": 1859922,
       "sha256": "ec969808895f5a056aa6e31c6ab023a3141f25cc51a3a6afaa51c44fef50a20c"
     },
     "product-landings/_images/generated/bright/w-quant-key-art-bright.prompt.md": {
-      "bytes": 1256,
-      "sha256": "182e5d1f97fae553932a22744d2b77daaf60a8a51034768fb83d2fb5414a4585"
+      "bytes": 1266,
+      "sha256": "928ca8b0115614dde740256d5d102acdc23cb0cd705aa29b4e4a2a5ce93bf462"
     },
     "product-landings/_images/generated/bright/w-radar-key-art-bright.png": {
       "bytes": 1830010,
       "sha256": "74d3f1e285eb7b951ddc162930ba5a2e34d6298db370466ba7dadcc17c35c51b"
     },
     "product-landings/_images/generated/bright/w-radar-key-art-bright.prompt.md": {
-      "bytes": 1241,
-      "sha256": "bd149a0be16246fbbe154b75f77ac28aaf4fee9dc9bb1209a19535796824cfb5"
+      "bytes": 1251,
+      "sha256": "de835251dc54d4d348e9e06287c4efad8dff5127b6916f02fe400473c431e10e"
     },
     "product-landings/_images/generated/bright/w-search-key-art-bright.png": {
       "bytes": 1685862,
       "sha256": "c4ac2a94b4217d15c78edb0ad9378bcb546708a1be8f1bd8cad4af2d18c4b6da"
     },
     "product-landings/_images/generated/bright/w-search-key-art-bright.prompt.md": {
-      "bytes": 1223,
-      "sha256": "ba5844c0ba000fc4bc36f9bb616d28be88961329eb2f8f127a24ff2411a24725"
+      "bytes": 1233,
+      "sha256": "9710028384c58ae07308eef07509a25a1840eae41d7c619a8a7a5b5820cb2db5"
     },
     "product-landings/_images/generated/dark/w-collect-key-art-dark.png": {
       "bytes": 1859923,
       "sha256": "5d9f1558c4c0b9815d0b510e60f093b4d79f0563890732c52b4d23c4c98dd055"
     },
     "product-landings/_images/generated/dark/w-collect-key-art-dark.prompt.md": {
-      "bytes": 1172,
-      "sha256": "a4a2fc0e926b32e7de04b9b0a9e0e8d1e245aa5aa3d084c226268c36983379ca"
+      "bytes": 1182,
+      "sha256": "35873708fdf872a59b209d1d51015b557a0f17f248cbfb565a69575c71722f76"
     },
     "product-landings/_images/generated/dark/w-daas-key-art-dark.png": {
       "bytes": 1766536,
       "sha256": "b0a61e15504cf2019d010c86a49efe0bd5f9e05656caf3e888680213f22a8a1f"
     },
     "product-landings/_images/generated/dark/w-daas-key-art-dark.prompt.md": {
-      "bytes": 1169,
-      "sha256": "7725fed5a5719a264014a608c4419e23bff9f92f6e6cc2a6595c9381feba38de"
+      "bytes": 1179,
+      "sha256": "0b371edb96e08dd092e0ed03db0bb43f41c9db04257642733a51eab814574c48"
     },
     "product-landings/_images/generated/dark/w-design-key-art-dark.png": {
       "bytes": 1510184,
       "sha256": "03860fbd911ecfaef0b69e34bf511015f4e43acf01de370306ba7de5566ff067"
     },
     "product-landings/_images/generated/dark/w-design-key-art-dark.prompt.md": {
-      "bytes": 1132,
-      "sha256": "4f5094ed2e802c148ed25da5c2711296c0c22387d6bf74082a7a786f35ede27b"
+      "bytes": 1142,
+      "sha256": "583e54ad0f78fbb9300df010d0ab7433b935753cc7c41c2680ded0c8dbd50ba5"
     },
     "product-landings/_images/generated/dark/w-domain-key-art-dark.png": {
       "bytes": 1776312,
       "sha256": "05393bb4dda77fbc5f56eeb5ab89385f3f01a708d72acbfd14c7dbbfaa9e3b71"
     },
     "product-landings/_images/generated/dark/w-domain-key-art-dark.prompt.md": {
-      "bytes": 1204,
-      "sha256": "ad71d4cece235a4ff829a44df74cf14ddf974e26aa35bcb869cf9c56778872b5"
+      "bytes": 1214,
+      "sha256": "f805a052ab739f70b82e453488ce722e5eed554d27a59623d157b40b41dfece6"
     },
     "product-landings/_images/generated/dark/w-erp-key-art-dark.png": {
       "bytes": 2002421,
       "sha256": "cb336535570ddbfcf28dee107c17652b5dbb221dc3dc5a811ac5eba37a676ed2"
     },
     "product-landings/_images/generated/dark/w-erp-key-art-dark.prompt.md": {
-      "bytes": 1168,
-      "sha256": "7de80434b189efbac541169a3eb22a1d9c353b42a395162ea94bb3ab28f832d9"
+      "bytes": 1178,
+      "sha256": "da800abc539098ef09331e98f07d9fee8815faf1a2f769a03b4c3d637e292bc5"
     },
     "product-landings/_images/generated/dark/w-hospital-key-art-dark.png": {
       "bytes": 1906591,
       "sha256": "a2eab2feffedd0bd82d4b07f756b7a1d1a74d1fe0718bc282648c454ac606abb"
     },
     "product-landings/_images/generated/dark/w-hospital-key-art-dark.prompt.md": {
-      "bytes": 1193,
-      "sha256": "b8875892bc2e2eed38140dacdf013dc34de5f5aaaf2603427003db0c8568c548"
+      "bytes": 1203,
+      "sha256": "6da8fc032ffb64e86173005d92fcc792a92bb6a585ae416a47eb12bd57066525"
     },
     "product-landings/_images/generated/dark/w-id-key-art-dark.png": {
       "bytes": 1687708,
       "sha256": "d837f5f4155c27cc70031e89ad4b46b15fdf38c258c915d5616bdc735609527a"
     },
     "product-landings/_images/generated/dark/w-id-key-art-dark.prompt.md": {
-      "bytes": 1146,
-      "sha256": "9807982d25cc6e7ef5536e4913eab33175039e29e2a45793e34b55f95573092b"
+      "bytes": 1156,
+      "sha256": "8c13423d7f541d616ada74f432f1d540f6d298cd55997897165e3049023e6cb9"
     },
     "product-landings/_images/generated/dark/w-imagetrace-key-art-dark.png": {
       "bytes": 1695424,
       "sha256": "1871f25b2c6085a73f73daddbec721985410583101290f7cfc97ed4b810c7710"
     },
     "product-landings/_images/generated/dark/w-imagetrace-key-art-dark.prompt.md": {
-      "bytes": 1216,
-      "sha256": "28e611f585b78408dc3cb526ca21f1b3c4f720365e21b4c1da364d3fff5632c8"
+      "bytes": 1226,
+      "sha256": "865459b02b389449baaf6553894123973cacadb7ae351a60470106f31256eafa"
     },
     "product-landings/_images/generated/dark/w-inspector-key-art-dark.png": {
       "bytes": 1927854,
       "sha256": "04fd7335b91792466b3ce3ddd2f25ace44d03d3e4df188f7c31a091adfd64ad0"
     },
     "product-landings/_images/generated/dark/w-inspector-key-art-dark.prompt.md": {
-      "bytes": 1203,
-      "sha256": "7a8d19d4d3b351c6849e91ffbfa57defbf7abc09581f9d6210a76e5be1939c25"
+      "bytes": 1213,
+      "sha256": "7ad1405009a862fbe753af1755c86b2d8b18f9ca5821b53e80a846dc926cc98f"
     },
     "product-landings/_images/generated/dark/w-jcr-key-art-dark.png": {
       "bytes": 1908818,
       "sha256": "8c4f25342b79933fd38c05055253426c00012ecab9d810e92904aab658557f7e"
     },
     "product-landings/_images/generated/dark/w-jcr-key-art-dark.prompt.md": {
-      "bytes": 1154,
-      "sha256": "088fef5c5a58ff3ee3d30e1ea8929479a9a8bc500132af7a51e0892e494b16db"
+      "bytes": 1164,
+      "sha256": "63f49683252855d5aaa5972fcab4eb2614539c449134650f9064968ba0c93976"
     },
     "product-landings/_images/generated/dark/w-knowledge-key-art-dark.png": {
       "bytes": 1942050,
       "sha256": "c54d8be70301faf3b027572f8b8340a4652b9888e3117b25a59f7d7299356486"
     },
     "product-landings/_images/generated/dark/w-knowledge-key-art-dark.prompt.md": {
-      "bytes": 1203,
-      "sha256": "95d01cdd513b982fa6d3ac7329d5af56f00f1cf1a759f8692dd76e01cb296368"
+      "bytes": 1213,
+      "sha256": "3d6ccc6d83a2f4ea42bf5e68a60fcb52ea28f11eccefe2daf36971e590f88aeb"
     },
     "product-landings/_images/generated/dark/w-maas-key-art-dark.png": {
       "bytes": 1735515,
       "sha256": "a4f5d9bea9166a876d6cc1e5f178af3d20dc08babd95823cf861fd89ac50fc59"
     },
     "product-landings/_images/generated/dark/w-maas-key-art-dark.prompt.md": {
-      "bytes": 1176,
-      "sha256": "560567acbb2d0d7ef3f83a3b7bf938e34312c6b145183c1a4bbfc211ee87cb16"
+      "bytes": 1186,
+      "sha256": "445d2c3226fe5581aca86aee4d8d6d3a2eca392443e335c565a16bcedba7b456"
     },
     "product-landings/_images/generated/dark/w-medtwin-key-art-dark.png": {
       "bytes": 1876422,
       "sha256": "ecef5c8d462ff97d51f5a38e77a667e03045e7d2ed3ac9acac39fe12c6186b3e"
     },
     "product-landings/_images/generated/dark/w-medtwin-key-art-dark.prompt.md": {
-      "bytes": 1191,
-      "sha256": "4f61b78627d0575b9835c172d6e5d16a3d34bfd72c362d3eff0393c6ca19ef04"
+      "bytes": 1201,
+      "sha256": "263b04eef2a94a0c1c436bd552357e46c19a2d5f0c7d5e286725d9951064c39b"
     },
     "product-landings/_images/generated/dark/w-modelgw-key-art-dark.png": {
       "bytes": 1780190,
       "sha256": "a3ee04447a9a3aedc789bb21dded8caf8226433b9dc582e3e01c030e041a4d2d"
     },
     "product-landings/_images/generated/dark/w-modelgw-key-art-dark.prompt.md": {
-      "bytes": 1186,
-      "sha256": "fa57c17f80ada723142a7410172c998447938f383224ae7714ddf9f86bbd0487"
+      "bytes": 1196,
+      "sha256": "0fa012a3344b5b0a197a525edefbb151bed9aef7ee991da9335f074464b02635"
     },
     "product-landings/_images/generated/dark/w-netsense-key-art-dark.png": {
       "bytes": 2052244,
       "sha256": "c1e06bc8445e32030f6e3be74c6877559334940f48d510ad33ea3a9629b2f392"
     },
     "product-landings/_images/generated/dark/w-netsense-key-art-dark.prompt.md": {
-      "bytes": 1180,
-      "sha256": "0101ec08fff31ae09288288e760ca13d5a07d50c6190fdb767354da138fc5711"
+      "bytes": 1190,
+      "sha256": "79ebe9d40471c57788fedb4d0f37582ddfc7e05b9c7b02d56cc051915680114b"
     },
     "product-landings/_images/generated/dark/w-nvr-key-art-dark.png": {
       "bytes": 2006956,
       "sha256": "b81558358f90419c3595f8f43c76c5d37af840c8eea10a33076400751d441906"
     },
     "product-landings/_images/generated/dark/w-nvr-key-art-dark.prompt.md": {
-      "bytes": 1142,
-      "sha256": "483d3a61547c40571689a5982ced9253c4d45b9d2c201d1eadcf3108edd8ee6f"
+      "bytes": 1152,
+      "sha256": "2f0e69990dd114053c3451ee156ecce28b66629e2d7987ef300a6052d7ce5dc2"
     },
     "product-landings/_images/generated/dark/w-omnisense-key-art-dark.png": {
       "bytes": 2163467,
       "sha256": "a22d2577ad98105d00b9d8310a3623aeb92d1844dcaba4854b56fbd7819f7936"
     },
     "product-landings/_images/generated/dark/w-omnisense-key-art-dark.prompt.md": {
-      "bytes": 1222,
-      "sha256": "6923cd80e1b4510b4ded2c6bac38099113ae58db7ac16c7a2f96badd1ed2a76f"
+      "bytes": 1232,
+      "sha256": "4d55d41febf22a01708dfe4932512117c66a0f399468744d4ee5f105daf07f87"
     },
     "product-landings/_images/generated/dark/w-quant-key-art-dark.png": {
       "bytes": 1951521,
       "sha256": "98f64d2d9a6d638cfcfd72f1b5b7a90caf604f96616e983558de49bc39e64354"
     },
     "product-landings/_images/generated/dark/w-quant-key-art-dark.prompt.md": {
-      "bytes": 1195,
-      "sha256": "901c38c7af153f9e54cd95dbe4431fcd6c91f33d577ec7abc31f5065b19651b4"
+      "bytes": 1205,
+      "sha256": "7b5253b62cd0461c6a8d0e4433cf06eef5a9b221c708bda44c2aa7e52fd81f7c"
     },
     "product-landings/_images/generated/dark/w-radar-key-art-dark.png": {
       "bytes": 1691351,
       "sha256": "9d742ee346305d51b0557d6e29151efd52fab8203e65fe9e86f6a1fccc89e15d"
     },
     "product-landings/_images/generated/dark/w-radar-key-art-dark.prompt.md": {
-      "bytes": 1169,
-      "sha256": "0f4100bae789cb28d560755ff6442ed1de9547d58beddd87b0718692e80a6bc6"
+      "bytes": 1179,
+      "sha256": "a63b5dec75e082654339e8e72d5da0e14540d83ed91f76a06947cb41170671d8"
     },
     "product-landings/_images/generated/dark/w-search-key-art-dark.png": {
       "bytes": 1859437,
       "sha256": "d6cffd11107379ff8d7bef9829c67453fe40f8fa190822de0761923c50df94d3"
     },
     "product-landings/_images/generated/dark/w-search-key-art-dark.prompt.md": {
-      "bytes": 1182,
-      "sha256": "b0f8f18b200cc0e3fc61a1cd868b1e9ddaf07dc24210af7ddb18bc5fdf3726de"
+      "bytes": 1192,
+      "sha256": "daeecaadd123254208b478b0f93de79158e34daf44df412e5cd88cf0143bb7ec"
     },
     "product-landings/_images/generated/dark/w-transfer-key-art-dark.png": {
       "bytes": 1780520,
       "sha256": "1997389b6709d94ea7ef7e174b312f662b98cce236bc5cc40cc016318cc862ee"
     },
     "product-landings/_images/generated/dark/w-transfer-key-art-dark.prompt.md": {
-      "bytes": 1174,
-      "sha256": "8e476ff3f608fda1ffac8f2f327cba86ffc50da15e75c54af666875dcec5be13"
+      "bytes": 1184,
+      "sha256": "c88190ce90ba7c386a377fef3efc5c86b8df0346c864193df6b4ebdb77cc3f48"
     },
     "product-landings/_images/generated/dark/w-translate-key-art-dark.png": {
       "bytes": 1795194,
       "sha256": "42ced43e82ceed31868f826fd1dc611dc7164faa68e316c56a9e1862de773ef1"
     },
     "product-landings/_images/generated/dark/w-translate-key-art-dark.prompt.md": {
-      "bytes": 1197,
-      "sha256": "0149eab46369bb986eb6fe278400305e55e85c46c7047fc847c164ee3ce7c228"
+      "bytes": 1207,
+      "sha256": "2d163f8867c339500b929db3cd3550da1a7cf0f627e793520d87b557818fe459"
     },
     "product-landings/_images/generated/product-ui/MANIFEST.md": {
       "bytes": 3437,

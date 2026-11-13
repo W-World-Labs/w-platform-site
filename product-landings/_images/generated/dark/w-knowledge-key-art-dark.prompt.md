@@ -2,7 +2,7 @@
 
 - Product: `w-knowledge` / W-Knowledge
 - Style: dark
-- Source generated file: `ig_0c47948295f3560c016a2fe06f36e08191af7fc0c1d108838d.png` (original generation output, private receipt retained)
+- Source generated file: `ig_0c47948295f3560c016a2fe06f36e08191af7fc0c1d108838d.png` (historical output filename; original output folder unavailable)
 - Project image: `_images/generated/dark/w-knowledge-key-art-dark.png`
 - Dimensions: 1672x941
 

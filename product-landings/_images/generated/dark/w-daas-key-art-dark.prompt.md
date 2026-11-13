@@ -2,7 +2,7 @@
 
 - Product: `w-daas` / W-DaaS
 - Style: dark
-- Source generated file: `ig_0c47948295f3560c016a2fe00a13988191ba42cda63d545f06.png` (original generation output, private receipt retained)
+- Source generated file: `ig_0c47948295f3560c016a2fe00a13988191ba42cda63d545f06.png` (historical output filename; original output folder unavailable)
 - Project image: `_images/generated/dark/w-daas-key-art-dark.png`
 - Dimensions: 1672x941
 

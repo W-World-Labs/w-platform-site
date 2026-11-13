@@ -2,7 +2,7 @@
 
 - Product: `w-maas` / W-MaaS
 - Style: bright
-- Source generated file: `ig_0c47948295f3560c016a2fe6d62d3481918380409f19942fd2.png` (original generation output, private receipt retained)
+- Source generated file: `ig_0c47948295f3560c016a2fe6d62d3481918380409f19942fd2.png` (historical output filename; original output folder unavailable)
 - Project image: `_images/generated/bright/w-maas-key-art-bright.png`
 - Dimensions: 1672x941
 

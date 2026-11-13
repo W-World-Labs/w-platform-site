@@ -2,7 +2,7 @@
 
 - Product: `w-hospital` / W-Hospital
 - Style: dark
-- Source generated file: `ig_0c47948295f3560c016a2fe2d44b648191b7761ede8a1daeb1.png` (original generation output, private receipt retained)
+- Source generated file: `ig_0c47948295f3560c016a2fe2d44b648191b7761ede8a1daeb1.png` (historical output filename; original output folder unavailable)
 - Project image: `_images/generated/dark/w-hospital-key-art-dark.png`
 - Dimensions: 1672x941
 

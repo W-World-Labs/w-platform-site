@@ -2,7 +2,7 @@
 
 - Product: `w-imagetrace` / W-ImageTrace
 - Style: bright
-- Source generated file: `ig_0c47948295f3560c016a2fe89d9760819195888050409eeed8.png` (original generation output, private receipt retained)
+- Source generated file: `ig_0c47948295f3560c016a2fe89d9760819195888050409eeed8.png` (historical output filename; original output folder unavailable)
 - Project image: `_images/generated/bright/w-imagetrace-key-art-bright.png`
 - Dimensions: 1672x941
 

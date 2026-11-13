@@ -2,7 +2,7 @@
 
 - Product: `w-translate` / W-Translate
 - Style: dark
-- Source generated file: `ig_0c47948295f3560c016a2fe454f2d081919c15cae42cd6d332.png` (original generation output, private receipt retained)
+- Source generated file: `ig_0c47948295f3560c016a2fe454f2d081919c15cae42cd6d332.png` (historical output filename; original output folder unavailable)
 - Project image: `_images/generated/dark/w-translate-key-art-dark.png`
 - Dimensions: 1672x941
 

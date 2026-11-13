@@ -2,7 +2,7 @@
 
 - Product: `w-netsense` / W-NetSense
 - Style: bright
-- Source generated file: `ig_0c47948295f3560c016a2fe96eabb88191bcb5409cff58562d.png` (original generation output, private receipt retained)
+- Source generated file: `ig_0c47948295f3560c016a2fe96eabb88191bcb5409cff58562d.png` (historical output filename; original output folder unavailable)
 - Project image: `_images/generated/bright/w-netsense-key-art-bright.png`
 - Dimensions: 1672x941
 

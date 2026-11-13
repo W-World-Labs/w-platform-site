@@ -3,7 +3,7 @@
 This folder stores every image generated during the landing-page asset pass.
 Each image has a same-name `.prompt.md` sidecar so the creative intent is traceable.
 
-- Source batch: original project image-generation pass; local receipt retained privately
+- Source batch: historical project-generation pass. Original output folder unavailable; source-path records retained privately.
 - Images copied: 41
 - Dark images: 22
 - Bright images: 19

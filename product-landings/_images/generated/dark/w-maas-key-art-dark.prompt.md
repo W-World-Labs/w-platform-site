@@ -2,7 +2,7 @@
 
 - Product: `w-maas` / W-MaaS
 - Style: dark
-- Source generated file: `ig_0c47948295f3560c016a2fdefcc3a4819194651266336a02e8.png` (original generation output, private receipt retained)
+- Source generated file: `ig_0c47948295f3560c016a2fdefcc3a4819194651266336a02e8.png` (historical output filename; original output folder unavailable)
 - Project image: `_images/generated/dark/w-maas-key-art-dark.png`
 - Dimensions: 1672x941
 

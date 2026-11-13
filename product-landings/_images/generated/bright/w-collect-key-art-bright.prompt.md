@@ -2,7 +2,7 @@
 
 - Product: `w-collect` / W-Collect
 - Style: bright
-- Source generated file: `ig_0c47948295f3560c016a2feb7a44d481919a930db04be33d35.png` (original generation output, private receipt retained)
+- Source generated file: `ig_0c47948295f3560c016a2feb7a44d481919a930db04be33d35.png` (historical output filename; original output folder unavailable)
 - Project image: `_images/generated/bright/w-collect-key-art-bright.png`
 - Dimensions: 1672x941
 

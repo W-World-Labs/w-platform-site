@@ -2,7 +2,7 @@
 
 - Product: `w-modelgw` / W-ModelGW
 - Style: bright
-- Source generated file: `ig_0c47948295f3560c016a2fe760911481918e9ba9441dc95a73.png` (original generation output, private receipt retained)
+- Source generated file: `ig_0c47948295f3560c016a2fe760911481918e9ba9441dc95a73.png` (historical output filename; original output folder unavailable)
 - Project image: `_images/generated/bright/w-modelgw-key-art-bright.png`
 - Dimensions: 1672x941
 

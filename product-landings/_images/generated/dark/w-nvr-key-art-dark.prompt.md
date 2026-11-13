@@ -2,7 +2,7 @@
 
 - Product: `w-nvr` / W-NVR
 - Style: dark
-- Source generated file: `ig_0c47948295f3560c016a2fe1da75a081918a6c4857e1c99104.png` (original generation output, private receipt retained)
+- Source generated file: `ig_0c47948295f3560c016a2fe1da75a081918a6c4857e1c99104.png` (historical output filename; original output folder unavailable)
 - Project image: `_images/generated/dark/w-nvr-key-art-dark.png`
 - Dimensions: 1672x941
 

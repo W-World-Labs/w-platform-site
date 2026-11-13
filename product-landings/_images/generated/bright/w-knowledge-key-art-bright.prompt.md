@@ -2,7 +2,7 @@
 
 - Product: `w-knowledge` / W-Knowledge
 - Style: bright
-- Source generated file: `ig_0c47948295f3560c016a2fe8d3157c8191806e84a0ff389623.png` (original generation output, private receipt retained)
+- Source generated file: `ig_0c47948295f3560c016a2fe8d3157c8191806e84a0ff389623.png` (historical output filename; original output folder unavailable)
 - Project image: `_images/generated/bright/w-knowledge-key-art-bright.png`
 - Dimensions: 1672x941
 

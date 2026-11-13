@@ -2,7 +2,7 @@
 
 - Product: `w-domain` / W-Domain
 - Style: bright
-- Source generated file: `ig_0c47948295f3560c016a2fe5ab513c819187b0b680a5e73902.png` (original generation output, private receipt retained)
+- Source generated file: `ig_0c47948295f3560c016a2fe5ab513c819187b0b680a5e73902.png` (historical output filename; original output folder unavailable)
 - Project image: `_images/generated/bright/w-domain-key-art-bright.png`
 - Dimensions: 1672x941
 

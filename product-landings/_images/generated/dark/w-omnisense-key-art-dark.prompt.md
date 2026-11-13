@@ -2,7 +2,7 @@
 
 - Product: `w-omnisense` / W-OmniSense
 - Style: dark
-- Source generated file: `ig_0c47948295f3560c016a2fe215b8b88191861335f0fb6d24f2.png` (original generation output, private receipt retained)
+- Source generated file: `ig_0c47948295f3560c016a2fe215b8b88191861335f0fb6d24f2.png` (historical output filename; original output folder unavailable)
 - Project image: `_images/generated/dark/w-omnisense-key-art-dark.png`
 - Dimensions: 1672x941
 

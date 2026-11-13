@@ -2,7 +2,7 @@
 
 - Product: `w-erp` / W-ERP
 - Style: bright
-- Source generated file: `ig_0c47948295f3560c016a2feab34f2c8191bb229ccdb9e02b48.png` (original generation output, private receipt retained)
+- Source generated file: `ig_0c47948295f3560c016a2feab34f2c8191bb229ccdb9e02b48.png` (historical output filename; original output folder unavailable)
 - Project image: `_images/generated/bright/w-erp-key-art-bright.png`
 - Dimensions: 1672x941
 

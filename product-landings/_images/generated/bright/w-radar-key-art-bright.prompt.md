@@ -2,7 +2,7 @@
 
 - Product: `w-radar` / W-Radar
 - Style: bright
-- Source generated file: `ig_0c47948295f3560c016a2fe56e97308191b0b70352562a596d.png` (original generation output, private receipt retained)
+- Source generated file: `ig_0c47948295f3560c016a2fe56e97308191b0b70352562a596d.png` (historical output filename; original output folder unavailable)
 - Project image: `_images/generated/bright/w-radar-key-art-bright.png`
 - Dimensions: 1672x941
 

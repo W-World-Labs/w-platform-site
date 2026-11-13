@@ -2,7 +2,7 @@
 
 - Product: `w-search` / W-Search
 - Style: bright
-- Source generated file: `ig_0c47948295f3560c016a2fe5ec8c588191a74a3d711ac8f2ca.png` (original generation output, private receipt retained)
+- Source generated file: `ig_0c47948295f3560c016a2fe5ec8c588191a74a3d711ac8f2ca.png` (historical output filename; original output folder unavailable)
 - Project image: `_images/generated/bright/w-search-key-art-bright.png`
 - Dimensions: 1672x941
 

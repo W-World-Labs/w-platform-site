@@ -2,7 +2,7 @@
 
 - Product: `w-medtwin` / W-MedTwin
 - Style: dark
-- Source generated file: `ig_0c47948295f3560c016a2fe313352c8191b1aa3029ca54a45c.png` (original generation output, private receipt retained)
+- Source generated file: `ig_0c47948295f3560c016a2fe313352c8191b1aa3029ca54a45c.png` (historical output filename; original output folder unavailable)
 - Project image: `_images/generated/dark/w-medtwin-key-art-dark.png`
 - Dimensions: 1672x941
 

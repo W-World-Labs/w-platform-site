@@ -2,7 +2,7 @@
 
 - Product: `w-search` / W-Search
 - Style: dark
-- Source generated file: `ig_0c47948295f3560c016a2fdec48ad08191aa7b2338e516acab.png` (original generation output, private receipt retained)
+- Source generated file: `ig_0c47948295f3560c016a2fdec48ad08191aa7b2338e516acab.png` (historical output filename; original output folder unavailable)
 - Project image: `_images/generated/dark/w-search-key-art-dark.png`
 - Dimensions: 1672x941
 

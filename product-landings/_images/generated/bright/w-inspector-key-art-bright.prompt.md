@@ -2,7 +2,7 @@
 
 - Product: `w-inspector` / W-Inspector
 - Style: bright
-- Source generated file: `ig_0c47948295f3560c016a2fe79cd41881918462dda83c4b45be.png` (original generation output, private receipt retained)
+- Source generated file: `ig_0c47948295f3560c016a2fe79cd41881918462dda83c4b45be.png` (historical output filename; original output folder unavailable)
 - Project image: `_images/generated/bright/w-inspector-key-art-bright.png`
 - Dimensions: 1672x941
 

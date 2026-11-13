@@ -2,7 +2,7 @@
 
 - Product: `w-inspector` / W-Inspector
 - Style: dark
-- Source generated file: `ig_0c47948295f3560c016a2fdf9b7a808191b5f70c60b30063d2.png` (original generation output, private receipt retained)
+- Source generated file: `ig_0c47948295f3560c016a2fdf9b7a808191b5f70c60b30063d2.png` (historical output filename; original output folder unavailable)
 - Project image: `_images/generated/dark/w-inspector-key-art-dark.png`
 - Dimensions: 1672x941
 

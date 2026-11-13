@@ -25,7 +25,7 @@
         "test:catalog": "node scripts/check-products-radar.mjs",
         "export:products": "node scripts/export-products.mjs",
         "test:routes": "node scripts/check-routes.mjs",
-        "test:images": "node scripts/check-product-images.mjs",
+        "test:images": "node scripts/prepare-public-images.mjs && node scripts/check-product-images.mjs",
         "test:ctas": "node scripts/check-product-ctas.mjs",
         "test:i18n": "node scripts/check-i18n.mjs",
         "test:radar-code": "node scripts/check-radar-code.mjs",

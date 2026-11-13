@@ -2,7 +2,7 @@
 
 - Product: `w-daas` / W-DaaS
 - Style: bright
-- Source generated file: `ig_0c47948295f3560c016a2fe85892588191a813feb9383e0c9d.png` (original generation output, private receipt retained)
+- Source generated file: `ig_0c47948295f3560c016a2fe85892588191a813feb9383e0c9d.png` (historical output filename; original output folder unavailable)
 - Project image: `_images/generated/bright/w-daas-key-art-bright.png`
 - Dimensions: 1672x941
 

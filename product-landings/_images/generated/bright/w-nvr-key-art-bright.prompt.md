@@ -2,7 +2,7 @@
 
 - Product: `w-nvr` / W-NVR
 - Style: bright
-- Source generated file: `ig_0c47948295f3560c016a2fe9b7c55c8191a4313d73c13c251a.png` (original generation output, private receipt retained)
+- Source generated file: `ig_0c47948295f3560c016a2fe9b7c55c8191a4313d73c13c251a.png` (historical output filename; original output folder unavailable)
 - Project image: `_images/generated/bright/w-nvr-key-art-bright.png`
 - Dimensions: 1672x941
 
