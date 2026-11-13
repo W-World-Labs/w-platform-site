@@ -1,0 +1,15 @@
+{
+  "repository": "https://github.com/W-World-Labs/w-id-sdk",
+  "commit": "8d57e08c63ad8567dae79c261a0fcad44f1a81a3",
+  "package": "@w-id/browser",
+  "version": "1.3.60",
+  "ci_run": "https://github.com/W-World-Labs/w-id-sdk/actions/runs/43486083662",
+  "artifact_id": 14067745815,
+  "resolved": "https://github.com/W-World-Labs/w-id-sdk/releases/download/browser-v1.3.60/w-id-browser-1.3.60.tgz",
+  "bytes": 32845,
+  "sha256": "8b68e1a12e7667618c4f2cc6354435de541e3fbd53ef4d6ca6ec9e7edbdf4124",
+  "integrity": "sha512-hw3znOYUa0H4XbxraRH+S81M4MreA0BfhK/FHdygcMvBnAWSF/3+Wz6MNQAAb5CKgRTqWpF8+OXfPHUso0CY6g==",
+  "license": "MIT",
+  "distribution": "Original actual CI npm tarball, unchanged; downloaded by npm ci, not vendored.",
+  "consumer_contract": "WIdBrowserClient, BrowserAuthError and createWClient declarations/fields checked against actual package; original application calls retained."
+}

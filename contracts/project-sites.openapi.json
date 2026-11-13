@@ -1,0 +1,61 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "W Platform Project Sites Console Facade",
+    "version": "1.0.0",
+    "description": "Same-origin W-Drop Sites control surface used by the project console. The browser first exchanges its current W-ID session for a short-lived exact-project management token, then sends that token as a bearer."
+  },
+  "servers": [{ "url": "/api/project-sites" }],
+  "security": [{ "ProjectManagerBearer": [] }],
+  "paths": {
+    "/api/v1/projects/{projectId}/sites": {
+      "parameters": [{ "$ref": "#/components/parameters/ProjectId" }],
+      "get": { "operationId": "listProjectSites", "responses": { "200": { "description": "Sites bound to this exact W-ID workspace and project.", "content": { "application/json": { "schema": { "type": "object", "required": ["sites"], "properties": { "sites": { "type": "array", "maxItems": 200, "items": { "$ref": "#/components/schemas/ProjectSite" } } } } } } }, "401": { "$ref": "#/components/responses/Unauthorized" }, "403": { "$ref": "#/components/responses/Forbidden" } } },
+      "post": { "operationId": "createProjectSite", "requestBody": { "$ref": "#/components/requestBodies/ProjectSiteFiles" }, "responses": { "201": { "description": "The created project site.", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ProjectSite" } } } }, "400": { "$ref": "#/components/responses/Invalid" }, "401": { "$ref": "#/components/responses/Unauthorized" }, "403": { "$ref": "#/components/responses/Forbidden" } } }
+    },
+    "/api/v1/projects/{projectId}/sites/{slug}/deployments": {
+      "parameters": [{ "$ref": "#/components/parameters/ProjectId" }, { "$ref": "#/components/parameters/Slug" }],
+      "post": { "operationId": "deployProjectSiteFiles", "requestBody": { "$ref": "#/components/requestBodies/ProjectSiteFiles" }, "responses": { "200": { "description": "The updated project site and current immutable version.", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ProjectSite" } } } }, "400": { "$ref": "#/components/responses/Invalid" }, "401": { "$ref": "#/components/responses/Unauthorized" }, "403": { "$ref": "#/components/responses/Forbidden" }, "404": { "$ref": "#/components/responses/NotFound" } } }
+    },
+    "/api/v1/projects/{projectId}/sites/{slug}/versions": {
+      "parameters": [{ "$ref": "#/components/parameters/ProjectId" }, { "$ref": "#/components/parameters/Slug" }],
+      "get": { "operationId": "listProjectSiteVersions", "responses": { "200": { "description": "At most 100 immutable version summaries.", "content": { "application/json": { "schema": { "type": "object", "required": ["versions"], "properties": { "versions": { "type": "array", "maxItems": 100, "items": { "$ref": "#/components/schemas/ProjectSiteVersion" } } } } } } }, "401": { "$ref": "#/components/responses/Unauthorized" }, "403": { "$ref": "#/components/responses/Forbidden" } } }
+    },
+    "/api/v1/projects/{projectId}/sites/{slug}/preview/{version}": {
+      "parameters": [{ "$ref": "#/components/parameters/ProjectId" }, { "$ref": "#/components/parameters/Slug" }, { "name": "version", "in": "path", "required": true, "schema": { "type": "integer", "minimum": 1 } }],
+      "get": { "operationId": "previewProjectSiteVersion", "responses": { "200": { "description": "HTTPS URL of the immutable version preview.", "content": { "application/json": { "schema": { "type": "object", "required": ["slug", "version", "url"], "properties": { "slug": { "type": "string" }, "version": { "type": "integer", "minimum": 1 }, "url": { "type": "string", "format": "uri", "pattern": "^https://" } } } } } }, "401": { "$ref": "#/components/responses/Unauthorized" }, "403": { "$ref": "#/components/responses/Forbidden" }, "404": { "$ref": "#/components/responses/NotFound" } } }
+    },
+    "/api/v1/projects/{projectId}/sites/{slug}/promote": { "parameters": [{ "$ref": "#/components/parameters/ProjectId" }, { "$ref": "#/components/parameters/Slug" }], "post": { "operationId": "promoteProjectSiteVersion", "requestBody": { "$ref": "#/components/requestBodies/ProjectSiteVersionChange" }, "responses": { "200": { "description": "Updated site after activating the requested version.", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ProjectSite" } } } }, "401": { "$ref": "#/components/responses/Unauthorized" }, "403": { "$ref": "#/components/responses/Forbidden" }, "404": { "$ref": "#/components/responses/NotFound" } } } },
+    "/api/v1/projects/{projectId}/sites/{slug}/rollback": { "parameters": [{ "$ref": "#/components/parameters/ProjectId" }, { "$ref": "#/components/parameters/Slug" }], "post": { "operationId": "rollbackProjectSiteVersion", "requestBody": { "$ref": "#/components/requestBodies/ProjectSiteVersionChange" }, "responses": { "200": { "description": "Updated site after activating the requested version.", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ProjectSite" } } } }, "401": { "$ref": "#/components/responses/Unauthorized" }, "403": { "$ref": "#/components/responses/Forbidden" }, "404": { "$ref": "#/components/responses/NotFound" } } } },
+    "/api/v1/projects/{projectId}/sites/{slug}": { "parameters": [{ "$ref": "#/components/parameters/ProjectId" }, { "$ref": "#/components/parameters/Slug" }], "delete": { "operationId": "deleteProjectSite", "responses": { "200": { "description": "Site was deleted.", "content": { "application/json": { "schema": { "type": "object", "required": ["slug", "deleted"], "properties": { "slug": { "type": "string" }, "deleted": { "const": true } } } } } }, "401": { "$ref": "#/components/responses/Unauthorized" }, "403": { "$ref": "#/components/responses/Forbidden" }, "404": { "$ref": "#/components/responses/NotFound" } } } },
+    "/api/v1/projects/{projectId}/sites/{slug}/domains": {
+      "parameters": [{ "$ref": "#/components/parameters/ProjectId" }, { "$ref": "#/components/parameters/Slug" }],
+      "get": { "operationId": "listProjectSiteDomains", "responses": { "200": { "description": "Custom-domain bindings and DNS verification instructions.", "content": { "application/json": { "schema": { "type": "object", "required": ["domains"], "properties": { "domains": { "type": "array", "maxItems": 50, "items": { "$ref": "#/components/schemas/ProjectSiteDomain" } } } } } } }, "401": { "$ref": "#/components/responses/Unauthorized" }, "403": { "$ref": "#/components/responses/Forbidden" } } },
+      "post": { "operationId": "addProjectSiteDomain", "requestBody": { "required": true, "content": { "application/json": { "schema": { "type": "object", "required": ["domain"], "properties": { "domain": { "type": "string", "maxLength": 253, "format": "hostname" } }, "additionalProperties": false } } } }, "responses": { "201": { "description": "Added custom-domain DNS instructions.", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ProjectSiteDomain" } } } }, "400": { "$ref": "#/components/responses/Invalid" }, "401": { "$ref": "#/components/responses/Unauthorized" }, "403": { "$ref": "#/components/responses/Forbidden" } } }
+    },
+    "/api/v1/projects/{projectId}/sites/{slug}/domains/{domain}/verify": { "parameters": [{ "$ref": "#/components/parameters/ProjectId" }, { "$ref": "#/components/parameters/Slug" }, { "name": "domain", "in": "path", "required": true, "schema": { "type": "string", "maxLength": 253, "format": "hostname" } }], "post": { "operationId": "verifyProjectSiteDomain", "responses": { "200": { "description": "Updated DNS verification status.", "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ProjectSiteDomain" } } } }, "401": { "$ref": "#/components/responses/Unauthorized" }, "403": { "$ref": "#/components/responses/Forbidden" }, "404": { "$ref": "#/components/responses/NotFound" } } } },
+    "/api/v1/projects/{projectId}/sites/{slug}/domains/{domain}": { "parameters": [{ "$ref": "#/components/parameters/ProjectId" }, { "$ref": "#/components/parameters/Slug" }, { "name": "domain", "in": "path", "required": true, "schema": { "type": "string", "maxLength": 253, "format": "hostname" } }], "delete": { "operationId": "deleteProjectSiteDomain", "responses": { "200": { "description": "Domain binding was removed.", "content": { "application/json": { "schema": { "type": "object", "required": ["deleted"], "properties": { "deleted": { "const": true } } } } } }, "401": { "$ref": "#/components/responses/Unauthorized" }, "403": { "$ref": "#/components/responses/Forbidden" }, "404": { "$ref": "#/components/responses/NotFound" } } } }
+  },
+  "components": {
+    "securitySchemes": { "ProjectManagerBearer": { "type": "http", "scheme": "bearer", "bearerFormat": "JWT", "description": "Short-lived W-ID exact-project management token exchanged from the current interactive first-party session." } },
+    "parameters": {
+      "ProjectId": { "name": "projectId", "in": "path", "required": true, "schema": { "type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$" } },
+      "Slug": { "name": "slug", "in": "path", "required": true, "schema": { "type": "string", "maxLength": 64, "pattern": "^[a-z0-9][a-z0-9-]{0,63}$" } }
+    },
+    "requestBodies": {
+      "ProjectSiteFiles": { "required": true, "content": { "application/json": { "schema": { "type": "object", "required": ["files"], "properties": { "slug": { "type": "string", "maxLength": 64, "pattern": "^[a-z0-9][a-z0-9-]{0,63}$" }, "files": { "type": "array", "minItems": 1, "maxItems": 100, "items": { "type": "object", "required": ["path", "content"], "properties": { "path": { "type": "string", "maxLength": 1024 }, "content": { "type": "string" }, "encoding": { "type": "string", "enum": ["utf8", "base64"] } } } } }, "additionalProperties": false } } } },
+      "ProjectSiteVersionChange": { "required": true, "content": { "application/json": { "schema": { "type": "object", "required": ["version"], "properties": { "version": { "type": "integer", "minimum": 1 } }, "additionalProperties": false } } } }
+    },
+    "responses": {
+      "Unauthorized": { "description": "The current session or exact-project token is no longer valid." },
+      "Forbidden": { "description": "W-ID denied project-manager authority." },
+      "NotFound": { "description": "The project site, version, or domain does not exist." },
+      "Invalid": { "description": "The request did not satisfy the bounded Sites contract." }
+    },
+    "schemas": {
+      "ProjectSite": { "type": "object", "required": ["workspace_id", "project_id", "slug", "url", "current_version", "created_at_unix", "file_count", "total_bytes"], "properties": { "workspace_id": { "type": "string" }, "project_id": { "type": "string" }, "slug": { "type": "string" }, "url": { "type": "string", "format": "uri", "pattern": "^https://" }, "current_version": { "type": "integer", "minimum": 1 }, "version_url": { "type": ["string", "null"], "format": "uri" }, "created_at_unix": { "type": "integer" }, "file_count": { "type": "integer" }, "total_bytes": { "type": "integer" } } },
+      "ProjectSiteVersion": { "type": "object", "required": ["version", "created_at_unix", "file_count", "total_bytes"], "properties": { "version": { "type": "integer", "minimum": 1 }, "created_at_unix": { "type": "integer" }, "file_count": { "type": "integer" }, "total_bytes": { "type": "integer" }, "files": { "type": "array", "maxItems": 100, "items": { "type": "object", "required": ["path", "size"], "properties": { "path": { "type": "string", "maxLength": 1024 }, "size": { "type": "integer" } } } }, "version_url": { "type": ["string", "null"], "format": "uri" } } },
+      "ProjectSiteDomain": { "type": "object", "required": ["domain", "url", "verified", "txt_name", "txt_value", "cname_target"], "properties": { "domain": { "type": "string", "format": "hostname" }, "url": { "type": "string", "format": "uri", "pattern": "^https://" }, "verified": { "type": "boolean" }, "verified_at_unix": { "type": ["integer", "null"] }, "last_checked_at_unix": { "type": ["integer", "null"] }, "txt_name": { "type": "string" }, "txt_value": { "type": "string" }, "cname_target": { "type": "string" }, "ipv4_target": { "type": ["string", "null"] } } }
+    }
+  }
+}

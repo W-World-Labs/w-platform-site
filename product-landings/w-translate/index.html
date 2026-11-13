@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>W-Translate — W Platform</title>
+<meta name="description" content="Multi-engine translation."/>
+<script async src="https://radar.myfastools.com/platform/bootstrap.js" data-workspace-id="ws_platform" data-project-id="omnitranslate" data-code="W-OMNITRANSLATE-E85E9EAF"></script>
+<style>
+/* ─── reset & tokens ─── */
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#08090d;
+  --bg2:#0d0f16;
+  --card:#111318;
+  --line:#1e2130;
+  --fg:#e6e8f0;
+  --mut:#8892a4;
+  --dim:#4a5268;
+  --acc1:#5b8cf7;
+  --acc2:#2ecfc0;
+  --radius-pill:100px;
+  --radius-card:16px;
+}
+
+/* ─── base ─── */
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  color:var(--fg);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,"PingFang SC",sans-serif;
+  font-size:16px;line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+
+/* ─── nav ─── */
+.w-nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 40px;
+  height:58px;
+  background:rgba(8,9,13,0.72);
+  backdrop-filter:blur(18px) saturate(1.4);
+  -webkit-backdrop-filter:blur(18px) saturate(1.4);
+  border-bottom:1px solid rgba(255,255,255,0.05);
+  transition:background .3s;
+}
+.w-nav-logo{
+  font-size:15px;font-weight:700;letter-spacing:.04em;color:var(--fg);
+  opacity:.9;
+}
+.w-nav-logo b{color:var(--acc2)}
+.pill-sm{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:8px 20px;
+  border-radius:var(--radius-pill);
+  font-size:13px;font-weight:600;letter-spacing:.02em;
+  cursor:pointer;border:none;
+  border:1px solid rgba(255,255,255,0.15);
+  background:rgba(255,255,255,0.06);
+  color:var(--fg);
+  transition:background .18s,border-color .18s,transform .18s;
+  white-space:nowrap;
+}
+.pill-sm:hover{background:rgba(255,255,255,0.12);border-color:rgba(255,255,255,0.28);transform:translateY(-1px)}
+
+/* ─── hero ─── */
+.w-hero{
+  position:relative;
+  min-height:100svh;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:flex-end;
+  overflow:hidden;
+  padding-bottom:80px;
+}
+.w-hero-bg{
+  position:absolute;inset:0;
+  background:var(--hero-gradient,var(--bg));
+}
+.w-hero-bg::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(to bottom,
+    rgba(8,9,13,0.2) 0%,
+    rgba(8,9,13,0.0) 35%,
+    rgba(8,9,13,0.55) 70%,
+    rgba(8,9,13,0.90) 100%);
+}
+.w-hero-content{
+  position:relative;z-index:2;
+  text-align:center;
+  max-width:860px;
+  padding:0 24px;
+}
+.w-hero-eyebrow{
+  display:inline-block;
+  font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--acc2);
+  margin-bottom:22px;
+  opacity:.85;
+}
+.w-hero-title{
+  font-size:clamp(48px,8.5vw,88px);
+  font-weight:700;
+  letter-spacing:-0.03em;
+  line-height:1.02;
+  color:#fff;
+}
+.w-hero-sub{
+  margin-top:20px;
+  font-size:clamp(17px,2.2vw,21px);
+  font-weight:400;
+  color:rgba(230,232,240,0.6);
+  max-width:580px;
+  margin-left:auto;margin-right:auto;
+}
+.w-hero-ctas{
+  margin-top:40px;
+  display:flex;gap:14px;align-items:center;justify-content:center;flex-wrap:wrap;
+}
+.pill-primary{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:14px 34px;
+  border-radius:var(--radius-pill);
+  font-size:15px;font-weight:600;letter-spacing:.02em;
+  cursor:pointer;
+  background:#fff;
+  color:#08090d;
+  border:1px solid #fff;
+  transition:background .18s,color .18s,transform .18s,box-shadow .18s;
+  white-space:nowrap;
+}
+.pill-primary:hover{
+  background:rgba(255,255,255,0.88);
+  transform:translateY(-2px);
+  box-shadow:0 8px 32px rgba(255,255,255,0.12);
+}
+.pill-ghost{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:13px 34px;
+  border-radius:var(--radius-pill);
+  font-size:15px;font-weight:600;letter-spacing:.02em;
+  cursor:pointer;
+  background:rgba(255,255,255,0.05);
+  color:rgba(255,255,255,0.88);
+  border:1px solid rgba(255,255,255,0.22);
+  transition:background .18s,border-color .18s,transform .18s;
+  white-space:nowrap;
+}
+.pill-ghost:hover{
+  background:rgba(255,255,255,0.10);
+  border-color:rgba(255,255,255,0.40);
+  transform:translateY(-2px);
+}
+
+/* ─── scroll indicator ─── */
+.w-scroll-hint{
+  position:absolute;bottom:30px;left:50%;transform:translateX(-50%);
+  z-index:3;
+  display:flex;flex-direction:column;align-items:center;gap:6px;
+  opacity:.35;
+  font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#fff;
+}
+.w-scroll-hint-line{
+  width:1px;height:36px;
+  background:linear-gradient(to bottom,rgba(255,255,255,0),rgba(255,255,255,0.6));
+  animation:scrollpulse 2s ease-in-out infinite;
+}
+@keyframes scrollpulse{
+  0%,100%{opacity:.3;transform:scaleY(1)}
+  50%{opacity:.9;transform:scaleY(1.1)}
+}
+
+/* ─── overview section ─── */
+.w-section{
+  min-height:100svh;
+  display:flex;align-items:center;
+  padding:120px 40px;
+  position:relative;overflow:hidden;
+}
+.w-section.alt{background:var(--bg2)}
+.w-section-wrap{
+  max-width:1100px;margin:0 auto;width:100%;
+  display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;
+}
+.w-section.flip .w-section-wrap{direction:rtl}
+.w-section.flip .w-section-text{direction:ltr}
+.w-section.flip .w-section-visual{direction:ltr}
+.w-section-eyebrow{
+  font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--acc2);margin-bottom:16px;opacity:.8;
+}
+.w-section-title{
+  font-size:clamp(30px,3.8vw,48px);
+  font-weight:700;letter-spacing:-0.025em;line-height:1.1;
+  color:#fff;
+}
+.w-section-body{
+  margin-top:20px;
+  font-size:clamp(15px,1.6vw,18px);
+  color:var(--mut);
+  line-height:1.75;
+}
+.w-section-visual{
+  border-radius:var(--radius-card);
+  overflow:hidden;
+  aspect-ratio:4/3;
+  display:flex;align-items:center;justify-content:center;
+  position:relative;
+}
+.w-section-visual-inner{
+  width:100%;height:100%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:clamp(48px,7vw,80px);
+  font-weight:800;
+  color:rgba(255,255,255,0.12);
+  letter-spacing:-0.04em;
+}
+.w-section-visual-glow{
+  position:absolute;inset:0;
+  opacity:.18;
+  filter:blur(40px);
+}
+
+/* ─── features grid section ─── */
+.w-features{
+  padding:120px 40px;
+  background:var(--bg);
+  border-top:1px solid var(--line);
+}
+.w-features-wrap{max-width:1100px;margin:0 auto;width:100%}
+.w-features-header{text-align:center;margin-bottom:72px}
+.w-features-eyebrow{
+  font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--acc1);margin-bottom:14px;opacity:.8;
+}
+.w-features-title{
+  font-size:clamp(28px,3.5vw,44px);
+  font-weight:700;letter-spacing:-0.025em;
+  color:#fff;
+}
+.w-features-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+  gap:2px;
+  border:1px solid var(--line);
+  border-radius:var(--radius-card);
+  overflow:hidden;
+}
+.w-feature-item{
+  background:var(--card);
+  padding:32px 28px;
+  border:0;
+}
+.w-feature-dot{
+  width:8px;height:8px;border-radius:50%;
+  margin-bottom:20px;
+}
+.w-feature-name{
+  font-size:16px;font-weight:600;color:#fff;
+  margin-bottom:8px;
+}
+.w-feature-body{
+  font-size:14px;color:var(--mut);line-height:1.6;
+}
+
+/* ─── use-cases section ─── */
+.w-usecases{
+  padding:120px 40px;
+  background:var(--bg2);
+  border-top:1px solid var(--line);
+}
+.w-usecases-wrap{max-width:880px;margin:0 auto;width:100%;text-align:center}
+.w-usecases-eyebrow{
+  font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--acc2);margin-bottom:14px;opacity:.8;
+}
+.w-usecases-title{
+  font-size:clamp(26px,3.2vw,40px);
+  font-weight:700;letter-spacing:-0.025em;color:#fff;
+  margin-bottom:52px;
+}
+.w-usecases-list{
+  list-style:none;
+  display:flex;flex-direction:column;gap:0;
+  text-align:left;
+  border:1px solid var(--line);border-radius:var(--radius-card);overflow:hidden;
+}
+.w-usecases-list li{
+  display:flex;align-items:flex-start;gap:18px;
+  padding:24px 28px;
+  background:var(--card);
+  border-bottom:1px solid var(--line);
+  font-size:16px;color:var(--mut);line-height:1.6;
+  transition:background .18s;
+}
+.w-usecases-list li:last-child{border-bottom:none}
+.w-usecases-list li:hover{background:rgba(255,255,255,0.02)}
+.w-usecase-num{
+  flex-shrink:0;
+  font-size:12px;font-weight:700;letter-spacing:.06em;
+  color:var(--acc2);opacity:.7;
+  padding-top:3px;
+  min-width:24px;
+}
+
+/* ─── bottom CTA strip ─── */
+.w-strip{
+  padding:120px 40px;
+  background:var(--bg);
+  border-top:1px solid var(--line);
+  text-align:center;
+}
+.w-strip-title{
+  font-size:clamp(32px,4.5vw,56px);
+  font-weight:700;letter-spacing:-0.03em;color:#fff;
+  margin-bottom:16px;
+}
+.w-strip-sub{
+  font-size:clamp(16px,1.8vw,19px);color:var(--mut);
+  margin-bottom:40px;
+}
+.w-strip-ctas{display:flex;gap:14px;align-items:center;justify-content:center;flex-wrap:wrap}
+
+/* ─── footer ─── */
+.w-footer{
+  padding:32px 40px;
+  border-top:1px solid var(--line);
+  display:flex;align-items:center;justify-content:space-between;
+  font-size:13px;color:var(--dim);
+  flex-wrap:wrap;gap:12px;
+}
+.w-footer a{color:var(--dim);transition:color .15s}
+.w-footer a:hover{color:var(--mut)}
+
+/* ─── responsive ─── */
+@media(max-width:800px){
+  .w-nav{padding:0 20px}
+  .w-section{padding:80px 24px}
+  .w-section-wrap{grid-template-columns:1fr;gap:40px}
+  .w-section.flip .w-section-wrap{direction:ltr}
+  .w-features{padding:80px 24px}
+  .w-usecases{padding:80px 24px}
+  .w-strip{padding:80px 24px}
+  .w-footer{padding:28px 24px}
+  .w-section-visual{aspect-ratio:16/9}
+}
+@media(max-width:480px){
+  .w-hero-ctas{flex-direction:column;gap:10px}
+  .pill-primary,.pill-ghost{width:100%;justify-content:center}
+  .w-strip-ctas{flex-direction:column;gap:10px;align-items:stretch}
+  .w-strip-ctas .pill-primary,.w-strip-ctas .pill-ghost{justify-content:center}
+}
+</style>
+</head>
+<body>
+<nav class="w-nav">  <a class="w-nav-logo" href="https://myfastools.com/">W<b>·</b>Platform</a> <a class="pill-sm" href="/auth/login?next=/">Sign in</a></nav>
+<section class="w-hero">  <div class="w-hero-bg" style="background:url(/_images/w-translate-hero.jpg) center/cover no-repeat,radial-gradient(ellipse 100% 70% at 50% -10%,hsla(72,70%,55%,0.27) 0%,transparent 70%),radial-gradient(ellipse 60% 40% at 50% 30%,hsla(72,70%,55%,0.13) 0%,transparent 60%),linear-gradient(170deg,#0d1020 0%,#08090d 60%)"></div>  <div class="w-hero-content">    <div class="w-hero-eyebrow">Apps &nbsp;·&nbsp; W&nbsp;Platform</div>    <h1 class="w-hero-title">W-Translate</h1>    <p class="w-hero-sub">Multi-engine translation.</p>    <div class="w-hero-ctas">      <a class="pill-primary" href="/auth/login?next=/">Sign in</a>      <a class="pill-ghost" href="https://myfastools.com/">All products</a>    </div>  </div>  <div class="w-scroll-hint">    <div class="w-scroll-hint-line"></div>  </div></section>
+<section class="w-section">  <div class="w-section-wrap">    <div class="w-section-text">      <div class="w-section-eyebrow">Overview</div>      <h2 class="w-section-title">W-Translate</h2>      <p class="w-section-body">W-Translate routes your text and documents through multiple best-in-class translation engines — giving you the highest-quality output for each language pair rather than locking you into a single provider. With support for 100+ languages, inline document translation that preserves formatting, and a clean REST API, it handles everything from quick message translations to high-volume localization pipelines. Sign in once with W-ID and your membership covers all usage under your plan quota.</p>    </div>    <div class="w-section-visual" style="background:url(/_images/w-translate-overview.jpg) center/cover no-repeat,linear-gradient(135deg,hsl(72,65%,48%),hsl(132,60%,38%))">  <div class="w-section-visual-glow" style="background:hsl(72,70%,55%)"></div>  <div class="w-section-visual-inner">W</div></div>  </div></section><section class="w-section alt">  <div class="w-section-wrap">    <div class="w-section-text">      <div class="w-section-eyebrow">Multi-engine quality</div>      <h2 class="w-section-title">Multi-engine quality</h2>      <p class="w-section-body">Instead of committing to one translation provider, W-Translate evaluates multiple engines and surfaces the best result for your specific language pair. You can also pin a preferred engine when consistency across a project matters more than chasing marginal quality gains.</p>    </div>    <div class="w-section-visual" style="background:url(/_images/w-translate-s1.jpg) center/cover no-repeat,linear-gradient(135deg,hsl(72,65%,48%),hsl(132,60%,38%))">  <div class="w-section-visual-glow" style="background:hsl(72,70%,55%)"></div>  <div class="w-section-visual-inner">MQ</div></div>  </div></section><section class="w-section flip">  <div class="w-section-wrap">    <div class="w-section-text">      <div class="w-section-eyebrow">Document translation</div>      <h2 class="w-section-title">Document translation</h2>      <p class="w-section-body">Upload DOCX, PDF, TXT, or HTML files and receive a translated version that preserves the original layout, heading hierarchy, and inline formatting. No more copy-pasting paragraphs one at a time — W-Translate handles entire documents in a single operation and returns a downloadable file.</p>    </div>    <div class="w-section-visual" style="background:url(/_images/w-translate-s2.jpg) center/cover no-repeat,linear-gradient(135deg,hsl(72,65%,48%),hsl(132,60%,38%))">  <div class="w-section-visual-glow" style="background:hsl(72,70%,55%)"></div>  <div class="w-section-visual-inner">DT</div></div>  </div></section><section class="w-section alt">  <div class="w-section-wrap">    <div class="w-section-text">      <div class="w-section-eyebrow">API access for developers</div>      <h2 class="w-section-title">API access for developers</h2>      <p class="w-section-body">A straightforward REST API lets you integrate W-Translate into any application, CI pipeline, or data workflow. Authenticate with your W-ID token, POST your text or document, and receive a translated result. Rate limits are tied to your membership quota with no per-character surprise charges.</p>    </div>    <div class="w-section-visual" style="background:url(/_images/w-translate-s3.jpg) center/cover no-repeat,linear-gradient(135deg,hsl(72,65%,48%),hsl(132,60%,38%))">  <div class="w-section-visual-glow" style="background:hsl(72,70%,55%)"></div>  <div class="w-section-visual-inner">AAF</div></div>  </div></section><div class="w-features">  <div class="w-features-wrap">    <div class="w-features-header">      <div class="w-features-eyebrow">Capabilities</div>      <h2 class="w-features-title">What W-Translate does</h2>    </div>    <div class="w-features-grid"><div class="w-feature-item">  <div class="w-feature-dot" style="background:hsl(72,70%,55%)"></div>  <div class="w-feature-name">100+ languages</div></div><div class="w-feature-item">  <div class="w-feature-dot" style="background:hsl(72,70%,55%)"></div>  <div class="w-feature-name">Multiple engines</div></div><div class="w-feature-item">  <div class="w-feature-dot" style="background:hsl(72,70%,55%)"></div>  <div class="w-feature-name">Document translation</div></div><div class="w-feature-item">  <div class="w-feature-dot" style="background:hsl(72,70%,55%)"></div>  <div class="w-feature-name">API access</div></div></div>  </div></div><div class="w-usecases">  <div class="w-usecases-wrap">    <div class="w-usecases-eyebrow">Use cases</div>    <h2 class="w-usecases-title">Built for real workflows</h2>    <ul class="w-usecases-list"><li>  <span class="w-usecase-num">01</span>  <span>Localize product UI strings and marketing copy into 10+ languages in one batch job</span></li><li>  <span class="w-usecase-num">02</span>  <span>Translate incoming support tickets to route them to the correct regional team</span></li><li>  <span class="w-usecase-num">03</span>  <span>Convert technical documentation uploaded as DOCX into multiple target languages</span></li><li>  <span class="w-usecase-num">04</span>  <span>Use the API to auto-translate user-generated content before moderation review</span></li><li>  <span class="w-usecase-num">05</span>  <span>Compare engine outputs side-by-side before choosing a translation for publication</span></li></ul>  </div></div>
+<div class="w-strip">  <h2 class="w-strip-title">Ready to get started?</h2>  <p class="w-strip-sub">Sign in with your W Platform account and open W-Translate instantly.</p>  <div class="w-strip-ctas">    <a class="pill-primary" href="/auth/login?next=/">Sign in</a>    <a class="pill-ghost" href="https://myfastools.com/">All products</a>  </div></div>
+<footer class="w-footer">  <span>© <span id="w-year"></span> W Platform</span>  <span>    <a href="https://myfastools.com/">All products</a>    &nbsp;·&nbsp;    <a href="https://auth.myfastools.com/">W-ID</a>  </span></footer><script>document.getElementById("w-year").textContent=new Date().getFullYear()</script>
+</body>
+</html>

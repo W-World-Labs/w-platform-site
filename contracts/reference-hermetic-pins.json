@@ -1,0 +1,152 @@
+{
+  "schema": "w-platform.reference-hermetic-pins/v1",
+  "status": "pending",
+  "components": {
+    "w-id": {
+      "repository": null,
+      "ref": null,
+      "commit": null,
+      "pull_request": null,
+      "provenance": null,
+      "verify_commands": [
+        [
+          "npm",
+          "ci",
+          "--prefix",
+          "{w-id}/acceptance/browser-pkce",
+          "--ignore-scripts"
+        ],
+        [
+          "npm",
+          "test",
+          "--prefix",
+          "{w-id}/acceptance/browser-pkce"
+        ]
+      ],
+      "fixture_command": [
+        "node",
+        "{w-id}/acceptance/browser-pkce/w-storage-identity-lease-launcher.mjs"
+      ],
+      "fixture_public_schema": "w-reference-fixture/v1",
+      "fixture_private_schema": "w-reference-identity-private-lease/v3"
+    },
+    "w-db": {
+      "repository": null,
+      "ref": null,
+      "commit": null,
+      "pull_request": null,
+      "provenance": null,
+      "verify_commands": [
+        [
+          "npm",
+          "ci",
+          "--prefix",
+          "{w-db}/tools/supabase-vendor",
+          "--ignore-scripts"
+        ],
+        [
+          "cargo",
+          "build",
+          "--locked",
+          "--manifest-path",
+          "{w-db}/Cargo.toml",
+          "--bin",
+          "w-db"
+        ],
+        [
+          "{w-db}/scripts/test-hermetic-launcher-contract.sh"
+        ]
+      ],
+      "launcher_command": [
+        "{w-db}/scripts/hermetic-reference-launcher.sh"
+      ],
+      "fixture_schema": "w-db.reference-fixture/v1"
+    },
+    "w-monitor": {
+      "repository": null,
+      "ref": null,
+      "commit": null,
+      "pull_request": null,
+      "provenance": null,
+      "verify_commands": [
+        [
+          "cargo",
+          "build",
+          "--locked",
+          "--manifest-path",
+          "{w-monitor}/w-monitor-server/Cargo.toml",
+          "--bin",
+          "w-monitor-server"
+        ],
+        [
+          "bash",
+          "-n",
+          "{w-monitor}/scripts/hermetic-reference-launcher.sh"
+        ]
+      ],
+      "launcher_command": [
+        "{w-monitor}/scripts/hermetic-reference-launcher.sh"
+      ],
+      "fixture_schema": "w-monitor.reference-fixture/v1"
+    },
+    "w-radar": {
+      "repository": null,
+      "ref": null,
+      "commit": null,
+      "pull_request": null,
+      "provenance": null,
+      "verify_commands": [
+        [
+          "cargo",
+          "build",
+          "--locked",
+          "--manifest-path",
+          "{w-radar}/Cargo.toml",
+          "--bin",
+          "w-radar-hermetic"
+        ],
+        [
+          "bash",
+          "-n",
+          "{w-radar}/scripts/hermetic-reference-launcher.sh"
+        ]
+      ],
+      "launcher_command": [
+        "{w-radar}/scripts/hermetic-reference-launcher.sh"
+      ],
+      "fixture_schema": "w-radar.reference-fixture/v1"
+    },
+    "w-storage": {
+      "repository": null,
+      "ref": null,
+      "commit": null,
+      "pull_request": null,
+      "provenance": null,
+      "verify_commands": [
+        [
+          "cargo",
+          "build",
+          "--locked",
+          "--manifest-path",
+          "{w-storage}/Cargo.toml",
+          "--bin",
+          "w-storage"
+        ],
+        [
+          "npm",
+          "ci",
+          "--prefix",
+          "{w-storage}/tests/supabase-js",
+          "--ignore-scripts"
+        ],
+        [
+          "{w-storage}/scripts/test-hermetic-launcher-contract.sh"
+        ]
+      ],
+      "launcher_command": [
+        "{w-storage}/scripts/hermetic-reference-launcher.sh"
+      ],
+      "fixture_schema": "w-storage.reference-fixture/v1"
+    }
+  }
+}

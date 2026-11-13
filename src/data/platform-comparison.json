@@ -1,0 +1,2558 @@
+[
+  {
+    "id": "supabase-1",
+    "platform": "Supabase",
+    "group": "vector",
+    "feature": {
+      "zh": "AI 集成",
+      "en": "AI integrations"
+    },
+    "owner": "W-DB / W-MaaS",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "db",
+    "official": "https://supabase.com/docs/guides/ai"
+  },
+  {
+    "id": "supabase-2",
+    "platform": "Supabase",
+    "group": "storage",
+    "feature": {
+      "zh": "分析桶 / Iceberg",
+      "en": "Analytics buckets"
+    },
+    "owner": "W-Storage",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "storage",
+    "official": "https://supabase.com/docs/guides/storage"
+  },
+  {
+    "id": "supabase-3",
+    "platform": "Supabase",
+    "group": "auth",
+    "feature": {
+      "zh": "认证钩子",
+      "en": "Auth hooks"
+    },
+    "owner": "W-ID",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "auth",
+    "official": "https://supabase.com/docs/guides/auth"
+  },
+  {
+    "id": "supabase-4",
+    "platform": "Supabase",
+    "group": "database",
+    "feature": {
+      "zh": "行级权限 RLS",
+      "en": "Row security"
+    },
+    "owner": "W-DB",
+    "status": "subset",
+    "level": "integration",
+    "detail": {
+      "zh": "网关注入已验证用户及不可变 owner，真实 PostgreSQL RLS 二次隔离已验收；不等同任意 Supabase 策略。",
+      "en": "Verified identity and immutable owner checks plus real PostgreSQL RLS; arbitrary Supabase policy equivalence is not claimed."
+    },
+    "source": "db",
+    "official": "https://supabase.com/docs/guides/database"
+  },
+  {
+    "id": "supabase-5",
+    "platform": "Supabase",
+    "group": "database",
+    "feature": {
+      "zh": "自动 GraphQL",
+      "en": "GraphQL API"
+    },
+    "owner": "W-DB",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "db",
+    "official": "https://supabase.com/docs/guides/database"
+  },
+  {
+    "id": "supabase-6",
+    "platform": "Supabase",
+    "group": "database",
+    "feature": {
+      "zh": "自动 REST API",
+      "en": "REST API"
+    },
+    "owner": "W-DB",
+    "status": "subset",
+    "level": "integration",
+    "detail": {
+      "zh": "已发布表的 CRUD、筛选、排序、分页、JSON 路径、全文检索和批量写入有官方 JS 客户端门槛；关系嵌入与完整 PostgREST 语法未齐。",
+      "en": "Published-table CRUD, filtering, paging, JSON paths, text search and batch writes have official JS gates; full PostgREST and relationship embedding are not proven."
+    },
+    "source": "db",
+    "official": "https://supabase.com/docs/guides/database"
+  },
+  {
+    "id": "supabase-7",
+    "platform": "Supabase",
+    "group": "vector",
+    "feature": {
+      "zh": "自动生成嵌入",
+      "en": "Automatic embeddings"
+    },
+    "owner": "W-DB / W-MaaS",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "db",
+    "official": "https://supabase.com/docs/guides/ai"
+  },
+  {
+    "id": "supabase-8",
+    "platform": "Supabase",
+    "group": "database",
+    "feature": {
+      "zh": "数据库分支",
+      "en": "Branching"
+    },
+    "owner": "W-DB",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "db",
+    "official": "https://supabase.com/docs/guides/database"
+  },
+  {
+    "id": "supabase-9",
+    "platform": "Supabase",
+    "group": "platform",
+    "feature": {
+      "zh": "命令行工具",
+      "en": "CLI"
+    },
+    "owner": "w-cli / W-Drop CLI",
+    "status": "different",
+    "level": "integration",
+    "detail": {
+      "zh": "提供 W 项目、身份和 Wrangler 子集，不是 Supabase CLI 全命令替代。本次本机 w-cli 为 1.5.8，Radar pin 为 1.5.1；该版本登记差异待收口。",
+      "en": "W project, identity and Wrangler workflows are not a full Supabase CLI replacement. This host reports w-cli 1.5.8 while Radar pins 1.5.1; the version-record mismatch remains open."
+    },
+    "source": "cli",
+    "official": "https://supabase.com/docs/guides/platform"
+  },
+  {
+    "id": "supabase-10",
+    "platform": "Supabase",
+    "group": "auth",
+    "feature": {
+      "zh": "验证码防护",
+      "en": "CAPTCHA"
+    },
+    "owner": "W-ID",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "auth",
+    "official": "https://supabase.com/docs/guides/auth"
+  },
+  {
+    "id": "supabase-11",
+    "platform": "Supabase",
+    "group": "platform",
+    "feature": {
+      "zh": "Flutter 客户端",
+      "en": "Flutter SDK"
+    },
+    "owner": "W 平台",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "audit",
+    "official": "https://supabase.com/docs/guides/platform"
+  },
+  {
+    "id": "supabase-12",
+    "platform": "Supabase",
+    "group": "platform",
+    "feature": {
+      "zh": "JavaScript 客户端",
+      "en": "JavaScript SDK"
+    },
+    "owner": "W-ID / W-DB / W-Storage",
+    "status": "subset",
+    "level": "integration",
+    "detail": {
+      "zh": "官方 supabase-js 2.111.0 的核心 Auth、Data、Storage、Functions 和 Realtime 有专项门槛；未证明每个方法均兼容。",
+      "en": "Official supabase-js 2.111.0 gates cover core Auth, Data, Storage, Functions and Realtime, not every method."
+    },
+    "source": "audit",
+    "official": "https://supabase.com/docs/guides/platform"
+  },
+  {
+    "id": "supabase-13",
+    "platform": "Supabase",
+    "group": "platform",
+    "feature": {
+      "zh": "Python 客户端",
+      "en": "Python SDK"
+    },
+    "owner": "W 平台",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "audit",
+    "official": "https://supabase.com/docs/guides/platform"
+  },
+  {
+    "id": "supabase-14",
+    "platform": "Supabase",
+    "group": "platform",
+    "feature": {
+      "zh": "Swift 客户端",
+      "en": "Swift SDK"
+    },
+    "owner": "W 平台",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "audit",
+    "official": "https://supabase.com/docs/guides/platform"
+  },
+  {
+    "id": "supabase-15",
+    "platform": "Supabase",
+    "group": "storage",
+    "feature": {
+      "zh": "文件分发 CDN",
+      "en": "File CDN"
+    },
+    "owner": "W-Storage / W-CDN",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "存储读取与平台边缘入口有实现；未取得对应全球文件 CDN 分发及缓存一致性验收。",
+      "en": "Storage reads and an edge entry exist; global file CDN delivery/cache consistency acceptance was not found."
+    },
+    "source": "storage",
+    "official": "https://supabase.com/docs/guides/storage"
+  },
+  {
+    "id": "supabase-16",
+    "platform": "Supabase",
+    "group": "database",
+    "feature": {
+      "zh": "定时任务 Cron",
+      "en": "Cron"
+    },
+    "owner": "W-DB",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "db",
+    "official": "https://supabase.com/docs/guides/database"
+  },
+  {
+    "id": "supabase-17",
+    "platform": "Supabase",
+    "group": "auth",
+    "feature": {
+      "zh": "自定义身份提供方",
+      "en": "Custom identity"
+    },
+    "owner": "W-ID",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "auth",
+    "official": "https://supabase.com/docs/guides/auth"
+  },
+  {
+    "id": "supabase-18",
+    "platform": "Supabase",
+    "group": "platform",
+    "feature": {
+      "zh": "API 自定义域名",
+      "en": "API domains"
+    },
+    "owner": "Caddy / W-Drop",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "平台自身 HTTPS 路由已注册；项目 API 自定义域名/生产 DNS-TLS 流程未专项验收，不能与 Pages 域名混用。",
+      "en": "Platform HTTPS routes are registered; custom project API domains/DNS-TLS are unproven and differ from Pages domains."
+    },
+    "source": "audit",
+    "official": "https://supabase.com/docs/guides/platform"
+  },
+  {
+    "id": "supabase-19",
+    "platform": "Supabase",
+    "group": "database",
+    "feature": {
+      "zh": "数据库 Webhook",
+      "en": "Database webhooks"
+    },
+    "owner": "W-DB",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "db",
+    "official": "https://supabase.com/docs/guides/database"
+  },
+  {
+    "id": "supabase-20",
+    "platform": "Supabase",
+    "group": "database",
+    "feature": {
+      "zh": "数据库备份",
+      "en": "Database backups"
+    },
+    "owner": "W-DB",
+    "status": "subset",
+    "level": "integration",
+    "detail": {
+      "zh": "项目权限下支持加密备份、恢复演练与回滚证据；自动每日策略、PITR 和跨节点灾备不能由此推定通过。",
+      "en": "Scoped encrypted backups and restore/rollback drills are proven; daily automation, PITR and cross-node recovery require separate evidence."
+    },
+    "source": "db",
+    "official": "https://supabase.com/docs/guides/database"
+  },
+  {
+    "id": "supabase-21",
+    "platform": "Supabase",
+    "group": "database",
+    "feature": {
+      "zh": "声明式结构管理",
+      "en": "Declarative schemas"
+    },
+    "owner": "W-DB",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "db",
+    "official": "https://supabase.com/docs/guides/database"
+  },
+  {
+    "id": "supabase-22",
+    "platform": "Supabase",
+    "group": "database",
+    "feature": {
+      "zh": "专用连接池",
+      "en": "Dedicated poolers"
+    },
+    "owner": "W-DB",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "db",
+    "official": "https://supabase.com/docs/guides/database"
+  },
+  {
+    "id": "supabase-23",
+    "platform": "Supabase",
+    "group": "functions",
+    "feature": {
+      "zh": "Deno 函数",
+      "en": "Deno functions"
+    },
+    "owner": "W-DB",
+    "status": "subset",
+    "level": "integration",
+    "detail": {
+      "zh": "原生 Functions 由 W-DB/Deno 管理，支持版本、保护调用、日志和回滚；真实身份组合已通过，公网普通用户全链路待验收。",
+      "en": "W-DB owns native Deno Functions, versions, protected invocation, logs and rollback; real-identity composition passed, ordinary-user production E2E is pending."
+    },
+    "source": "g1",
+    "official": "https://supabase.com/docs/guides/functions"
+  },
+  {
+    "id": "supabase-24",
+    "platform": "Supabase",
+    "group": "auth",
+    "feature": {
+      "zh": "邮件模板",
+      "en": "Email templates"
+    },
+    "owner": "W-ID",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "auth",
+    "official": "https://supabase.com/docs/guides/auth"
+  },
+  {
+    "id": "supabase-25",
+    "platform": "Supabase",
+    "group": "auth",
+    "feature": {
+      "zh": "邮箱密码登录",
+      "en": "Email login"
+    },
+    "owner": "W-ID",
+    "status": "subset",
+    "level": "integration",
+    "detail": {
+      "zh": "官方客户端注册、注册邮件 OTP、密码登录、用户读取、刷新旋转与注销已覆盖；OTP 仅声明 signup 类型。",
+      "en": "Official-client signup, signup email OTP, password login, user lookup, refresh rotation and logout are covered; OTP is limited to signup."
+    },
+    "source": "auth",
+    "official": "https://supabase.com/docs/guides/auth"
+  },
+  {
+    "id": "supabase-26",
+    "platform": "Supabase",
+    "group": "storage",
+    "feature": {
+      "zh": "文件存储",
+      "en": "File storage"
+    },
+    "owner": "W-Storage",
+    "status": "subset",
+    "level": "integration",
+    "detail": {
+      "zh": "私有桶 CRUD、对象上传/下载/删除/列表和签名读写链接已覆盖；对象权限采用 W 项目授权，不是任意 storage.objects SQL 策略。",
+      "en": "Private buckets, object CRUD/listing and signed read/upload links are covered; W project authorization differs from arbitrary storage.objects policies."
+    },
+    "source": "storage",
+    "official": "https://supabase.com/docs/guides/storage"
+  },
+  {
+    "id": "supabase-27",
+    "platform": "Supabase",
+    "group": "database",
+    "feature": {
+      "zh": "外部数据包装器",
+      "en": "Foreign data wrappers"
+    },
+    "owner": "W-DB",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "db",
+    "official": "https://supabase.com/docs/guides/database"
+  },
+  {
+    "id": "supabase-28",
+    "platform": "Supabase",
+    "group": "studio",
+    "feature": {
+      "zh": "外键选择器",
+      "en": "Foreign key selector"
+    },
+    "owner": "Console",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "console",
+    "official": "https://supabase.com/docs/guides/database"
+  },
+  {
+    "id": "supabase-29",
+    "platform": "Supabase",
+    "group": "storage",
+    "feature": {
+      "zh": "图片变换",
+      "en": "Image transforms"
+    },
+    "owner": "W-Storage",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "storage",
+    "official": "https://supabase.com/docs/guides/storage"
+  },
+  {
+    "id": "supabase-30",
+    "platform": "Supabase",
+    "group": "auth",
+    "feature": {
+      "zh": "JWT 签名密钥",
+      "en": "JWT keys"
+    },
+    "owner": "W-ID",
+    "status": "different",
+    "level": "integration",
+    "detail": {
+      "zh": "W-ID 签名验证、精确项目 audience、单次刷新及真实撤销有证据；不是 Supabase 签名密钥管理 API 的兼容实现。",
+      "en": "W-ID signatures, project audiences, refresh rotation and revocation are proven; Supabase signing-key management API compatibility is not claimed."
+    },
+    "source": "auth",
+    "official": "https://supabase.com/docs/guides/auth"
+  },
+  {
+    "id": "supabase-31",
+    "platform": "Supabase",
+    "group": "platform",
+    "feature": {
+      "zh": "日志导出",
+      "en": "Log drains"
+    },
+    "owner": "W 平台",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "audit",
+    "official": "https://supabase.com/docs/guides/platform"
+  },
+  {
+    "id": "supabase-32",
+    "platform": "Supabase",
+    "group": "platform",
+    "feature": {
+      "zh": "日志与分析",
+      "en": "Logs / analytics"
+    },
+    "owner": "W-Radar / Functions 日志",
+    "status": "subset",
+    "level": "integration",
+    "detail": {
+      "zh": "项目日志和调用指标有实现；Worker 日志/metrics 有真实执行证据。完整 Supabase 分析与生产日志导出未验收。",
+      "en": "Project logs and invocation metrics exist; Worker runtime logs/metrics are proven. Full Supabase analytics and production drains are not."
+    },
+    "source": "audit",
+    "official": "https://supabase.com/docs/guides/platform"
+  },
+  {
+    "id": "supabase-33",
+    "platform": "Supabase",
+    "group": "platform",
+    "feature": {
+      "zh": "MCP 接口",
+      "en": "MCP server"
+    },
+    "owner": "W-Radar MCP",
+    "status": "different",
+    "level": "contract",
+    "detail": {
+      "zh": "有注册中心、上下文、观测与任务 MCP；不提供 Supabase MCP 的数据库管理命令兼容承诺。",
+      "en": "Radar exposes registry/context/observability MCP tools, not Supabase MCP command compatibility."
+    },
+    "source": "audit",
+    "official": "https://supabase.com/docs/guides/platform"
+  },
+  {
+    "id": "supabase-34",
+    "platform": "Supabase",
+    "group": "platform",
+    "feature": {
+      "zh": "项目管理 API",
+      "en": "Management API"
+    },
+    "owner": "W-ID / W-DB / W-Drop",
+    "status": "different",
+    "level": "integration",
+    "detail": {
+      "zh": "W 项目/工作区、数据资源和发布生命周期有独立契约；不与 Supabase Management API 路由或 DTO 等同。",
+      "en": "W workspace/project, data-resource and deployment lifecycles use their own contracts, not Supabase Management API DTOs/routes."
+    },
+    "source": "audit",
+    "official": "https://supabase.com/docs/guides/platform"
+  },
+  {
+    "id": "supabase-35",
+    "platform": "Supabase",
+    "group": "auth",
+    "feature": {
+      "zh": "多因素认证",
+      "en": "MFA"
+    },
+    "owner": "W-ID",
+    "status": "unverified",
+    "level": "contract",
+    "detail": {
+      "zh": "W-ID 存在 TOTP 密钥和原生身份能力；GoTrue 兼容矩阵没有 MFA 流程，未取得官方客户端与生产专项验收。",
+      "en": "W-ID has native TOTP material; the GoTrue matrix omits MFA and no official-client production acceptance was found."
+    },
+    "source": "auth",
+    "official": "https://supabase.com/docs/guides/auth"
+  },
+  {
+    "id": "supabase-36",
+    "platform": "Supabase",
+    "group": "platform",
+    "feature": {
+      "zh": "本地原生运行",
+      "en": "Local runtime"
+    },
+    "owner": "W 组合验收启动器",
+    "status": "different",
+    "level": "integration",
+    "detail": {
+      "zh": "W-ID/DB/Storage 有真实组件隔离启动器；其中数据库使用 Docker，不能称作 Supabase 无 Docker 原生运行兼容。",
+      "en": "Real-component W launchers exist; database fixtures use Docker and do not establish Supabase Docker-free local-runtime parity."
+    },
+    "source": "audit",
+    "official": "https://supabase.com/docs/guides/platform"
+  },
+  {
+    "id": "supabase-37",
+    "platform": "Supabase",
+    "group": "platform",
+    "feature": {
+      "zh": "数据库网络限制",
+      "en": "Network restrictions"
+    },
+    "owner": "W 平台",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "audit",
+    "official": "https://supabase.com/docs/guides/platform"
+  },
+  {
+    "id": "supabase-38",
+    "platform": "Supabase",
+    "group": "auth",
+    "feature": {
+      "zh": "OAuth 授权服务器",
+      "en": "OAuth server"
+    },
+    "owner": "W-ID",
+    "status": "different",
+    "level": "integration",
+    "detail": {
+      "zh": "W-ID 为独立 OAuth/OIDC 授权服务器，PKCE 与撤销已验收；Supabase OAuth Server 的全部接口未对等。",
+      "en": "W-ID is an independent OAuth/OIDC server with proven PKCE/revocation, not full Supabase OAuth Server API parity."
+    },
+    "source": "auth",
+    "official": "https://supabase.com/docs/guides/auth"
+  },
+  {
+    "id": "supabase-39",
+    "platform": "Supabase",
+    "group": "database",
+    "feature": {
+      "zh": "OrioleDB 存储引擎",
+      "en": "OrioleDB"
+    },
+    "owner": "W-DB",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "db",
+    "official": "https://supabase.com/docs/guides/database"
+  },
+  {
+    "id": "supabase-40",
+    "platform": "Supabase",
+    "group": "platform",
+    "feature": {
+      "zh": "并行本地项目",
+      "en": "Parallel local projects"
+    },
+    "owner": "W 平台",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "audit",
+    "official": "https://supabase.com/docs/guides/platform"
+  },
+  {
+    "id": "supabase-41",
+    "platform": "Supabase",
+    "group": "auth",
+    "feature": {
+      "zh": "Magic Link 登录",
+      "en": "Magic links"
+    },
+    "owner": "W-ID",
+    "status": "unverified",
+    "level": "contract",
+    "detail": {
+      "zh": "有原生 magic-link 模块；当前 GoTrue 矩阵只覆盖 signup 验证，不宣称 signInWithOtp/Magic Link 兼容。",
+      "en": "A native magic-link module exists; the GoTrue matrix covers signup verification, not signInWithOtp/Magic Link parity."
+    },
+    "source": "auth",
+    "official": "https://supabase.com/docs/guides/auth"
+  },
+  {
+    "id": "supabase-42",
+    "platform": "Supabase",
+    "group": "functions",
+    "feature": {
+      "zh": "函数持久存储",
+      "en": "Function persistence"
+    },
+    "owner": "W-DB Functions",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "隔离函数生命周期已验收；S3 挂载、跨调用持久卷与供应商函数存储语义没有专项证据。",
+      "en": "Function lifecycle is proven; S3 mounts, persistent volumes and vendor function-storage semantics lack evidence."
+    },
+    "source": "g1",
+    "official": "https://supabase.com/docs/guides/functions"
+  },
+  {
+    "id": "supabase-43",
+    "platform": "Supabase",
+    "group": "auth",
+    "feature": {
+      "zh": "手机号登录",
+      "en": "Phone login"
+    },
+    "owner": "W-ID",
+    "status": "unsupported",
+    "level": "contract",
+    "detail": {
+      "zh": "GoTrue 兼容契约明确不支持 phone_password；未取得短信登录链路验收。",
+      "en": "The GoTrue contract explicitly excludes phone_password; no SMS login acceptance was found."
+    },
+    "source": "auth",
+    "official": "https://supabase.com/docs/guides/auth"
+  },
+  {
+    "id": "supabase-44",
+    "platform": "Supabase",
+    "group": "studio",
+    "feature": {
+      "zh": "权限策略模板",
+      "en": "Policy templates"
+    },
+    "owner": "Console",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "console",
+    "official": "https://supabase.com/docs/guides/database"
+  },
+  {
+    "id": "supabase-45",
+    "platform": "Supabase",
+    "group": "database",
+    "feature": {
+      "zh": "Postgres 扩展",
+      "en": "Postgres extensions"
+    },
+    "owner": "W-DB",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "db",
+    "official": "https://supabase.com/docs/guides/database"
+  },
+  {
+    "id": "supabase-46",
+    "platform": "Supabase",
+    "group": "database",
+    "feature": {
+      "zh": "数据库角色",
+      "en": "Postgres roles"
+    },
+    "owner": "W-DB",
+    "status": "subset",
+    "level": "integration",
+    "detail": {
+      "zh": "项目数据库/用户与权限生命周期有真实 PG 验证；不等同所有 Postgres 角色的 Studio 管理界面。",
+      "en": "Project database/user/permission lifecycle is validated against PostgreSQL; full Studio role administration is not claimed."
+    },
+    "source": "db",
+    "official": "https://supabase.com/docs/guides/database"
+  },
+  {
+    "id": "supabase-47",
+    "platform": "Supabase",
+    "group": "database",
+    "feature": {
+      "zh": "项目独立 Postgres",
+      "en": "Project Postgres"
+    },
+    "owner": "W-DB",
+    "status": "subset",
+    "level": "integration",
+    "detail": {
+      "zh": "项目及环境数据库资源、凭据与隔离生命周期有验收；独立数据库不代表每项目独占物理实例。",
+      "en": "Project/environment databases, credentials and isolated lifecycle are proven; dedicated physical instances per project are not implied."
+    },
+    "source": "db",
+    "official": "https://supabase.com/docs/guides/database"
+  },
+  {
+    "id": "supabase-48",
+    "platform": "Supabase",
+    "group": "platform",
+    "feature": {
+      "zh": "私网连接",
+      "en": "PrivateLink"
+    },
+    "owner": "W 平台",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "audit",
+    "official": "https://supabase.com/docs/guides/platform"
+  },
+  {
+    "id": "supabase-49",
+    "platform": "Supabase",
+    "group": "database",
+    "feature": {
+      "zh": "持久消息队列",
+      "en": "Queues"
+    },
+    "owner": "W-DB",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "db",
+    "official": "https://supabase.com/docs/guides/database"
+  },
+  {
+    "id": "supabase-50",
+    "platform": "Supabase",
+    "group": "database",
+    "feature": {
+      "zh": "只读副本",
+      "en": "Read replicas"
+    },
+    "owner": "W-DB",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "db",
+    "official": "https://supabase.com/docs/guides/database"
+  },
+  {
+    "id": "supabase-51",
+    "platform": "Supabase",
+    "group": "realtime",
+    "feature": {
+      "zh": "广播消息",
+      "en": "Broadcast"
+    },
+    "owner": "W-DB Realtime",
+    "status": "subset",
+    "level": "integration",
+    "detail": {
+      "zh": "支持私有 Broadcast/Phoenix 协议子集；每项目 100 连接、每连接 1 频道、消息 16 KiB/20 次每秒等边界。",
+      "en": "Private Broadcast/Phoenix subset: 100 connections per project, one channel per connection and 16 KiB / 20 messages per second limits."
+    },
+    "source": "db",
+    "official": "https://supabase.com/docs/guides/realtime"
+  },
+  {
+    "id": "supabase-52",
+    "platform": "Supabase",
+    "group": "realtime",
+    "feature": {
+      "zh": "广播权限控制",
+      "en": "Broadcast authorization"
+    },
+    "owner": "W-DB Realtime",
+    "status": "different",
+    "level": "integration",
+    "detail": {
+      "zh": "以精确项目成员与 realtime:connect 控制私有频道；任意 realtime.messages RLS 兼容未证明。",
+      "en": "Exact-project membership and realtime:connect govern private channels; arbitrary realtime.messages RLS parity is not proven."
+    },
+    "source": "db",
+    "official": "https://supabase.com/docs/guides/realtime"
+  },
+  {
+    "id": "supabase-53",
+    "platform": "Supabase",
+    "group": "realtime",
+    "feature": {
+      "zh": "历史广播重放",
+      "en": "Broadcast replay"
+    },
+    "owner": "W-DB Realtime",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "db",
+    "official": "https://supabase.com/docs/guides/realtime"
+  },
+  {
+    "id": "supabase-54",
+    "platform": "Supabase",
+    "group": "realtime",
+    "feature": {
+      "zh": "数据库触发广播",
+      "en": "Database broadcast"
+    },
+    "owner": "W-DB Realtime",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "db",
+    "official": "https://supabase.com/docs/guides/realtime"
+  },
+  {
+    "id": "supabase-55",
+    "platform": "Supabase",
+    "group": "realtime",
+    "feature": {
+      "zh": "数据库变更订阅",
+      "en": "Postgres changes"
+    },
+    "owner": "W-DB Realtime",
+    "status": "subset",
+    "level": "integration",
+    "detail": {
+      "zh": "受管理资源的逻辑复制、事件游标与官方客户端已有门槛；未管理项目、全部过滤语法和生产断线恢复未齐。",
+      "en": "Managed-resource logical replication, event cursors and official clients have gates; unmanaged projects, full filters and production reconnects are not proven."
+    },
+    "source": "db",
+    "official": "https://supabase.com/docs/guides/realtime"
+  },
+  {
+    "id": "supabase-56",
+    "platform": "Supabase",
+    "group": "realtime",
+    "feature": {
+      "zh": "在线成员状态",
+      "en": "Presence"
+    },
+    "owner": "W-DB Realtime",
+    "status": "subset",
+    "level": "integration",
+    "detail": {
+      "zh": "私有 Presence/成员差异同步已覆盖；成员 key 来自已验证 W-ID subject，元数据和队列有上限。",
+      "en": "Private Presence/diffs are covered; keys come from verified W-ID subjects with metadata and queue limits."
+    },
+    "source": "db",
+    "official": "https://supabase.com/docs/guides/realtime"
+  },
+  {
+    "id": "supabase-57",
+    "platform": "Supabase",
+    "group": "realtime",
+    "feature": {
+      "zh": "成员状态权限",
+      "en": "Presence authorization"
+    },
+    "owner": "W-DB Realtime",
+    "status": "different",
+    "level": "integration",
+    "detail": {
+      "zh": "复用精确项目私有频道授权；不是 Supabase 任意 Presence SQL 策略的承诺。",
+      "en": "Uses exact-project private-channel authorization, not arbitrary Supabase Presence SQL policy compatibility."
+    },
+    "source": "db",
+    "official": "https://supabase.com/docs/guides/realtime"
+  },
+  {
+    "id": "supabase-58",
+    "platform": "Supabase",
+    "group": "functions",
+    "feature": {
+      "zh": "指定地区调用",
+      "en": "Regional invocation"
+    },
+    "owner": "W-DB Functions",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "g1",
+    "official": "https://supabase.com/docs/guides/functions"
+  },
+  {
+    "id": "supabase-59",
+    "platform": "Supabase",
+    "group": "platform",
+    "feature": {
+      "zh": "用量报表",
+      "en": "Reports / metrics"
+    },
+    "owner": "Console / W-Radar / W-Drop",
+    "status": "subset",
+    "level": "integration",
+    "detail": {
+      "zh": "Console 项目状态、平台用量和 Worker 调用指标有契约；完整账单、价格和供应商分析维度未对齐。",
+      "en": "Console state, platform usage and Worker metrics have contracts; full billing, pricing and vendor dimensions are not aligned."
+    },
+    "source": "audit",
+    "official": "https://supabase.com/docs/guides/platform"
+  },
+  {
+    "id": "supabase-60",
+    "platform": "Supabase",
+    "group": "storage",
+    "feature": {
+      "zh": "可恢复上传 TUS",
+      "en": "Resumable uploads"
+    },
+    "owner": "W-Storage",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "S3 multipart 已支持，不能替代 TUS 协议。未取得 TUS 断点续传客户端验收。",
+      "en": "S3 multipart exists but does not establish TUS resumable-upload protocol compatibility."
+    },
+    "source": "storage",
+    "official": "https://supabase.com/docs/guides/storage"
+  },
+  {
+    "id": "supabase-61",
+    "platform": "Supabase",
+    "group": "platform",
+    "feature": {
+      "zh": "角色权限 RBAC",
+      "en": "RBAC"
+    },
+    "owner": "W-ID",
+    "status": "different",
+    "level": "integration",
+    "detail": {
+      "zh": "平台管理员、开发工作区成员与产品用户权限分离；真实非成员/外租户拒绝已验收。不能直接映射供应商所有角色。",
+      "en": "Platform admins, workspace teams and product users are separate; nonmember/foreign-tenant denials are proven. Vendor roles are not one-to-one."
+    },
+    "source": "auth",
+    "official": "https://supabase.com/docs/guides/platform"
+  },
+  {
+    "id": "supabase-62",
+    "platform": "Supabase",
+    "group": "storage",
+    "feature": {
+      "zh": "S3 协议兼容",
+      "en": "S3 compatibility"
+    },
+    "owner": "W-Storage",
+    "status": "subset",
+    "level": "integration",
+    "detail": {
+      "zh": "SigV4、对象 CRUD、分页、范围读、multipart 有门槛；CopyObject、ACL、标签、部分版本语义等明确拒绝。",
+      "en": "SigV4, object CRUD, paging, ranges and multipart have gates; CopyObject, ACLs, tagging and some version semantics are explicitly excluded."
+    },
+    "source": "storage",
+    "official": "https://supabase.com/docs/guides/storage"
+  },
+  {
+    "id": "supabase-63",
+    "platform": "Supabase",
+    "group": "platform",
+    "feature": {
+      "zh": "SOC 2 合规",
+      "en": "SOC 2"
+    },
+    "owner": "W 平台",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "audit",
+    "official": "https://supabase.com/docs/guides/platform"
+  },
+  {
+    "id": "supabase-64",
+    "platform": "Supabase",
+    "group": "studio",
+    "feature": {
+      "zh": "SQL 编辑器",
+      "en": "SQL editor"
+    },
+    "owner": "W-DB / Console",
+    "status": "subset",
+    "level": "integration",
+    "detail": {
+      "zh": "有带租户声明的有限只读预览/执行和行编辑接口；不支持在浏览器执行任意 SQL/DDL。",
+      "en": "Scoped bounded read-only SQL preview/execution and row editing exist; arbitrary browser SQL/DDL is not supported."
+    },
+    "source": "db",
+    "official": "https://supabase.com/docs/guides/database"
+  },
+  {
+    "id": "supabase-65",
+    "platform": "Supabase",
+    "group": "platform",
+    "feature": {
+      "zh": "数据库强制 TLS",
+      "en": "Database TLS"
+    },
+    "owner": "W-DB / Caddy",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "公开 API HTTPS 有证据；未取得普通项目数据库客户端 TLS 强制及证书链专项验收。",
+      "en": "Public API HTTPS is proven; project database-client TLS enforcement and certificate-chain acceptance were not found."
+    },
+    "source": "audit",
+    "official": "https://supabase.com/docs/guides/platform"
+  },
+  {
+    "id": "supabase-66",
+    "platform": "Supabase",
+    "group": "auth",
+    "feature": {
+      "zh": "企业 SAML 登录",
+      "en": "SAML SSO"
+    },
+    "owner": "W-ID",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前查到的兼容矩阵未覆盖 SAML 登录或供应商配置；待独立契约及生产身份验收。",
+      "en": "The inspected compatibility matrix does not cover SAML login/provider setup; contract and production identity acceptance remain."
+    },
+    "source": "auth",
+    "official": "https://supabase.com/docs/guides/auth"
+  },
+  {
+    "id": "supabase-67",
+    "platform": "Supabase",
+    "group": "studio",
+    "feature": {
+      "zh": "安全与性能建议",
+      "en": "Database advisors"
+    },
+    "owner": "Console",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "console",
+    "official": "https://supabase.com/docs/guides/database"
+  },
+  {
+    "id": "supabase-68",
+    "platform": "Supabase",
+    "group": "auth",
+    "feature": {
+      "zh": "服务端认证辅助",
+      "en": "Server auth helpers"
+    },
+    "owner": "W-ID SDK",
+    "status": "different",
+    "level": "contract",
+    "detail": {
+      "zh": "W-ID 有自身服务端 SDK；未声明 @supabase/ssr / @supabase/server 全部 cookie/session 契约兼容。",
+      "en": "W-ID has its own server SDKs; full @supabase/ssr or @supabase/server cookie/session compatibility is not claimed."
+    },
+    "source": "auth",
+    "official": "https://supabase.com/docs/guides/auth"
+  },
+  {
+    "id": "supabase-69",
+    "platform": "Supabase",
+    "group": "storage",
+    "feature": {
+      "zh": "智能缓存失效",
+      "en": "Smart CDN"
+    },
+    "owner": "W-Storage",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "storage",
+    "official": "https://supabase.com/docs/guides/storage"
+  },
+  {
+    "id": "supabase-70",
+    "platform": "Supabase",
+    "group": "auth",
+    "feature": {
+      "zh": "社交账号登录",
+      "en": "Social login"
+    },
+    "owner": "W-ID",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "原生 OAuth/OIDC 不等同全部社交提供方；GoTrue 社交登录接口与逐个提供方生产回调未验收。",
+      "en": "Native OAuth/OIDC does not prove all social providers; GoTrue social endpoints/provider callbacks remain unverified."
+    },
+    "source": "auth",
+    "official": "https://supabase.com/docs/guides/auth"
+  },
+  {
+    "id": "supabase-71",
+    "platform": "Supabase",
+    "group": "studio",
+    "feature": {
+      "zh": "数据库 AI 助手",
+      "en": "AI assistant"
+    },
+    "owner": "Console",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "console",
+    "official": "https://supabase.com/docs/guides/database"
+  },
+  {
+    "id": "supabase-72",
+    "platform": "Supabase",
+    "group": "database",
+    "feature": {
+      "zh": "数据分析流水线",
+      "en": "Pipelines"
+    },
+    "owner": "W-DB",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "db",
+    "official": "https://supabase.com/docs/guides/database"
+  },
+  {
+    "id": "supabase-73",
+    "platform": "Supabase",
+    "group": "database",
+    "feature": {
+      "zh": "Supavisor 连接池",
+      "en": "Supavisor"
+    },
+    "owner": "W-DB",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "db",
+    "official": "https://supabase.com/docs/guides/database"
+  },
+  {
+    "id": "supabase-74",
+    "platform": "Supabase",
+    "group": "platform",
+    "feature": {
+      "zh": "Terraform 提供方",
+      "en": "Terraform"
+    },
+    "owner": "W 平台",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "audit",
+    "official": "https://supabase.com/docs/guides/platform"
+  },
+  {
+    "id": "supabase-75",
+    "platform": "Supabase",
+    "group": "auth",
+    "feature": {
+      "zh": "信任第三方 JWT",
+      "en": "Third-party auth"
+    },
+    "owner": "W-ID",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "auth",
+    "official": "https://supabase.com/docs/guides/auth"
+  },
+  {
+    "id": "supabase-76",
+    "platform": "Supabase",
+    "group": "studio",
+    "feature": {
+      "zh": "模拟用户身份",
+      "en": "User impersonation"
+    },
+    "owner": "Console",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "console",
+    "official": "https://supabase.com/docs/guides/database"
+  },
+  {
+    "id": "supabase-77",
+    "platform": "Supabase",
+    "group": "platform",
+    "feature": {
+      "zh": "秘密保险库",
+      "en": "Vault"
+    },
+    "owner": "W-ID Vault",
+    "status": "different",
+    "level": "integration",
+    "detail": {
+      "zh": "加密保存秘密，Workers 使用工作区/项目引用；不是 Supabase Postgres Vault 扩展或相同函数接口。",
+      "en": "Encrypted W-ID secrets and project/workspace references exist; this differs from the Supabase Postgres Vault extension."
+    },
+    "source": "auth",
+    "official": "https://supabase.com/docs/guides/platform"
+  },
+  {
+    "id": "supabase-78",
+    "platform": "Supabase",
+    "group": "storage",
+    "feature": {
+      "zh": "向量桶",
+      "en": "Vector buckets"
+    },
+    "owner": "W-Storage",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "storage",
+    "official": "https://supabase.com/docs/guides/storage"
+  },
+  {
+    "id": "supabase-79",
+    "platform": "Supabase",
+    "group": "vector",
+    "feature": {
+      "zh": "向量数据库",
+      "en": "Vector database"
+    },
+    "owner": "W-DB / W-MaaS",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "db",
+    "official": "https://supabase.com/docs/guides/ai"
+  },
+  {
+    "id": "supabase-80",
+    "platform": "Supabase",
+    "group": "studio",
+    "feature": {
+      "zh": "可视化结构设计",
+      "en": "Schema designer"
+    },
+    "owner": "Console",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "console",
+    "official": "https://supabase.com/docs/guides/database"
+  },
+  {
+    "id": "supabase-81",
+    "platform": "Supabase",
+    "group": "auth",
+    "feature": {
+      "zh": "Web3 钱包登录",
+      "en": "Web3 auth"
+    },
+    "owner": "W-ID",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前核对的 W 兼容契约及验收记录没有此项的对等证据；需补充具体接口、客户端和生产验收，未据此判定能力不存在。",
+      "en": "No parity evidence in the inspected W contracts/acceptance records; specific API, client and production checks are needed. This does not establish absence."
+    },
+    "source": "auth",
+    "official": "https://supabase.com/docs/guides/auth"
+  },
+  {
+    "id": "supabase-82",
+    "platform": "Supabase",
+    "group": "auth",
+    "feature": {
+      "zh": "注册邮件 OTP / 会话",
+      "en": "Signup OTP / sessions"
+    },
+    "owner": "W-ID",
+    "status": "subset",
+    "level": "integration",
+    "detail": {
+      "zh": "signup 验证、单次刷新、项目范围 local/others/global 注销已覆盖；非 signup OTP 不在矩阵中。",
+      "en": "Signup verification, single-use refresh and project-scoped logout are covered; other OTP types are outside the matrix."
+    },
+    "source": "auth",
+    "official": "https://supabase.com/docs/guides/auth"
+  },
+  {
+    "id": "supabase-83",
+    "platform": "Supabase",
+    "group": "auth",
+    "feature": {
+      "zh": "匿名登录 / service-role 管理",
+      "en": "Anonymous / admin auth"
+    },
+    "owner": "W-ID",
+    "status": "unsupported",
+    "level": "contract",
+    "detail": {
+      "zh": "当前 GoTrue 矩阵明确不支持匿名登录与浏览器 admin/service-role；原生服务端管理是另一接口。",
+      "en": "The GoTrue matrix excludes anonymous signin and browser admin/service-role; native server administration is a separate API."
+    },
+    "source": "auth",
+    "official": "https://supabase.com/docs/guides/auth"
+  },
+  {
+    "id": "supabase-84",
+    "platform": "Supabase",
+    "group": "storage",
+    "feature": {
+      "zh": "签名下载 / 上传链接",
+      "en": "Signed read / upload"
+    },
+    "owner": "W-Storage",
+    "status": "subset",
+    "level": "integration",
+    "detail": {
+      "zh": "读链接最长一小时、批量最多 100 项；上传授权两小时、绑定精确对象。签发 key 撤销不撤销已签发上传授权。",
+      "en": "Reads last up to one hour / 100 batch items; uploads last two hours and bind an exact object. Issuer-key revocation does not revoke existing upload grants."
+    },
+    "source": "storage",
+    "official": "https://supabase.com/docs/guides/storage"
+  },
+  {
+    "id": "supabase-85",
+    "platform": "Supabase",
+    "group": "storage",
+    "feature": {
+      "zh": "桶策略 / 配额 / 归档删除",
+      "en": "Bucket policy / lifecycle"
+    },
+    "owner": "W-Storage",
+    "status": "subset",
+    "level": "integration",
+    "detail": {
+      "zh": "支持 MIME/大小、配额、归档恢复与精确删除；通用 S3 全写入配额、永久清除和生命周期有明确限制。",
+      "en": "MIME/size, quotas, archive/restore and exact deletion exist; generic-S3 all-write quotas, permanent purge and lifecycle have explicit limits."
+    },
+    "source": "storage",
+    "official": "https://supabase.com/docs/guides/storage"
+  },
+  {
+    "id": "supabase-86",
+    "platform": "Supabase",
+    "group": "functions",
+    "feature": {
+      "zh": "函数版本 / 回滚 / 删除",
+      "en": "Function versions / rollback"
+    },
+    "owner": "W-DB",
+    "status": "subset",
+    "level": "integration",
+    "detail": {
+      "zh": "真实身份组合完成 v1→v2→v1、撤销拒绝和删除；原生历史保留 deleted 状态，生产普通用户同路径待验证。",
+      "en": "Real-identity composition passed v1/v2/rollback, revocation and deletion; native history retains deleted records, and ordinary-user production E2E is pending."
+    },
+    "source": "g1",
+    "official": "https://supabase.com/docs/guides/functions"
+  },
+  {
+    "id": "supabase-87",
+    "platform": "Supabase",
+    "group": "database",
+    "feature": {
+      "zh": "数据库时间点恢复 PITR",
+      "en": "Point-in-time recovery"
+    },
+    "owner": "W-DB",
+    "status": "unsupported",
+    "level": "contract",
+    "detail": {
+      "zh": "提供方能力未支持时明确 false；pg_dump/pg_restore 不能算 WAL 时间点恢复。",
+      "en": "Provider capability remains false where unsupported; dump/restore is not WAL point-in-time recovery."
+    },
+    "source": "db",
+    "official": "https://supabase.com/docs/guides/database"
+  },
+  {
+    "id": "cloudflare-88",
+    "platform": "Cloudflare",
+    "group": "workers",
+    "feature": {
+      "zh": "JS/TS Module 执行",
+      "en": "Module execution"
+    },
+    "owner": "W-Drop / W-Sandbox",
+    "status": "subset",
+    "level": "integration",
+    "detail": {
+      "zh": "有真实 KVM、不变镜像与签名回执执行；运行时不是 workerd，完整 Web/Node API 对等未证明。",
+      "en": "Real KVM, immutable images and signed execution receipts are proven; runtime is not workerd and full Web/Node API parity is not claimed."
+    },
+    "source": "g1",
+    "official": "https://developers.cloudflare.com/workers/"
+  },
+  {
+    "id": "cloudflare-89",
+    "platform": "Cloudflare",
+    "group": "workers",
+    "feature": {
+      "zh": "源码版本 / 构建产物",
+      "en": "Versions / artifacts"
+    },
+    "owner": "W-Drop",
+    "status": "subset",
+    "level": "integration",
+    "detail": {
+      "zh": "不可变源码、包摘要、JS/TS 语义检查与运行 bundle 有契约；构建成功不自动等于已部署。",
+      "en": "Immutable sources, checksummed bundles and JS/TS semantic checks exist; packaging is distinct from deployment."
+    },
+    "source": "drop",
+    "official": "https://developers.cloudflare.com/workers/"
+  },
+  {
+    "id": "cloudflare-90",
+    "platform": "Cloudflare",
+    "group": "workers",
+    "feature": {
+      "zh": "发布 / 显式回滚",
+      "en": "Deploy / rollback"
+    },
+    "owner": "W-Drop",
+    "status": "subset",
+    "level": "integration",
+    "detail": {
+      "zh": "版本必须取得签名 applied 回执；真实组件通过 v1/v2/回滚，线上用户全链路待验收。",
+      "en": "Versions require signed applied receipts; real-component v1/v2/rollback passed, ordinary-user production E2E remains."
+    },
+    "source": "g1",
+    "official": "https://developers.cloudflare.com/workers/"
+  },
+  {
+    "id": "cloudflare-91",
+    "platform": "Cloudflare",
+    "group": "workers",
+    "feature": {
+      "zh": "渐进流量发布",
+      "en": "Gradual releases"
+    },
+    "owner": "W-Drop",
+    "status": "subset",
+    "level": "contract",
+    "detail": {
+      "zh": "支持一个版本或两个版本精确权重；完整多版本、生产流量分布与故障回滚未专项验收。",
+      "en": "One or two versions with exact weights are supported; broader traffic distribution and production failure rollback are unproven."
+    },
+    "source": "drop",
+    "official": "https://developers.cloudflare.com/workers/"
+  },
+  {
+    "id": "cloudflare-92",
+    "platform": "Cloudflare",
+    "group": "workers",
+    "feature": {
+      "zh": "公开 / JWT 保护调用",
+      "en": "Public / JWT access"
+    },
+    "owner": "W-Drop + W-ID",
+    "status": "subset",
+    "level": "integration",
+    "detail": {
+      "zh": "公开调用可显式选择，保护调用使用实时精确项目用户授权；开发管理权限与终端用户分开。",
+      "en": "Public invocation is explicit; protected calls use live exact-project user authorization, separate from developer management rights."
+    },
+    "source": "drop",
+    "official": "https://developers.cloudflare.com/workers/"
+  },
+  {
+    "id": "cloudflare-93",
+    "platform": "Cloudflare",
+    "group": "workers",
+    "feature": {
+      "zh": "变量绑定",
+      "en": "Variables"
+    },
+    "owner": "W-Drop",
+    "status": "subset",
+    "level": "integration",
+    "detail": {
+      "zh": "字符串 vars 与不可变版本快照已覆盖；JSON vars、额外供应商 binding 和并发 CAS 未齐。",
+      "en": "String vars and immutable version snapshots are covered; JSON vars, other vendor bindings and concurrent CAS are not."
+    },
+    "source": "drop",
+    "official": "https://developers.cloudflare.com/workers/"
+  },
+  {
+    "id": "cloudflare-94",
+    "platform": "Cloudflare",
+    "group": "workers",
+    "feature": {
+      "zh": "项目秘密",
+      "en": "Project secrets"
+    },
+    "owner": "W-Drop / W-ID Vault",
+    "status": "different",
+    "level": "integration",
+    "detail": {
+      "zh": "支持加密项目级秘密引用与轮换；不是 per-Worker secret 命名空间，原生命令 secret * 明确不支持。",
+      "en": "Encrypted project secret references and rotation exist; per-Worker secret namespaces and secret * commands are not supported."
+    },
+    "source": "drop",
+    "official": "https://developers.cloudflare.com/workers/"
+  },
+  {
+    "id": "cloudflare-95",
+    "platform": "Cloudflare",
+    "group": "workers",
+    "feature": {
+      "zh": "对象桶绑定",
+      "en": "Bucket bindings"
+    },
+    "owner": "W-Drop / W-Storage",
+    "status": "subset",
+    "level": "contract",
+    "detail": {
+      "zh": "支持项目桶授权与对象适配；不能据此宣称完整 R2 binding API。",
+      "en": "Project bucket grants/object adapters exist; full R2 binding API compatibility is not claimed."
+    },
+    "source": "drop",
+    "official": "https://developers.cloudflare.com/r2/"
+  },
+  {
+    "id": "cloudflare-96",
+    "platform": "Cloudflare",
+    "group": "workers",
+    "feature": {
+      "zh": "JSON/JSONC 配置",
+      "en": "JSON/JSONC config"
+    },
+    "owner": "W-Drop CLI",
+    "status": "subset",
+    "level": "integration",
+    "detail": {
+      "zh": "支持 name/main/date/string vars/env；TOML、assets、build、routes、compatibility_flags 和额外绑定拒绝。",
+      "en": "Supports name/main/date/string vars/env; TOML, assets, build, routes, compatibility_flags and extra bindings are rejected."
+    },
+    "source": "drop",
+    "official": "https://developers.cloudflare.com/workers/wrangler/"
+  },
+  {
+    "id": "cloudflare-97",
+    "platform": "Cloudflare",
+    "group": "workers",
+    "feature": {
+      "zh": "环境选择",
+      "en": "Environments"
+    },
+    "owner": "W-Drop CLI",
+    "status": "different",
+    "level": "integration",
+    "detail": {
+      "zh": "命名 Worker 与变量隔离；项目秘密仍共享，不等于独立项目/租户/完整生产预览环境。",
+      "en": "Worker names/vars separate environments; project secrets stay shared and this is not independent project/tenant/preview parity."
+    },
+    "source": "drop",
+    "official": "https://developers.cloudflare.com/workers/wrangler/"
+  },
+  {
+    "id": "cloudflare-98",
+    "platform": "Cloudflare",
+    "group": "workers",
+    "feature": {
+      "zh": "本地 dev",
+      "en": "Local dev"
+    },
+    "owner": "W-Drop / w-cli",
+    "status": "unsupported",
+    "level": "contract",
+    "detail": {
+      "zh": "兼容矩阵明确不支持 dev；本地静态服务不能冒充 Workers 开发环境。",
+      "en": "Compatibility matrices explicitly exclude dev; static serving is not a Workers dev environment."
+    },
+    "source": "drop",
+    "official": "https://developers.cloudflare.com/workers/wrangler/"
+  },
+  {
+    "id": "cloudflare-99",
+    "platform": "Cloudflare",
+    "group": "workers",
+    "feature": {
+      "zh": "实时 tail",
+      "en": "Live tail"
+    },
+    "owner": "W-Drop / w-cli",
+    "status": "unsupported",
+    "level": "contract",
+    "detail": {
+      "zh": "提供有界日志快照，不支持 Wrangler 实时 tail 流。",
+      "en": "Bounded log snapshots exist, but Wrangler live tail streaming is unsupported."
+    },
+    "source": "drop",
+    "official": "https://developers.cloudflare.com/workers/wrangler/"
+  },
+  {
+    "id": "cloudflare-100",
+    "platform": "Cloudflare",
+    "group": "workers",
+    "feature": {
+      "zh": "日志 / 调用指标",
+      "en": "Logs / metrics"
+    },
+    "owner": "W-Drop / W-Radar",
+    "status": "subset",
+    "level": "integration",
+    "detail": {
+      "zh": "真实 Worker 执行已有签名日志与 metrics；完整 Logpush/尾流/供应商观测 API 未齐。",
+      "en": "Real Worker execution has signed logs and metrics; full Logpush/tail/vendor observability API parity is absent."
+    },
+    "source": "g1",
+    "official": "https://developers.cloudflare.com/workers/"
+  },
+  {
+    "id": "cloudflare-101",
+    "platform": "Cloudflare",
+    "group": "workers",
+    "feature": {
+      "zh": "删除 / 清理",
+      "en": "Deletion / cleanup"
+    },
+    "owner": "W-Drop / W-Sandbox",
+    "status": "subset",
+    "level": "integration",
+    "detail": {
+      "zh": "终止运行后删除确切 Worker 记录，保留邻居资源；真实组合与生产 facade 的清理有证据。",
+      "en": "Terminates then deletes the exact Worker while preserving neighbors; composition and production facade cleanup are proven."
+    },
+    "source": "g1",
+    "official": "https://developers.cloudflare.com/workers/"
+  },
+  {
+    "id": "cloudflare-102",
+    "platform": "Cloudflare",
+    "group": "workers",
+    "feature": {
+      "zh": "框架构建 / assets",
+      "en": "Frameworks / assets"
+    },
+    "owner": "W-Drop CLI",
+    "status": "unsupported",
+    "level": "contract",
+    "detail": {
+      "zh": "不自动识别框架或执行构建，也不导入 Worker static assets 配置。",
+      "en": "No framework detection/build execution or Worker static-assets config import."
+    },
+    "source": "drop",
+    "official": "https://developers.cloudflare.com/workers/"
+  },
+  {
+    "id": "cloudflare-103",
+    "platform": "Cloudflare",
+    "group": "workers",
+    "feature": {
+      "zh": "兼容日期 / Node API",
+      "en": "Compatibility / Node"
+    },
+    "owner": "W-Drop",
+    "status": "subset",
+    "level": "contract",
+    "detail": {
+      "zh": "日期与部分 node: 导入经过编译验证；不是所有 Cloudflare 日期语义或 Node 内置 API。",
+      "en": "Dates and selected node: imports are compiler-validated, not all Cloudflare date semantics or Node builtins."
+    },
+    "source": "drop",
+    "official": "https://developers.cloudflare.com/workers/"
+  },
+  {
+    "id": "cloudflare-104",
+    "platform": "Cloudflare",
+    "group": "pages",
+    "feature": {
+      "zh": "静态站点发布",
+      "en": "Static deploy"
+    },
+    "owner": "W-Drop Sites",
+    "status": "subset",
+    "level": "integration",
+    "detail": {
+      "zh": "目录上传、二进制资产、首次发布和不可变版本有门槛；框架自动构建与全托管 Git 工作流未齐。",
+      "en": "Directory/binary uploads, first publication and immutable versions have gates; automatic framework/Git workflows are not proven."
+    },
+    "source": "drop",
+    "official": "https://developers.cloudflare.com/pages/"
+  },
+  {
+    "id": "cloudflare-105",
+    "platform": "Cloudflare",
+    "group": "pages",
+    "feature": {
+      "zh": "版本列表 / 预览",
+      "en": "Versions / preview"
+    },
+    "owner": "W-Drop Sites",
+    "status": "subset",
+    "level": "contract",
+    "detail": {
+      "zh": "支持版本列表和子域名模式预览；path-prefix 模式预览明确 501，只有 production 环境。",
+      "en": "Version listing and subdomain previews exist; path-prefix previews return 501 and only production environment exists."
+    },
+    "source": "drop",
+    "official": "https://developers.cloudflare.com/pages/"
+  },
+  {
+    "id": "cloudflare-106",
+    "platform": "Cloudflare",
+    "group": "pages",
+    "feature": {
+      "zh": "历史提升 / 回滚",
+      "en": "Promote / rollback"
+    },
+    "owner": "W-Drop Sites",
+    "status": "subset",
+    "level": "integration",
+    "detail": {
+      "zh": "历史内容重新发布为新版本，保留旧版本不变；生产域名回滚仍需专项证明。",
+      "en": "Historical content is republished as a new version while old versions stay immutable; production domain rollback needs evidence."
+    },
+    "source": "drop",
+    "official": "https://developers.cloudflare.com/pages/"
+  },
+  {
+    "id": "cloudflare-107",
+    "platform": "Cloudflare",
+    "group": "pages",
+    "feature": {
+      "zh": "自定义域名 / DNS 证明",
+      "en": "Custom domains"
+    },
+    "owner": "W-Drop Sites / Caddy",
+    "status": "subset",
+    "level": "contract",
+    "detail": {
+      "zh": "有域名添加、TXT 验证、删除契约；终端用户生产 DNS/TLS/撤销及回滚未完整验收。",
+      "en": "Add/TXT verification/removal contracts exist; user production DNS/TLS/revocation/rollback remain unverified."
+    },
+    "source": "drop",
+    "official": "https://developers.cloudflare.com/pages/"
+  },
+  {
+    "id": "cloudflare-108",
+    "platform": "Cloudflare",
+    "group": "pages",
+    "feature": {
+      "zh": "Pages Functions / dev",
+      "en": "Pages runtime / dev"
+    },
+    "owner": "W-Drop",
+    "status": "unsupported",
+    "level": "contract",
+    "detail": {
+      "zh": "没有 Pages Functions 同构运行时；pages dev 与 Pages secrets 命令明确不支持。",
+      "en": "No equivalent Pages Functions runtime; pages dev and Pages-specific secrets are explicitly unsupported."
+    },
+    "source": "drop",
+    "official": "https://developers.cloudflare.com/pages/"
+  },
+  {
+    "id": "cloudflare-109",
+    "platform": "Cloudflare",
+    "group": "pages",
+    "feature": {
+      "zh": "Git 自动构建 / 分支预览",
+      "en": "Git / branch previews"
+    },
+    "owner": "W-Drop Sites",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "已有静态发布不证明 Git webhook、自动构建及分支预览完整工作流。",
+      "en": "Static publication does not prove Git webhooks, automated builds or branch preview workflows."
+    },
+    "source": "drop",
+    "official": "https://developers.cloudflare.com/pages/"
+  },
+  {
+    "id": "cloudflare-110",
+    "platform": "Cloudflare",
+    "group": "r2",
+    "feature": {
+      "zh": "私有桶 CRUD",
+      "en": "Private buckets"
+    },
+    "owner": "W-Storage / W-Drop",
+    "status": "subset",
+    "level": "integration",
+    "detail": {
+      "zh": "支持项目私有桶列表/创建/读取/删除；真实 W-ID 的 native CLI 测试仅证明本地 Objects 适配。",
+      "en": "Project private-bucket CRUD exists; real-W-ID native CLI acceptance proves the local Objects adapter, not production upstream."
+    },
+    "source": "storage",
+    "official": "https://developers.cloudflare.com/r2/"
+  },
+  {
+    "id": "cloudflare-111",
+    "platform": "Cloudflare",
+    "group": "r2",
+    "feature": {
+      "zh": "对象读写 / 范围 / 条件",
+      "en": "Objects / ranges"
+    },
+    "owner": "W-Storage",
+    "status": "subset",
+    "level": "integration",
+    "detail": {
+      "zh": "S3/Storage 有读写、分页、范围和条件读取；Wrangler 只映射对象基础命令。",
+      "en": "S3/Storage supports CRUD, paging, ranges and conditional reads; Wrangler maps only basic object commands."
+    },
+    "source": "storage",
+    "official": "https://developers.cloudflare.com/r2/"
+  },
+  {
+    "id": "cloudflare-112",
+    "platform": "Cloudflare",
+    "group": "r2",
+    "feature": {
+      "zh": "分片上传",
+      "en": "Multipart"
+    },
+    "owner": "W-Storage",
+    "status": "subset",
+    "level": "integration",
+    "detail": {
+      "zh": "原生 S3 面支持 multipart；Wrangler R2 高级 multipart 参数不支持。",
+      "en": "Native S3 supports multipart; advanced Wrangler R2 multipart options are unsupported."
+    },
+    "source": "storage",
+    "official": "https://developers.cloudflare.com/r2/"
+  },
+  {
+    "id": "cloudflare-113",
+    "platform": "Cloudflare",
+    "group": "r2",
+    "feature": {
+      "zh": "公开桶 / 公共域名",
+      "en": "Public buckets"
+    },
+    "owner": "W-Storage / W-Drop",
+    "status": "unsupported",
+    "level": "contract",
+    "detail": {
+      "zh": "Wrangler 桶能力只声明私有项目桶；不声称公开桶及公开 R2 域名语义。",
+      "en": "Wrangler bucket capability is private-project only; public buckets/R2 domains are not claimed."
+    },
+    "source": "drop",
+    "official": "https://developers.cloudflare.com/r2/"
+  },
+  {
+    "id": "cloudflare-114",
+    "platform": "Cloudflare",
+    "group": "r2",
+    "feature": {
+      "zh": "生命周期 / 版本",
+      "en": "Lifecycle / versions"
+    },
+    "owner": "W-Storage",
+    "status": "subset",
+    "level": "integration",
+    "detail": {
+      "zh": "本地存储支持生命周期/版本；通用 S3 生命周期和跨提供方版本/删除标记仍有限制。",
+      "en": "Local lifecycle/versioning exists; generic-S3 lifecycle and portable versions/delete markers remain limited."
+    },
+    "source": "storage",
+    "official": "https://developers.cloudflare.com/r2/"
+  },
+  {
+    "id": "cloudflare-115",
+    "platform": "Cloudflare",
+    "group": "r2",
+    "feature": {
+      "zh": "真实 R2 提供方",
+      "en": "Actual R2 provider"
+    },
+    "owner": "W-Storage",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "通用 S3 适配器实测 MinIO，可配置 R2；未取得真实 R2 生产读写/故障专项证据。",
+      "en": "Generic S3 was tested against MinIO and can target R2; actual production R2 I/O/failure acceptance was not found."
+    },
+    "source": "storage",
+    "official": "https://developers.cloudflare.com/r2/"
+  },
+  {
+    "id": "cloudflare-116",
+    "platform": "Cloudflare",
+    "group": "r2",
+    "feature": {
+      "zh": "复制 / 提供方故障转移",
+      "en": "Replication / failover"
+    },
+    "owner": "W-Storage",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "兼容契约明确保留跨提供方复制/故障转移门槛，当前不能标记完成。",
+      "en": "The compatibility contract retains cross-provider replication/failover gates; completion is not established."
+    },
+    "source": "storage",
+    "official": "https://developers.cloudflare.com/r2/"
+  },
+  {
+    "id": "cloudflare-117",
+    "platform": "Cloudflare",
+    "group": "data",
+    "feature": {
+      "zh": "KV",
+      "en": "KV"
+    },
+    "owner": "暂无兼容映射",
+    "status": "unsupported",
+    "level": "contract",
+    "detail": {
+      "zh": "W-Drop/w-cli 明确拒绝 kv 命令；数据库表不能改名冒充 KV。",
+      "en": "W-Drop/w-cli explicitly reject kv commands; database tables are not a KV compatibility implementation."
+    },
+    "source": "drop",
+    "official": "https://developers.cloudflare.com/kv/"
+  },
+  {
+    "id": "cloudflare-118",
+    "platform": "Cloudflare",
+    "group": "data",
+    "feature": {
+      "zh": "D1",
+      "en": "D1"
+    },
+    "owner": "暂无兼容映射",
+    "status": "unsupported",
+    "level": "contract",
+    "detail": {
+      "zh": "W-Drop/w-cli 明确拒绝 d1 命令；PostgreSQL 不等于 D1 SQLite API。",
+      "en": "W-Drop/w-cli explicitly reject d1 commands; PostgreSQL is not the D1 SQLite API."
+    },
+    "source": "drop",
+    "official": "https://developers.cloudflare.com/d1/"
+  },
+  {
+    "id": "cloudflare-119",
+    "platform": "Cloudflare",
+    "group": "data",
+    "feature": {
+      "zh": "消息队列",
+      "en": "Queues"
+    },
+    "owner": "W 平台",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "不在本轮已交付兼容能力内；同类 W 产品或内部后台不能替代此项 API、运行时及生产验收。",
+      "en": "Outside this delivered compatibility scope; similar W products/internal systems do not establish API, runtime or production parity."
+    },
+    "source": "audit",
+    "official": "https://developers.cloudflare.com/queues/"
+  },
+  {
+    "id": "cloudflare-120",
+    "platform": "Cloudflare",
+    "group": "data",
+    "feature": {
+      "zh": "定时触发",
+      "en": "Cron triggers"
+    },
+    "owner": "W 平台",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "不在本轮已交付兼容能力内；同类 W 产品或内部后台不能替代此项 API、运行时及生产验收。",
+      "en": "Outside this delivered compatibility scope; similar W products/internal systems do not establish API, runtime or production parity."
+    },
+    "source": "audit",
+    "official": "https://developers.cloudflare.com/workers/configuration/cron-triggers/"
+  },
+  {
+    "id": "cloudflare-121",
+    "platform": "Cloudflare",
+    "group": "data",
+    "feature": {
+      "zh": "有状态对象",
+      "en": "Durable Objects"
+    },
+    "owner": "W 平台",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "不在本轮已交付兼容能力内；同类 W 产品或内部后台不能替代此项 API、运行时及生产验收。",
+      "en": "Outside this delivered compatibility scope; similar W products/internal systems do not establish API, runtime or production parity."
+    },
+    "source": "audit",
+    "official": "https://developers.cloudflare.com/durable-objects/"
+  },
+  {
+    "id": "cloudflare-122",
+    "platform": "Cloudflare",
+    "group": "data",
+    "feature": {
+      "zh": "持久工作流",
+      "en": "Workflows"
+    },
+    "owner": "W 平台",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "不在本轮已交付兼容能力内；同类 W 产品或内部后台不能替代此项 API、运行时及生产验收。",
+      "en": "Outside this delivered compatibility scope; similar W products/internal systems do not establish API, runtime or production parity."
+    },
+    "source": "audit",
+    "official": "https://developers.cloudflare.com/workflows/"
+  },
+  {
+    "id": "cloudflare-123",
+    "platform": "Cloudflare",
+    "group": "data",
+    "feature": {
+      "zh": "数据库代理",
+      "en": "Hyperdrive"
+    },
+    "owner": "W 平台",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "不在本轮已交付兼容能力内；同类 W 产品或内部后台不能替代此项 API、运行时及生产验收。",
+      "en": "Outside this delivered compatibility scope; similar W products/internal systems do not establish API, runtime or production parity."
+    },
+    "source": "audit",
+    "official": "https://developers.cloudflare.com/hyperdrive/"
+  },
+  {
+    "id": "cloudflare-124",
+    "platform": "Cloudflare",
+    "group": "data",
+    "feature": {
+      "zh": "向量索引",
+      "en": "Vectorize"
+    },
+    "owner": "W 平台",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "不在本轮已交付兼容能力内；同类 W 产品或内部后台不能替代此项 API、运行时及生产验收。",
+      "en": "Outside this delivered compatibility scope; similar W products/internal systems do not establish API, runtime or production parity."
+    },
+    "source": "audit",
+    "official": "https://developers.cloudflare.com/vectorize/"
+  },
+  {
+    "id": "cloudflare-125",
+    "platform": "Cloudflare",
+    "group": "data",
+    "feature": {
+      "zh": "边缘模型运行",
+      "en": "Workers AI"
+    },
+    "owner": "W 平台",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "不在本轮已交付兼容能力内；同类 W 产品或内部后台不能替代此项 API、运行时及生产验收。",
+      "en": "Outside this delivered compatibility scope; similar W products/internal systems do not establish API, runtime or production parity."
+    },
+    "source": "audit",
+    "official": "https://developers.cloudflare.com/workers-ai/"
+  },
+  {
+    "id": "cloudflare-126",
+    "platform": "Cloudflare",
+    "group": "data",
+    "feature": {
+      "zh": "分析事件存储",
+      "en": "Analytics Engine"
+    },
+    "owner": "W 平台",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "不在本轮已交付兼容能力内；同类 W 产品或内部后台不能替代此项 API、运行时及生产验收。",
+      "en": "Outside this delivered compatibility scope; similar W products/internal systems do not establish API, runtime or production parity."
+    },
+    "source": "audit",
+    "official": "https://developers.cloudflare.com/analytics/analytics-engine/"
+  },
+  {
+    "id": "cloudflare-127",
+    "platform": "Cloudflare",
+    "group": "data",
+    "feature": {
+      "zh": "浏览器运行",
+      "en": "Browser Run"
+    },
+    "owner": "W 平台",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "不在本轮已交付兼容能力内；同类 W 产品或内部后台不能替代此项 API、运行时及生产验收。",
+      "en": "Outside this delivered compatibility scope; similar W products/internal systems do not establish API, runtime or production parity."
+    },
+    "source": "audit",
+    "official": "https://developers.cloudflare.com/browser-rendering/"
+  },
+  {
+    "id": "cloudflare-128",
+    "platform": "Cloudflare",
+    "group": "data",
+    "feature": {
+      "zh": "容器运行",
+      "en": "Containers"
+    },
+    "owner": "W 平台",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "不在本轮已交付兼容能力内；同类 W 产品或内部后台不能替代此项 API、运行时及生产验收。",
+      "en": "Outside this delivered compatibility scope; similar W products/internal systems do not establish API, runtime or production parity."
+    },
+    "source": "audit",
+    "official": "https://developers.cloudflare.com/containers/"
+  },
+  {
+    "id": "cloudflare-129",
+    "platform": "Cloudflare",
+    "group": "edge",
+    "feature": {
+      "zh": "DNS 管理",
+      "en": "DNS management"
+    },
+    "owner": "W-Domain / 边缘",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "平台域名与路由已注册；客户域名全套 DNS API、传播一致性与权限仍需专项对比。",
+      "en": "Platform domains/routes are registered; customer DNS API, propagation and permission parity require separate checks."
+    },
+    "source": "audit",
+    "official": "https://developers.cloudflare.com/dns/"
+  },
+  {
+    "id": "cloudflare-130",
+    "platform": "Cloudflare",
+    "group": "edge",
+    "feature": {
+      "zh": "HTTPS / 证书",
+      "en": "HTTPS / certificates"
+    },
+    "owner": "Caddy",
+    "status": "different",
+    "level": "production",
+    "detail": {
+      "zh": "当前公开健康检查使用可信 TLS；Caddy 是实际证书所有者，不是 Cloudflare SSL API 实现。",
+      "en": "Current public health uses trusted TLS; Caddy owns certificates and does not implement the Cloudflare SSL API."
+    },
+    "source": "audit",
+    "official": "https://developers.cloudflare.com/ssl/"
+  },
+  {
+    "id": "cloudflare-131",
+    "platform": "Cloudflare",
+    "group": "edge",
+    "feature": {
+      "zh": "全球 CDN / 多 POP",
+      "en": "Global CDN / POPs"
+    },
+    "owner": "W-CDN / 边缘",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "使用 Cloudflare 公共入口不等于自有全球 CDN；多 POP 缓存一致性、调度、故障恢复未证明。",
+      "en": "Using Cloudflare ingress does not establish an independently owned global CDN; POP consistency/routing/recovery are unproven."
+    },
+    "source": "audit",
+    "official": "https://developers.cloudflare.com/cache/"
+  },
+  {
+    "id": "cloudflare-132",
+    "platform": "Cloudflare",
+    "group": "edge",
+    "feature": {
+      "zh": "缓存 / purge API",
+      "en": "Cache / purge"
+    },
+    "owner": "W-CDN / W-Drop",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "已有静态分发不代表完整缓存规则、Cache API 或全局 purge 语义；需要独立契约。",
+      "en": "Static distribution does not prove full cache rules, Cache API or global purge semantics."
+    },
+    "source": "audit",
+    "official": "https://developers.cloudflare.com/cache/"
+  },
+  {
+    "id": "cloudflare-133",
+    "platform": "Cloudflare",
+    "group": "edge",
+    "feature": {
+      "zh": "流量调度 / 跨节点恢复",
+      "en": "Routing / recovery"
+    },
+    "owner": "Caddy / W 平台",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "当前路由与回滚准备有证据；真实负载均衡、跨节点恢复、持续容量与 SLO 未验收。",
+      "en": "Routes and rollback preparation are evidenced; live load balancing, cross-node recovery, sustained capacity and SLOs are not."
+    },
+    "source": "audit",
+    "official": "https://developers.cloudflare.com/load-balancing/"
+  },
+  {
+    "id": "cloudflare-134",
+    "platform": "Cloudflare",
+    "group": "edge",
+    "feature": {
+      "zh": "AI 请求网关",
+      "en": "AI Gateway"
+    },
+    "owner": "W-ModelGW / W-MaaS",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "存在模型网关项目；与 Cloudflare AI Gateway 的缓存、限流、分析和供应商功能对等未专项验收。",
+      "en": "Model gateway projects exist; Cloudflare AI Gateway caching, limits, analytics and provider parity are unverified."
+    },
+    "source": "audit",
+    "official": "https://developers.cloudflare.com/ai-gateway/"
+  },
+  {
+    "id": "acceptance-135",
+    "platform": "Acceptance",
+    "group": "acceptance",
+    "feature": {
+      "zh": "统一身份 / 项目发现",
+      "en": "Identity / discovery"
+    },
+    "owner": "W 平台",
+    "status": "verified",
+    "level": "production",
+    "detail": {
+      "zh": "三方发现中的 workspace/project 与原生 Functions/Workers 所有权一致；当前只读脚本 11/11 通过。",
+      "en": "Workspace/project and native Functions/Workers ownership agree across discovery; current read-only probes passed 11/11."
+    },
+    "source": "audit",
+    "official": "https://supabase.com/docs/guides/platform/going-into-prod"
+  },
+  {
+    "id": "acceptance-136",
+    "platform": "Acceptance",
+    "group": "acceptance",
+    "feature": {
+      "zh": "核心后端正式发布",
+      "en": "Backend releases"
+    },
+    "owner": "W 平台",
+    "status": "verified",
+    "level": "production",
+    "detail": {
+      "zh": "Radar 当前 pin：W-ID 1.3.49、DB 0.8.21、Storage 0.1.7、Drop 0.4.0、Sandbox 0.2.0；发布 CI 与此前进程哈希有记录。",
+      "en": "Radar pins W-ID 1.3.49, DB 0.8.21, Storage 0.1.7, Drop 0.4.0 and Sandbox 0.2.0; release CI and earlier process hashes are recorded."
+    },
+    "source": "audit",
+    "official": "https://supabase.com/docs/guides/platform/going-into-prod"
+  },
+  {
+    "id": "acceptance-137",
+    "platform": "Acceptance",
+    "group": "acceptance",
+    "feature": {
+      "zh": "普通新用户完整生产流程",
+      "en": "Fresh-user production E2E"
+    },
+    "owner": "W 平台",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "Auth→CRUD/RLS→私有 Storage→Realtime→保护函数/Worker→日志→备份恢复→撤销回滚→清理尚无完整线上成功记录。",
+      "en": "No complete online fresh-user Auth→CRUD/RLS→Storage→Realtime→Functions/Workers→logs→backup/restore→revocation/rollback→cleanup success record."
+    },
+    "source": "audit",
+    "official": "https://supabase.com/docs/guides/platform/going-into-prod"
+  },
+  {
+    "id": "acceptance-138",
+    "platform": "Acceptance",
+    "group": "acceptance",
+    "feature": {
+      "zh": "同项目双函数运行时生产验收",
+      "en": "Two-runtime production E2E"
+    },
+    "owner": "W 平台",
+    "status": "subset",
+    "level": "integration",
+    "detail": {
+      "zh": "真实身份隔离组合生命周期通过；生产 Sandbox KVM 也实测，但不能合并为普通用户经公开 Drop/native API 的全流程。",
+      "en": "Real-identity composition passed and production Sandbox KVM was separately tested; together these do not prove ordinary-user public API E2E."
+    },
+    "source": "audit",
+    "official": "https://supabase.com/docs/guides/platform/going-into-prod"
+  },
+  {
+    "id": "acceptance-139",
+    "platform": "Acceptance",
+    "group": "acceptance",
+    "feature": {
+      "zh": "Console 生产登录后业务",
+      "en": "Console after login"
+    },
+    "owner": "W 平台",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "公开入口有正常 W-ID 登录跳转；本地浏览器通过不等于当前生产回调及登录后业务已全验收。",
+      "en": "Public entry follows W-ID login redirects; local browser passes do not prove current production callback/post-login business flows."
+    },
+    "source": "audit",
+    "official": "https://supabase.com/docs/guides/platform/going-into-prod"
+  },
+  {
+    "id": "acceptance-140",
+    "platform": "Acceptance",
+    "group": "acceptance",
+    "feature": {
+      "zh": "租户拒绝 / 真实撤销",
+      "en": "Tenant denials / revocation"
+    },
+    "owner": "W 平台",
+    "status": "subset",
+    "level": "integration",
+    "detail": {
+      "zh": "真实组件组合证明外租户、平台非成员和 OAuth 撤销拒绝；公开生产全链路仍需同项复验。",
+      "en": "Real-component composition proves foreign-tenant/nonmember denials and OAuth revocation; production E2E needs the same checks."
+    },
+    "source": "audit",
+    "official": "https://supabase.com/docs/guides/platform/going-into-prod"
+  },
+  {
+    "id": "acceptance-141",
+    "platform": "Acceptance",
+    "group": "acceptance",
+    "feature": {
+      "zh": "不可变 Worker / 签名 / 清理",
+      "en": "Immutable KVM / cleanup"
+    },
+    "owner": "W 平台",
+    "status": "verified",
+    "level": "production",
+    "detail": {
+      "zh": "生产实际 KVM、镜像/来宾哈希、独立签名验证和删除清理有证据；不能扩展为整个终端用户 Worker 发布链路。",
+      "en": "Production KVM, image/guest hashes, independent signatures and deletion cleanup are proven, not the entire end-user deployment chain."
+    },
+    "source": "audit",
+    "official": "https://supabase.com/docs/guides/platform/going-into-prod"
+  },
+  {
+    "id": "acceptance-142",
+    "platform": "Acceptance",
+    "group": "acceptance",
+    "feature": {
+      "zh": "容量 / SLO / 灾备",
+      "en": "Capacity / SLO / disaster recovery"
+    },
+    "owner": "W 平台",
+    "status": "unverified",
+    "level": "none",
+    "detail": {
+      "zh": "健康绿灯、CI 与静态哈希都不能替代负载、跨节点故障、RPO/RTO 或灾备演练。",
+      "en": "Health, CI and file hashes do not establish load, cross-node failure, RPO/RTO or disaster-recovery acceptance."
+    },
+    "source": "audit",
+    "official": "https://supabase.com/docs/guides/platform/going-into-prod"
+  }
+]

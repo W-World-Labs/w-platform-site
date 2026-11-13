@@ -1,0 +1,56 @@
+name: Public source CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: public-source-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    if: github.event.repository.private == false
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: '22.23.1'
+          cache: npm
+      - run: npm install --global npm@10.9.9 --registry=https://registry.npmjs.org
+      - name: Check source and toolchain
+        run: |
+          test "$(node --version)" = v22.23.1
+          test "$(npm --version)" = 10.9.9
+          python3 scripts/check-public-source.py
+      - run: npm ci --include=dev --include=optional --no-fund --registry=https://registry.npmjs.org
+      - run: npx --no-install playwright install --with-deps chromium
+      - run: npm run ci
+      - name: Package verified source
+        shell: bash
+        run: |
+          test -f dist/build-provenance.json
+          node --input-type=module -e 'import fs from "node:fs"; import { execFileSync } from "node:child_process"; const p=JSON.parse(fs.readFileSync("dist/build-provenance.json")); if(p.commit !== execFileSync("git",["rev-parse","HEAD"],{encoding:"utf8"}).trim()) process.exit(1)'
+          test -z "$(git status --porcelain=v1 --untracked-files=all)"
+          git diff --exit-code
+          mkdir -p "$RUNNER_TEMP/source-package"
+          git archive --format=tar HEAD | gzip -n > "$RUNNER_TEMP/source-package/w-platform-site-source.tar.gz"
+          git rev-parse HEAD > "$RUNNER_TEMP/source-package/COMMIT"
+          cd "$RUNNER_TEMP/source-package"
+          sha256sum w-platform-site-source.tar.gz COMMIT > SHA256SUMS
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: w-platform-site-source
+          path: ${{ runner.temp }}/source-package/
+          if-no-files-found: error
+          retention-days: 1

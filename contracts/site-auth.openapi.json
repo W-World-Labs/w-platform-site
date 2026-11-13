@@ -1,0 +1,79 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "W Platform site session",
+    "version": "1.0.0",
+    "description": "W Commons w-id-gate routes on the W Platform origin. Any valid W-ID login opens static site content. Product APIs enforce their own tenant authorization. All responses use private/no-store caching."
+  },
+  "servers": [{ "url": "https://myfastools.com" }],
+  "paths": {
+    "/auth/login": {
+      "get": {
+        "summary": "Start W-ID authorization and set an HttpOnly state cookie",
+        "responses": {
+          "303": { "description": "Redirect to the registered W-ID authorization endpoint" },
+          "503": { "description": "SSO configuration unavailable" },
+          "500": { "description": "Failed to build authorization URL" }
+        }
+      }
+    },
+    "/auth/callback": {
+      "get": {
+        "summary": "Validate state, exchange code and establish the site session",
+        "parameters": [
+          { "name": "code", "in": "query", "schema": { "type": "string" } },
+          { "name": "state", "in": "query", "schema": { "type": "string" } },
+          { "name": "error", "in": "query", "schema": { "type": "string" } }
+        ],
+        "responses": {
+          "303": { "description": "Secure HttpOnly SameSite=Lax session established; redirect to homepage" },
+          "400": { "description": "Missing or invalid code/state" },
+          "502": { "description": "W-ID authorization exchange failed" },
+          "503": { "description": "SSO configuration unavailable" },
+          "500": { "description": "Failed to issue local session" }
+        }
+      }
+    },
+    "/auth/me": {
+      "get": {
+        "summary": "Read the verified site session",
+        "security": [{ "siteSession": [] }],
+        "responses": {
+          "200": {
+            "description": "Verified identity; no workspace or entitlement grant",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": ["sub", "login", "is_admin"],
+                  "properties": {
+                    "sub": { "type": "string" },
+                    "login": { "type": "string" },
+                    "is_admin": { "type": "boolean" }
+                  }
+                }
+              }
+            }
+          },
+          "401": { "description": "Missing, expired or invalid session" }
+        }
+      }
+    },
+    "/auth/logout": {
+      "post": {
+        "summary": "Clear this site's session cookie",
+        "responses": {
+          "200": {
+            "description": "Local session cookie cleared; browser SDK handles its own W-ID logout",
+            "content": { "application/json": { "schema": { "type": "object", "required": ["success"], "properties": { "success": { "type": "boolean", "enum": [true] } } } } }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "siteSession": { "type": "apiKey", "in": "cookie", "name": "w_platform_session" }
+    }
+  }
+}

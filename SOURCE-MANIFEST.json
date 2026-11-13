@@ -1,0 +1,2082 @@
+{
+  "schema": "w-public-source-manifest/v1",
+  "scope": "complete reviewed source-only snapshot; self excluded from hash inventory",
+  "files": {
+    ".github/workflows/ci.yml": {
+      "bytes": 2261,
+      "sha256": "36767ba47ad7794359b2da0d4adda8e5975cfbe2148de4a05a94f65c80eed2a5"
+    },
+    ".gitignore": {
+      "bytes": 375,
+      "sha256": "3aa16bab9d5d6bb45782b6254905e4c2d302a5f8bac3ac73efdc3c8430ee9dc9"
+    },
+    "AGENTS.md": {
+      "bytes": 1364,
+      "sha256": "640e9c2788c9e1a8652298551fa9ce5ec9a0660eae48ccdbf630bfe723cc96fd"
+    },
+    "DEPENDENCIES.json": {
+      "bytes": 93338,
+      "sha256": "1c4aad4496d1c3a3e25bd4b72742f0b6a931bb0af6eb62e38ededc81b740594e"
+    },
+    "LICENSE": {
+      "bytes": 1104,
+      "sha256": "46522b3f2545ce3b6eb45c8993592c11553e500c79c4941d49dc6f24cb818825"
+    },
+    "PUBLIC_SOURCE.md": {
+      "bytes": 3802,
+      "sha256": "84394477c9cc0af43394c2037212d0302b0b4b223eb096d7a85135f859e5acb3"
+    },
+    "README.md": {
+      "bytes": 36306,
+      "sha256": "bed4b3e5840e9a638519b747e006ae77088dda5ff7df285c4d9a808e56c0f2f1"
+    },
+    "THIRD-PARTY-NOTICES.md": {
+      "bytes": 2286,
+      "sha256": "9e4776ac72b621e63c908bbc8c4e832b37a9c7dc1f3393de1a3d92a99023fbd6"
+    },
+    "contracts/project-sites.openapi.json": {
+      "bytes": 12209,
+      "sha256": "f47f6f87c6608412e274a52791f9525c5977cb1b6a38f56d983187da2b043aad"
+    },
+    "contracts/reference-hermetic-pins.json": {
+      "bytes": 3602,
+      "sha256": "5feb150720eabf1ae810aebaaae9f38bec15c1fc4c180d97f2c78dddc4342218"
+    },
+    "contracts/site-auth.openapi.json": {
+      "bytes": 3018,
+      "sha256": "f779b923b584166e488bba928c9f4b9c8ab9e4516f3f0924a4d8250dd7211fe3"
+    },
+    "eslint.config.js": {
+      "bytes": 591,
+      "sha256": "cf80a7510234dcd5ae594b30b44682b8b45ba13c0fcb5bf8928bea143802aa1c"
+    },
+    "index.html": {
+      "bytes": 969,
+      "sha256": "3c2a60ff8ddfca37aa13f54e27876b4574c22dc628f696e2a210aba9310e2b58"
+    },
+    "licenses/CREATE_VITE_LICENSE.txt": {
+      "bytes": 7968,
+      "sha256": "d626953766546816ba9ce3927f139cc2e4d3373ce70169c42ff1e248943609eb"
+    },
+    "licenses/W_ID_BROWSER_LICENSE.txt": {
+      "bytes": 1082,
+      "sha256": "d1526c3ba050a1a223cc7047bb7c6bccbaf5c2032e9ccc9848115fbfa60b5d7f"
+    },
+    "licenses/W_ID_BROWSER_SOURCE.json": {
+      "bytes": 899,
+      "sha256": "7956543e20166a8084af668c27435fedecefa6120138f5edb3baba2efee8d823"
+    },
+    "package-lock.json": {
+      "bytes": 168494,
+      "sha256": "d81b46dda139e099ee8e5958da7402a8171a10510f010ba7a1966b4e59dcd3a2"
+    },
+    "package.json": {
+      "bytes": 4508,
+      "sha256": "13934014490da45286be7fd35058a35b651510989ecfb7f212e1e4ac387ff23e"
+    },
+    "product-landings/.gitignore": {
+      "bytes": 31,
+      "sha256": "4a1a0c6aea67226da09204ed6a18895c40237d8e43eb3d0be61c8931d101fa80"
+    },
+    "product-landings/IMAGES.md": {
+      "bytes": 64702,
+      "sha256": "3d87705650e2d8389f98633b22f17f151d75ec679358c0dd09c442cfcd6a1ee1"
+    },
+    "product-landings/README.md": {
+      "bytes": 1198,
+      "sha256": "2f0ccf06cbb15341b702158e4b20753cd559d19e8e5f97bc14a6655c66c3de54"
+    },
+    "product-landings/_build.py": {
+      "bytes": 3804,
+      "sha256": "ef6dcacffc57895aaaf6a0dedb3da820bf6bfb784518586249ad0f0ac581c032"
+    },
+    "product-landings/_connect_generated_images.py": {
+      "bytes": 9731,
+      "sha256": "620e0d81a3223f58b1a9eb6247186d5eb24e8eeee3e6be2c9ad650626a1cd465"
+    },
+    "product-landings/_gen.py": {
+      "bytes": 27538,
+      "sha256": "2671377e0960c002546def63c3d84a7a0f465c1508a5f1973af3c1e5c1d11252"
+    },
+    "product-landings/_images/.gitkeep": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "product-landings/_images/CONNECTED_IMAGES.md": {
+      "bytes": 16395,
+      "sha256": "1dced7e27e017e45bd55bbd68236dcdb30b70afcec3f683ccbb30cffe08336f7"
+    },
+    "product-landings/_images/generated/MANIFEST.md": {
+      "bytes": 9516,
+      "sha256": "5a091fe30cc9a23aec3c3426fff065bd94e00ac653cf1b2f63f5375a79a1f961"
+    },
+    "product-landings/_images/generated/bright/w-collect-key-art-bright.png": {
+      "bytes": 1975389,
+      "sha256": "66149fc12d6cda0646621afa1bb83b412f0fe520073545b454a16eb422d28ba9"
+    },
+    "product-landings/_images/generated/bright/w-collect-key-art-bright.prompt.md": {
+      "bytes": 1243,
+      "sha256": "75d5de87d3031ba550a3b9703693f2d0c0878b10ad6d2ae67c93f59c2e4f5c23"
+    },
+    "product-landings/_images/generated/bright/w-daas-key-art-bright.png": {
+      "bytes": 1657410,
+      "sha256": "c40c465b93fad3de78a554aa84cb13a272b458fdc6c9a160d847a53b7d6454d0"
+    },
+    "product-landings/_images/generated/bright/w-daas-key-art-bright.prompt.md": {
+      "bytes": 1240,
+      "sha256": "2ce9cb91e93b119173a7980ee9ca73428c82b344c05323171961665ed553b4af"
+    },
+    "product-landings/_images/generated/bright/w-design-key-art-bright.png": {
+      "bytes": 1567402,
+      "sha256": "343261d22b8f8256d2fb4def6acaf5b05e0b5cf31c1cf534151d79c05f8babd6"
+    },
+    "product-landings/_images/generated/bright/w-design-key-art-bright.prompt.md": {
+      "bytes": 1197,
+      "sha256": "eda7a69aa6ea9b35f0612e76f629259fb378284455375c7c2343e43104a6e9ee"
+    },
+    "product-landings/_images/generated/bright/w-domain-key-art-bright.png": {
+      "bytes": 1888580,
+      "sha256": "2707a2b73792b5b513cacc4cdd6317f35dfc2e5b85ff5c4fd611b346787347b9"
+    },
+    "product-landings/_images/generated/bright/w-domain-key-art-bright.prompt.md": {
+      "bytes": 1268,
+      "sha256": "83697a270ad870993c884bea3665866b9d8624d1243d581dcc02cbd47106d60e"
+    },
+    "product-landings/_images/generated/bright/w-erp-key-art-bright.png": {
+      "bytes": 1835782,
+      "sha256": "83b190896d5a6e424e861122e652cac44442a06cea1563a43e3e45def1505468"
+    },
+    "product-landings/_images/generated/bright/w-erp-key-art-bright.prompt.md": {
+      "bytes": 1257,
+      "sha256": "21ead93ffb106535e280242351641bae62db8a61833ffb4db50a63cc81fbbff1"
+    },
+    "product-landings/_images/generated/bright/w-hospital-key-art-bright.png": {
+      "bytes": 1740689,
+      "sha256": "ec320d60c7b64c9cbd9de1e708ae80b3eef8d13ccd865edd5933383669a82177"
+    },
+    "product-landings/_images/generated/bright/w-hospital-key-art-bright.prompt.md": {
+      "bytes": 1264,
+      "sha256": "77a4c3a9eceeb72e19d51cdd4129b03e4eea9b16b0acf38543c26f74c5b9b257"
+    },
+    "product-landings/_images/generated/bright/w-id-key-art-bright.png": {
+      "bytes": 1629045,
+      "sha256": "76e92227649b4543c791aea64ed775b79f9eb5fe44afd7b6dd7aafa11f2ef9d7"
+    },
+    "product-landings/_images/generated/bright/w-id-key-art-bright.prompt.md": {
+      "bytes": 1199,
+      "sha256": "ab8be608f952573519f058652fdd178e5369d6bc9ed13b5b4e584feb36d344f2"
+    },
+    "product-landings/_images/generated/bright/w-imagetrace-key-art-bright.png": {
+      "bytes": 1770915,
+      "sha256": "03be2b2aea00b320f05eac307645bef3fdfbfd333b5e736ae00416d0d867b6c8"
+    },
+    "product-landings/_images/generated/bright/w-imagetrace-key-art-bright.prompt.md": {
+      "bytes": 1284,
+      "sha256": "9aa7e31518b4744a11b987c3d8822d86d7d33999bbbc6e215b0a961e622a2954"
+    },
+    "product-landings/_images/generated/bright/w-inspector-key-art-bright.png": {
+      "bytes": 1732157,
+      "sha256": "dcc9b2558d8e60f3342418a641e2706e6d4de365d2703aadc0e21a81c7e2e53e"
+    },
+    "product-landings/_images/generated/bright/w-inspector-key-art-bright.prompt.md": {
+      "bytes": 1293,
+      "sha256": "7e16ab728154e427c42aacca02b01200434eec70f18055e2f2c1b8fb40dc1013"
+    },
+    "product-landings/_images/generated/bright/w-knowledge-key-art-bright.png": {
+      "bytes": 1678944,
+      "sha256": "cbfb35fccd4365bd6a1e716c021bd14a63291e504efa8c3440d4eb70bc64cfac"
+    },
+    "product-landings/_images/generated/bright/w-knowledge-key-art-bright.prompt.md": {
+      "bytes": 1286,
+      "sha256": "e9ece4a7fa8b1ca0f3bf74ba2123b6eacc5f9ce9f754cdfbbe88a58699848000"
+    },
+    "product-landings/_images/generated/bright/w-maas-key-art-bright.png": {
+      "bytes": 1866016,
+      "sha256": "f415effeab8323d01530a9c7b84efff8e3e8f40898611a76945c595d6a3b5b24"
+    },
+    "product-landings/_images/generated/bright/w-maas-key-art-bright.prompt.md": {
+      "bytes": 1244,
+      "sha256": "a11f9a896487ae73243530d845d2c478739da9ce825ff567d05880922261ed2a"
+    },
+    "product-landings/_images/generated/bright/w-medtwin-key-art-bright.png": {
+      "bytes": 1662288,
+      "sha256": "0ed5f0ee0ccdfa421a795e4c961a6e405e8686e381df979f16762989ee8215f9"
+    },
+    "product-landings/_images/generated/bright/w-medtwin-key-art-bright.prompt.md": {
+      "bytes": 1262,
+      "sha256": "2b2cf4101e4b09ab8dc8a283964ee70ea3491bebc31c5e795223d1695df4be02"
+    },
+    "product-landings/_images/generated/bright/w-modelgw-key-art-bright.png": {
+      "bytes": 1787130,
+      "sha256": "6568215f9671fc5c0a6305c7c389c5e8d9a779e98deac9952d042b02ed1f82b4"
+    },
+    "product-landings/_images/generated/bright/w-modelgw-key-art-bright.prompt.md": {
+      "bytes": 1272,
+      "sha256": "d0a55acd90b7175e50c45f8d9fbf94c04781c7313b0b75b1f798d766d45f5213"
+    },
+    "product-landings/_images/generated/bright/w-netsense-key-art-bright.png": {
+      "bytes": 1912625,
+      "sha256": "62c5b64402bd5b361d431f03798deb5532c2040322c2b60dd1de280a680d1dcb"
+    },
+    "product-landings/_images/generated/bright/w-netsense-key-art-bright.prompt.md": {
+      "bytes": 1263,
+      "sha256": "9b194746863c852a1ea08e6a0c4ee2a7a3b817c9443b8591ad84041c9a389cef"
+    },
+    "product-landings/_images/generated/bright/w-nvr-key-art-bright.png": {
+      "bytes": 1887538,
+      "sha256": "47260a8389081064a7cef19d9d248bfa836c582d98ef5c0e8474668cd784a140"
+    },
+    "product-landings/_images/generated/bright/w-nvr-key-art-bright.prompt.md": {
+      "bytes": 1215,
+      "sha256": "b4c790f6ae85aaff0a2eca57e73fb76e42253363d4bdd90443babae763d0ccdd"
+    },
+    "product-landings/_images/generated/bright/w-omnisense-key-art-bright.png": {
+      "bytes": 1767131,
+      "sha256": "eb76facf368387736ba13dfa4598c1adaa4551b968dab21f93218f0852190337"
+    },
+    "product-landings/_images/generated/bright/w-omnisense-key-art-bright.prompt.md": {
+      "bytes": 1284,
+      "sha256": "18e25f9d0bdb44189b8b6865f47b6bdbf2a273deb076033519502eb32c78366f"
+    },
+    "product-landings/_images/generated/bright/w-quant-key-art-bright.png": {
+      "bytes": 1859922,
+      "sha256": "ec969808895f5a056aa6e31c6ab023a3141f25cc51a3a6afaa51c44fef50a20c"
+    },
+    "product-landings/_images/generated/bright/w-quant-key-art-bright.prompt.md": {
+      "bytes": 1256,
+      "sha256": "182e5d1f97fae553932a22744d2b77daaf60a8a51034768fb83d2fb5414a4585"
+    },
+    "product-landings/_images/generated/bright/w-radar-key-art-bright.png": {
+      "bytes": 1830010,
+      "sha256": "74d3f1e285eb7b951ddc162930ba5a2e34d6298db370466ba7dadcc17c35c51b"
+    },
+    "product-landings/_images/generated/bright/w-radar-key-art-bright.prompt.md": {
+      "bytes": 1241,
+      "sha256": "bd149a0be16246fbbe154b75f77ac28aaf4fee9dc9bb1209a19535796824cfb5"
+    },
+    "product-landings/_images/generated/bright/w-search-key-art-bright.png": {
+      "bytes": 1685862,
+      "sha256": "c4ac2a94b4217d15c78edb0ad9378bcb546708a1be8f1bd8cad4af2d18c4b6da"
+    },
+    "product-landings/_images/generated/bright/w-search-key-art-bright.prompt.md": {
+      "bytes": 1223,
+      "sha256": "ba5844c0ba000fc4bc36f9bb616d28be88961329eb2f8f127a24ff2411a24725"
+    },
+    "product-landings/_images/generated/dark/w-collect-key-art-dark.png": {
+      "bytes": 1859923,
+      "sha256": "5d9f1558c4c0b9815d0b510e60f093b4d79f0563890732c52b4d23c4c98dd055"
+    },
+    "product-landings/_images/generated/dark/w-collect-key-art-dark.prompt.md": {
+      "bytes": 1172,
+      "sha256": "a4a2fc0e926b32e7de04b9b0a9e0e8d1e245aa5aa3d084c226268c36983379ca"
+    },
+    "product-landings/_images/generated/dark/w-daas-key-art-dark.png": {
+      "bytes": 1766536,
+      "sha256": "b0a61e15504cf2019d010c86a49efe0bd5f9e05656caf3e888680213f22a8a1f"
+    },
+    "product-landings/_images/generated/dark/w-daas-key-art-dark.prompt.md": {
+      "bytes": 1169,
+      "sha256": "7725fed5a5719a264014a608c4419e23bff9f92f6e6cc2a6595c9381feba38de"
+    },
+    "product-landings/_images/generated/dark/w-design-key-art-dark.png": {
+      "bytes": 1510184,
+      "sha256": "03860fbd911ecfaef0b69e34bf511015f4e43acf01de370306ba7de5566ff067"
+    },
+    "product-landings/_images/generated/dark/w-design-key-art-dark.prompt.md": {
+      "bytes": 1132,
+      "sha256": "4f5094ed2e802c148ed25da5c2711296c0c22387d6bf74082a7a786f35ede27b"
+    },
+    "product-landings/_images/generated/dark/w-domain-key-art-dark.png": {
+      "bytes": 1776312,
+      "sha256": "05393bb4dda77fbc5f56eeb5ab89385f3f01a708d72acbfd14c7dbbfaa9e3b71"
+    },
+    "product-landings/_images/generated/dark/w-domain-key-art-dark.prompt.md": {
+      "bytes": 1204,
+      "sha256": "ad71d4cece235a4ff829a44df74cf14ddf974e26aa35bcb869cf9c56778872b5"
+    },
+    "product-landings/_images/generated/dark/w-erp-key-art-dark.png": {
+      "bytes": 2002421,
+      "sha256": "cb336535570ddbfcf28dee107c17652b5dbb221dc3dc5a811ac5eba37a676ed2"
+    },
+    "product-landings/_images/generated/dark/w-erp-key-art-dark.prompt.md": {
+      "bytes": 1168,
+      "sha256": "7de80434b189efbac541169a3eb22a1d9c353b42a395162ea94bb3ab28f832d9"
+    },
+    "product-landings/_images/generated/dark/w-hospital-key-art-dark.png": {
+      "bytes": 1906591,
+      "sha256": "a2eab2feffedd0bd82d4b07f756b7a1d1a74d1fe0718bc282648c454ac606abb"
+    },
+    "product-landings/_images/generated/dark/w-hospital-key-art-dark.prompt.md": {
+      "bytes": 1193,
+      "sha256": "b8875892bc2e2eed38140dacdf013dc34de5f5aaaf2603427003db0c8568c548"
+    },
+    "product-landings/_images/generated/dark/w-id-key-art-dark.png": {
+      "bytes": 1687708,
+      "sha256": "d837f5f4155c27cc70031e89ad4b46b15fdf38c258c915d5616bdc735609527a"
+    },
+    "product-landings/_images/generated/dark/w-id-key-art-dark.prompt.md": {
+      "bytes": 1146,
+      "sha256": "9807982d25cc6e7ef5536e4913eab33175039e29e2a45793e34b55f95573092b"
+    },
+    "product-landings/_images/generated/dark/w-imagetrace-key-art-dark.png": {
+      "bytes": 1695424,
+      "sha256": "1871f25b2c6085a73f73daddbec721985410583101290f7cfc97ed4b810c7710"
+    },
+    "product-landings/_images/generated/dark/w-imagetrace-key-art-dark.prompt.md": {
+      "bytes": 1216,
+      "sha256": "28e611f585b78408dc3cb526ca21f1b3c4f720365e21b4c1da364d3fff5632c8"
+    },
+    "product-landings/_images/generated/dark/w-inspector-key-art-dark.png": {
+      "bytes": 1927854,
+      "sha256": "04fd7335b91792466b3ce3ddd2f25ace44d03d3e4df188f7c31a091adfd64ad0"
+    },
+    "product-landings/_images/generated/dark/w-inspector-key-art-dark.prompt.md": {
+      "bytes": 1203,
+      "sha256": "7a8d19d4d3b351c6849e91ffbfa57defbf7abc09581f9d6210a76e5be1939c25"
+    },
+    "product-landings/_images/generated/dark/w-jcr-key-art-dark.png": {
+      "bytes": 1908818,
+      "sha256": "8c4f25342b79933fd38c05055253426c00012ecab9d810e92904aab658557f7e"
+    },
+    "product-landings/_images/generated/dark/w-jcr-key-art-dark.prompt.md": {
+      "bytes": 1154,
+      "sha256": "088fef5c5a58ff3ee3d30e1ea8929479a9a8bc500132af7a51e0892e494b16db"
+    },
+    "product-landings/_images/generated/dark/w-knowledge-key-art-dark.png": {
+      "bytes": 1942050,
+      "sha256": "c54d8be70301faf3b027572f8b8340a4652b9888e3117b25a59f7d7299356486"
+    },
+    "product-landings/_images/generated/dark/w-knowledge-key-art-dark.prompt.md": {
+      "bytes": 1203,
+      "sha256": "95d01cdd513b982fa6d3ac7329d5af56f00f1cf1a759f8692dd76e01cb296368"
+    },
+    "product-landings/_images/generated/dark/w-maas-key-art-dark.png": {
+      "bytes": 1735515,
+      "sha256": "a4f5d9bea9166a876d6cc1e5f178af3d20dc08babd95823cf861fd89ac50fc59"
+    },
+    "product-landings/_images/generated/dark/w-maas-key-art-dark.prompt.md": {
+      "bytes": 1176,
+      "sha256": "560567acbb2d0d7ef3f83a3b7bf938e34312c6b145183c1a4bbfc211ee87cb16"
+    },
+    "product-landings/_images/generated/dark/w-medtwin-key-art-dark.png": {
+      "bytes": 1876422,
+      "sha256": "ecef5c8d462ff97d51f5a38e77a667e03045e7d2ed3ac9acac39fe12c6186b3e"
+    },
+    "product-landings/_images/generated/dark/w-medtwin-key-art-dark.prompt.md": {
+      "bytes": 1191,
+      "sha256": "4f61b78627d0575b9835c172d6e5d16a3d34bfd72c362d3eff0393c6ca19ef04"
+    },
+    "product-landings/_images/generated/dark/w-modelgw-key-art-dark.png": {
+      "bytes": 1780190,
+      "sha256": "a3ee04447a9a3aedc789bb21dded8caf8226433b9dc582e3e01c030e041a4d2d"
+    },
+    "product-landings/_images/generated/dark/w-modelgw-key-art-dark.prompt.md": {
+      "bytes": 1186,
+      "sha256": "fa57c17f80ada723142a7410172c998447938f383224ae7714ddf9f86bbd0487"
+    },
+    "product-landings/_images/generated/dark/w-netsense-key-art-dark.png": {
+      "bytes": 2052244,
+      "sha256": "c1e06bc8445e32030f6e3be74c6877559334940f48d510ad33ea3a9629b2f392"
+    },
+    "product-landings/_images/generated/dark/w-netsense-key-art-dark.prompt.md": {
+      "bytes": 1180,
+      "sha256": "0101ec08fff31ae09288288e760ca13d5a07d50c6190fdb767354da138fc5711"
+    },
+    "product-landings/_images/generated/dark/w-nvr-key-art-dark.png": {
+      "bytes": 2006956,
+      "sha256": "b81558358f90419c3595f8f43c76c5d37af840c8eea10a33076400751d441906"
+    },
+    "product-landings/_images/generated/dark/w-nvr-key-art-dark.prompt.md": {
+      "bytes": 1142,
+      "sha256": "483d3a61547c40571689a5982ced9253c4d45b9d2c201d1eadcf3108edd8ee6f"
+    },
+    "product-landings/_images/generated/dark/w-omnisense-key-art-dark.png": {
+      "bytes": 2163467,
+      "sha256": "a22d2577ad98105d00b9d8310a3623aeb92d1844dcaba4854b56fbd7819f7936"
+    },
+    "product-landings/_images/generated/dark/w-omnisense-key-art-dark.prompt.md": {
+      "bytes": 1222,
+      "sha256": "6923cd80e1b4510b4ded2c6bac38099113ae58db7ac16c7a2f96badd1ed2a76f"
+    },
+    "product-landings/_images/generated/dark/w-quant-key-art-dark.png": {
+      "bytes": 1951521,
+      "sha256": "98f64d2d9a6d638cfcfd72f1b5b7a90caf604f96616e983558de49bc39e64354"
+    },
+    "product-landings/_images/generated/dark/w-quant-key-art-dark.prompt.md": {
+      "bytes": 1195,
+      "sha256": "901c38c7af153f9e54cd95dbe4431fcd6c91f33d577ec7abc31f5065b19651b4"
+    },
+    "product-landings/_images/generated/dark/w-radar-key-art-dark.png": {
+      "bytes": 1691351,
+      "sha256": "9d742ee346305d51b0557d6e29151efd52fab8203e65fe9e86f6a1fccc89e15d"
+    },
+    "product-landings/_images/generated/dark/w-radar-key-art-dark.prompt.md": {
+      "bytes": 1169,
+      "sha256": "0f4100bae789cb28d560755ff6442ed1de9547d58beddd87b0718692e80a6bc6"
+    },
+    "product-landings/_images/generated/dark/w-search-key-art-dark.png": {
+      "bytes": 1859437,
+      "sha256": "d6cffd11107379ff8d7bef9829c67453fe40f8fa190822de0761923c50df94d3"
+    },
+    "product-landings/_images/generated/dark/w-search-key-art-dark.prompt.md": {
+      "bytes": 1182,
+      "sha256": "b0f8f18b200cc0e3fc61a1cd868b1e9ddaf07dc24210af7ddb18bc5fdf3726de"
+    },
+    "product-landings/_images/generated/dark/w-transfer-key-art-dark.png": {
+      "bytes": 1780520,
+      "sha256": "1997389b6709d94ea7ef7e174b312f662b98cce236bc5cc40cc016318cc862ee"
+    },
+    "product-landings/_images/generated/dark/w-transfer-key-art-dark.prompt.md": {
+      "bytes": 1174,
+      "sha256": "8e476ff3f608fda1ffac8f2f327cba86ffc50da15e75c54af666875dcec5be13"
+    },
+    "product-landings/_images/generated/dark/w-translate-key-art-dark.png": {
+      "bytes": 1795194,
+      "sha256": "42ced43e82ceed31868f826fd1dc611dc7164faa68e316c56a9e1862de773ef1"
+    },
+    "product-landings/_images/generated/dark/w-translate-key-art-dark.prompt.md": {
+      "bytes": 1197,
+      "sha256": "0149eab46369bb986eb6fe278400305e55e85c46c7047fc847c164ee3ce7c228"
+    },
+    "product-landings/_images/generated/product-ui/MANIFEST.md": {
+      "bytes": 3437,
+      "sha256": "0d82bbfa3b8a737ac09088f7c5ccc69d12c47f1976c9bfc48e1ef3878a37324b"
+    },
+    "product-landings/_images/generated/product-ui/w-collect-product-ui.png": {
+      "bytes": 48851,
+      "sha256": "7da53f92abea83729031e68f1f031013d42ea14a6676aca3a3754fec96d1f378"
+    },
+    "product-landings/_images/generated/product-ui/w-collect-product-ui.prompt.md": {
+      "bytes": 657,
+      "sha256": "200191c8b2170d9130a089d54b3c277924edd695970a10302165ed9f6f9e37a4"
+    },
+    "product-landings/_images/generated/product-ui/w-daas-product-ui.png": {
+      "bytes": 53302,
+      "sha256": "f2ba414bbe28a16237370c7e0a3f763b4eb22867f0a1b50d3fad5d67a551f5c3"
+    },
+    "product-landings/_images/generated/product-ui/w-daas-product-ui.prompt.md": {
+      "bytes": 641,
+      "sha256": "f740e6c5ff1e4da2f58f484f1d74b73bef88a59304336195b4ae3e44d7a8c3ce"
+    },
+    "product-landings/_images/generated/product-ui/w-design-product-ui.png": {
+      "bytes": 47426,
+      "sha256": "ce14d5b0e3282671ab8f07ed4a8befd3413a73e09aebf7f48aea899138acc948"
+    },
+    "product-landings/_images/generated/product-ui/w-design-product-ui.prompt.md": {
+      "bytes": 652,
+      "sha256": "faee13a31b32473566bee06d8f5ea97a639083bbed5f9361e1852ddde36cf7d2"
+    },
+    "product-landings/_images/generated/product-ui/w-domain-product-ui.png": {
+      "bytes": 56708,
+      "sha256": "65440f81f734ae182b0004046003300ac5cd7b28ec945f55ff5f6e04d0b07dd4"
+    },
+    "product-landings/_images/generated/product-ui/w-domain-product-ui.prompt.md": {
+      "bytes": 642,
+      "sha256": "3f1af62cf154ecd92f3fa1d1aaf97aa2f730d9d47c1ba1a02b741b6e876948b3"
+    },
+    "product-landings/_images/generated/product-ui/w-erp-product-ui.png": {
+      "bytes": 57783,
+      "sha256": "216a688b49670b23232da2e2b2baff0da2a62a632c329b1d1bc571bec64f3b0a"
+    },
+    "product-landings/_images/generated/product-ui/w-erp-product-ui.prompt.md": {
+      "bytes": 633,
+      "sha256": "d4488aeba16e896cc2c9e76e35d732f0a808a6a064c057c07eb3d4a2970e39e7"
+    },
+    "product-landings/_images/generated/product-ui/w-hospital-product-ui.png": {
+      "bytes": 57084,
+      "sha256": "7c6eec0cc19693dec662ae3029e1a75340a112f2de99abb81ffdecbba88f94db"
+    },
+    "product-landings/_images/generated/product-ui/w-hospital-product-ui.prompt.md": {
+      "bytes": 661,
+      "sha256": "c98e17af32707e32a20e1557b8cf14e0dd590c0786bfaf460b5bbdb5e1441b80"
+    },
+    "product-landings/_images/generated/product-ui/w-id-product-ui.png": {
+      "bytes": 55391,
+      "sha256": "0d0312a9e751b551523372f448796008ace54815569046aceabbfc76a1d094fb"
+    },
+    "product-landings/_images/generated/product-ui/w-id-product-ui.prompt.md": {
+      "bytes": 633,
+      "sha256": "afbb25b1212851b8eb4c0817e04aa17431c6c96077ceb8a1ee564c9677edf1aa"
+    },
+    "product-landings/_images/generated/product-ui/w-imagetrace-product-ui.png": {
+      "bytes": 49740,
+      "sha256": "56d616f1ece648ea1049f789e8fb77c20d246695a0731ec3f52d75453bf2d9a6"
+    },
+    "product-landings/_images/generated/product-ui/w-imagetrace-product-ui.prompt.md": {
+      "bytes": 664,
+      "sha256": "c91b20d6dc21fda30ad89454578d9d39b79c893c0b5178f676d9abc76d9bacdd"
+    },
+    "product-landings/_images/generated/product-ui/w-inspector-product-ui.png": {
+      "bytes": 52250,
+      "sha256": "eb3c04fffd98ebc820761a6cc03660c4689b334ea9b57da8feab61fd7bd206ee"
+    },
+    "product-landings/_images/generated/product-ui/w-inspector-product-ui.prompt.md": {
+      "bytes": 657,
+      "sha256": "73070cda4f564ef540ae0b1d79d5355e76284f7e6ac9eb9435dcecf285da41f4"
+    },
+    "product-landings/_images/generated/product-ui/w-jcr-product-ui.png": {
+      "bytes": 55835,
+      "sha256": "c9171971c8af196add5f0e976847e74b9e4e782e36cea1c37de36c8623a513d5"
+    },
+    "product-landings/_images/generated/product-ui/w-jcr-product-ui.prompt.md": {
+      "bytes": 635,
+      "sha256": "b746a58431c73ee4e3ebe5fc7eee8ceb21a21dc4e640c86332c874a0b8dd83f5"
+    },
+    "product-landings/_images/generated/product-ui/w-knowledge-product-ui.png": {
+      "bytes": 52534,
+      "sha256": "d2455d747d5c309785b3991d20157e5b897d2c772e903ef0a4e0761ecfc54413"
+    },
+    "product-landings/_images/generated/product-ui/w-knowledge-product-ui.prompt.md": {
+      "bytes": 661,
+      "sha256": "1ea9a6011f63939ef81a2f26bcfebe2cbdfc102beb5bfdced68348d78bce6add"
+    },
+    "product-landings/_images/generated/product-ui/w-maas-product-ui.png": {
+      "bytes": 52393,
+      "sha256": "d5bf0905353896ac20ad562b9ab3b1ec3e3bb2fca5f0e310cbcde73bffda30d2"
+    },
+    "product-landings/_images/generated/product-ui/w-maas-product-ui.prompt.md": {
+      "bytes": 640,
+      "sha256": "403782bd7587f9cb57380a42bcc221e09540f7d7638991170c0eae9b58ee4e56"
+    },
+    "product-landings/_images/generated/product-ui/w-medtwin-product-ui.png": {
+      "bytes": 43489,
+      "sha256": "33dbd3dc638e62899b86a3f579e2719d56d6bad2fff22b773a572963df064060"
+    },
+    "product-landings/_images/generated/product-ui/w-medtwin-product-ui.prompt.md": {
+      "bytes": 657,
+      "sha256": "22de6422ed673bfe24bdb55095a068604d9d9bd32d3b278643e34c24a232ed42"
+    },
+    "product-landings/_images/generated/product-ui/w-modelgw-product-ui.png": {
+      "bytes": 55727,
+      "sha256": "8928dbe919b36d6fbf397ff60d42ea96c52b8ca1ba8044ec882688cf9428d723"
+    },
+    "product-landings/_images/generated/product-ui/w-modelgw-product-ui.prompt.md": {
+      "bytes": 651,
+      "sha256": "12b8be05a21f37cf80bc56689af9253b60f455eb3102ddf1bd677ee39d742752"
+    },
+    "product-landings/_images/generated/product-ui/w-netsense-product-ui.png": {
+      "bytes": 52995,
+      "sha256": "07c113d3e575b6c26b660ed91c5d342cd7b2144a951ab69211190b467e07bfb5"
+    },
+    "product-landings/_images/generated/product-ui/w-netsense-product-ui.prompt.md": {
+      "bytes": 663,
+      "sha256": "87676a5c5d5aa4d98ef9a3c4351678081e5019d8b8c31fd70d7a2383b61b50aa"
+    },
+    "product-landings/_images/generated/product-ui/w-nvr-product-ui.png": {
+      "bytes": 45020,
+      "sha256": "b2854bf85fd8f517aa6f4d76aca86a7016eeebd0629a482ec992d3cad8d150ca"
+    },
+    "product-landings/_images/generated/product-ui/w-nvr-product-ui.prompt.md": {
+      "bytes": 633,
+      "sha256": "d0982b6930a96506ca06592452da5180da41ca4640985a26cf9bc69bccd07f84"
+    },
+    "product-landings/_images/generated/product-ui/w-omnisense-product-ui.png": {
+      "bytes": 49281,
+      "sha256": "cf1846bd1f4f058f074ae3aa127320c7aeeb29db9ca35806d88f15f81e913f35"
+    },
+    "product-landings/_images/generated/product-ui/w-omnisense-product-ui.prompt.md": {
+      "bytes": 664,
+      "sha256": "c2bcbb87458fb3eec4ac6b0d12890e6ca017ff968e5442e25900651fa720a2fa"
+    },
+    "product-landings/_images/generated/product-ui/w-quant-product-ui.png": {
+      "bytes": 44636,
+      "sha256": "6139e8b7491d6695a1fe6dbe7336d7226ba48a48ee7d7de2e9fcd74fd3ddafd6"
+    },
+    "product-landings/_images/generated/product-ui/w-quant-product-ui.prompt.md": {
+      "bytes": 636,
+      "sha256": "af7ef753c7f9a5d6dec2caca89fe1db700d53881809b33dce891d3b65e66931a"
+    },
+    "product-landings/_images/generated/product-ui/w-radar-product-ui.png": {
+      "bytes": 49076,
+      "sha256": "798de9992d83727de9b4824164c95b84df2739a466e6027310cd21fbd77dbbe0"
+    },
+    "product-landings/_images/generated/product-ui/w-radar-product-ui.prompt.md": {
+      "bytes": 651,
+      "sha256": "b355e3e898a126aeddb664c8730dfc008bddeb3853db66082b6c159cc5ea2e6d"
+    },
+    "product-landings/_images/generated/product-ui/w-search-product-ui.png": {
+      "bytes": 57813,
+      "sha256": "f51adc5b4831048a1201f61445dfa52651b669b6685db2c5433e5e4b808a8c33"
+    },
+    "product-landings/_images/generated/product-ui/w-search-product-ui.prompt.md": {
+      "bytes": 650,
+      "sha256": "345ce4fd1e622f8c744b531df71634b6fd5f306f8b3278823689963410d0e028"
+    },
+    "product-landings/_images/generated/product-ui/w-transfer-product-ui.png": {
+      "bytes": 52739,
+      "sha256": "fbe4d77fd3f8a67b634f27c0d266763532a40a7f7978781ae4c6f6211b3bbaaf"
+    },
+    "product-landings/_images/generated/product-ui/w-transfer-product-ui.prompt.md": {
+      "bytes": 656,
+      "sha256": "dd4170ba35a555ff99e6961f4e912f91f35fd21132312c560d2f2daa83bb8820"
+    },
+    "product-landings/_images/generated/product-ui/w-translate-product-ui.png": {
+      "bytes": 47728,
+      "sha256": "2a6380b779a4034dacbe9bcfcceb9273c8f7e71e9acf0fd8cf1bdaf92c0f5ded"
+    },
+    "product-landings/_images/generated/product-ui/w-translate-product-ui.prompt.md": {
+      "bytes": 672,
+      "sha256": "124c21a28ab4cb5c31d8aeeb78ace5901a5835d043233f5fb645d5b80fa65a2d"
+    },
+    "product-landings/_images/w-collect-hero.jpg": {
+      "bytes": 156880,
+      "sha256": "e5a467b78896d3c9f3f109b7a2c9e82da19ed454f64f86c1f4ee32d390436ded"
+    },
+    "product-landings/_images/w-collect-hero.prompt.md": {
+      "bytes": 783,
+      "sha256": "a3f321d155fae40349bc832c616f21a6be0189ac2da387b6044c64b45e9f681e"
+    },
+    "product-landings/_images/w-collect-overview.jpg": {
+      "bytes": 106671,
+      "sha256": "ff2acaf98e1a6ab34aae4e3f7c03c899e01a9130cc09435c5cd63bb4e6445da8"
+    },
+    "product-landings/_images/w-collect-overview.prompt.md": {
+      "bytes": 799,
+      "sha256": "08ee9cae8b848fba7739dd421233827124817780cbf6f47e9915927f488dda4e"
+    },
+    "product-landings/_images/w-collect-s1.jpg": {
+      "bytes": 211528,
+      "sha256": "7cc95865cf02e8fd8396c0d26dc39ff22eb6ca5610743330c6272980fa0bef5c"
+    },
+    "product-landings/_images/w-collect-s1.prompt.md": {
+      "bytes": 798,
+      "sha256": "98031decf635817c73327d40fff7ec8f03b9e57ab189b30731dc6e10644065bf"
+    },
+    "product-landings/_images/w-collect-s2.jpg": {
+      "bytes": 106536,
+      "sha256": "da6c3da50f623dfca5b359a71544baec23375bbf660b1a3f75e76c3fbb59ebe8"
+    },
+    "product-landings/_images/w-collect-s2.prompt.md": {
+      "bytes": 791,
+      "sha256": "7ef2e00968f36fd4f2fc5cb6300329bb56a5943ba2b8f85d07f562f414889972"
+    },
+    "product-landings/_images/w-collect-s3.jpg": {
+      "bytes": 172928,
+      "sha256": "e4eed594ee2c09375d0461a1cef22e86d54c1732133d156c3bbd7557ccab7801"
+    },
+    "product-landings/_images/w-collect-s3.prompt.md": {
+      "bytes": 800,
+      "sha256": "52b459968e1830b7b225335e6ae17e36794e590916d32307a694ac9a4a1ec2cc"
+    },
+    "product-landings/_images/w-daas-hero.jpg": {
+      "bytes": 128220,
+      "sha256": "eae6b2dda29c9265b98244e7adf8adb9d7764cc13d5fa2b1819ed5074d548d9e"
+    },
+    "product-landings/_images/w-daas-hero.prompt.md": {
+      "bytes": 768,
+      "sha256": "681f36a284a689443f7e0c40a91c5272adddc646891c91d3bbd29f0bfc8fa5c9"
+    },
+    "product-landings/_images/w-daas-overview.jpg": {
+      "bytes": 87636,
+      "sha256": "738477d32c3ccf0952639c4d8672dc8724190a6a0d743808df2ce1ac99ff3dec"
+    },
+    "product-landings/_images/w-daas-overview.prompt.md": {
+      "bytes": 784,
+      "sha256": "cd9695011e2c197c987a4386e01c50d29f606d56fa852962c2f49f8b1ba3d029"
+    },
+    "product-landings/_images/w-daas-s1.jpg": {
+      "bytes": 169211,
+      "sha256": "4382d2fa477c53c69ac3834377b8b33a502a39896608e75a323f864f9a47c7b1"
+    },
+    "product-landings/_images/w-daas-s1.prompt.md": {
+      "bytes": 776,
+      "sha256": "89ad8672abe5ce38574b8f5680724714f6499e8128eb488c7825ffc3339f5904"
+    },
+    "product-landings/_images/w-daas-s2.jpg": {
+      "bytes": 86517,
+      "sha256": "0e46dd7dfd4b9fb2751867d54cd6034f7aa84e256cf2014658e4e7247b5b397e"
+    },
+    "product-landings/_images/w-daas-s2.prompt.md": {
+      "bytes": 779,
+      "sha256": "a64e0b6827f6416808dbe03dbb23a65f6a505f86e7f9f8b709e2e83ff5355dfc"
+    },
+    "product-landings/_images/w-daas-s3.jpg": {
+      "bytes": 134779,
+      "sha256": "6459a5bfa1a404d1eba5387b4e2ad3df3b5b5701d506bd860189a267a3c76a86"
+    },
+    "product-landings/_images/w-daas-s3.prompt.md": {
+      "bytes": 781,
+      "sha256": "f8deff65409efd41541ea94fea72a8c44f7eede836a6973ef6246117015a4872"
+    },
+    "product-landings/_images/w-design-hero.jpg": {
+      "bytes": 110540,
+      "sha256": "bf6d40f116ceaaefe8b71cadfaa4255b7c70c1f9e9f6b7cd46ee2314d7872ba2"
+    },
+    "product-landings/_images/w-design-hero.prompt.md": {
+      "bytes": 778,
+      "sha256": "11012ed3bf8454f792633619047a25692894dcfad63d23ad400feb30ac2b4427"
+    },
+    "product-landings/_images/w-design-overview.jpg": {
+      "bytes": 87028,
+      "sha256": "734045f94ec201413863b33476dc49aafd8dcf1eed06da5fa6e95f731964da21"
+    },
+    "product-landings/_images/w-design-overview.prompt.md": {
+      "bytes": 794,
+      "sha256": "eebbfbff996cb6751564a429432812fd7b745c25d6d6513c13a8de048dd0f995"
+    },
+    "product-landings/_images/w-design-s1.jpg": {
+      "bytes": 151718,
+      "sha256": "ece2ab75fca07d23502b83b29108d4e95579701aabe8642009ec73a316ece2a5"
+    },
+    "product-landings/_images/w-design-s1.prompt.md": {
+      "bytes": 799,
+      "sha256": "f32b0b2ea45192724d6e0a20284ff32b97b71e3650d3dbafd3be0ede4bf924a2"
+    },
+    "product-landings/_images/w-design-s2.jpg": {
+      "bytes": 85449,
+      "sha256": "ec8b6544eb08804da56f0df11c8000b06fd3efa5fdbb285abbeb8536636e2f2b"
+    },
+    "product-landings/_images/w-design-s2.prompt.md": {
+      "bytes": 787,
+      "sha256": "54815403d447a92dce4bb093542be7a8d2ed95cefa3c17e3cd36a5afeee95e2a"
+    },
+    "product-landings/_images/w-design-s3.jpg": {
+      "bytes": 117860,
+      "sha256": "7cbd91296e01098e30db6807056378ff9d46f9f6455f63bff530b46c9ad21839"
+    },
+    "product-landings/_images/w-design-s3.prompt.md": {
+      "bytes": 793,
+      "sha256": "1388850a7cf2a3a292dcf1b4fd41d3f14ee291254deb4ddeddfbb3da62952567"
+    },
+    "product-landings/_images/w-domain-hero.jpg": {
+      "bytes": 150690,
+      "sha256": "58c52c6dd71435a95475ff0632904321e191106c35d688efb8807ef62dc6245e"
+    },
+    "product-landings/_images/w-domain-hero.prompt.md": {
+      "bytes": 778,
+      "sha256": "2b6489a476433b758d6444c0cff1ed1f995cb211b3f155a973c71def7a4f8bb8"
+    },
+    "product-landings/_images/w-domain-overview.jpg": {
+      "bytes": 102903,
+      "sha256": "f757a5e43f17df4c6e465c8e3f1ea5eb173e9d31e41faec50ccd1a48c1438e02"
+    },
+    "product-landings/_images/w-domain-overview.prompt.md": {
+      "bytes": 794,
+      "sha256": "137a876f3d658239e0b2e33bc7c70e50ae489d8e56ba7ddb3ccb9c6292fea80b"
+    },
+    "product-landings/_images/w-domain-s1.jpg": {
+      "bytes": 204813,
+      "sha256": "0c30f6c6770e19d1996a2d23ec86e3cbdec6d8b57695512a44265319b7a1b014"
+    },
+    "product-landings/_images/w-domain-s1.prompt.md": {
+      "bytes": 797,
+      "sha256": "c771f3a66159e2d58ec862d812cc24e0a26a5225edbe733bbb82c9887bc6986c"
+    },
+    "product-landings/_images/w-domain-s2.jpg": {
+      "bytes": 104670,
+      "sha256": "4f39c256db12f3979d770cd88a77e5a62721cb9f78687ae1c6e14072cb8fef2a"
+    },
+    "product-landings/_images/w-domain-s2.prompt.md": {
+      "bytes": 793,
+      "sha256": "bb1a9a44e756795e01868ad20cdfbaa2dfe8a464b30bc9e9b5b618bc56d94466"
+    },
+    "product-landings/_images/w-domain-s3.jpg": {
+      "bytes": 173890,
+      "sha256": "011dd29b44118988604035da701f53cfb0f293386ca30b10d17ffb867ee0743e"
+    },
+    "product-landings/_images/w-domain-s3.prompt.md": {
+      "bytes": 789,
+      "sha256": "b7183ec35ccc221f525d101db7e457b8ded7a3cb83fa2539805d68e67830b87b"
+    },
+    "product-landings/_images/w-erp-hero.jpg": {
+      "bytes": 141224,
+      "sha256": "042aa1deac63aa5b222121fb9f915aca7919c9da4033ab08ae76cb84c1be606f"
+    },
+    "product-landings/_images/w-erp-hero.prompt.md": {
+      "bytes": 763,
+      "sha256": "be6765b4b6cf2cf988735622a62d11ebbc796205f446f5dfeb758027c5130a3b"
+    },
+    "product-landings/_images/w-erp-overview.jpg": {
+      "bytes": 98597,
+      "sha256": "d1d9967d2321a5e692e2a8d5614f0c05024f20f3a997c089b31368d01a490ae7"
+    },
+    "product-landings/_images/w-erp-overview.prompt.md": {
+      "bytes": 779,
+      "sha256": "2eb81f11ca4646cc87a6786ad81f662687d60743518cf2f33e756c147fa15d08"
+    },
+    "product-landings/_images/w-erp-s1.jpg": {
+      "bytes": 191746,
+      "sha256": "10cec2b6dc4a0369576a9f1aba99b736ad2bbcf1b4acd80298f167c84ff436e4"
+    },
+    "product-landings/_images/w-erp-s1.prompt.md": {
+      "bytes": 769,
+      "sha256": "b42d03529b736e42e72af5f9754330fd764e76eefb3398d9e3326123ee1efcfe"
+    },
+    "product-landings/_images/w-erp-s2.jpg": {
+      "bytes": 100682,
+      "sha256": "a8bf52a4cb25b60f1fed97dab9c9b0c3c01bbd2cfd0f5857b411240bbed2b59d"
+    },
+    "product-landings/_images/w-erp-s2.prompt.md": {
+      "bytes": 765,
+      "sha256": "dd63aadcda9a2efb6dcd3751f92a5d5421a7b8bd8fbd584c3841e81205d56a92"
+    },
+    "product-landings/_images/w-erp-s3.jpg": {
+      "bytes": 160423,
+      "sha256": "df4a05571f869ed58c8d6dece3a23a4edc78a014cbc011264b3523cdc3da251e"
+    },
+    "product-landings/_images/w-erp-s3.prompt.md": {
+      "bytes": 769,
+      "sha256": "8cb2437cdd6ebee375cfa3b5ab102747f9aa7e1c3c4a30e53a03c594e2b58805"
+    },
+    "product-landings/_images/w-hospital-hero.jpg": {
+      "bytes": 139581,
+      "sha256": "177a9fcf7e4364d1c15f515b13a8067bf49355586567ff00115701d3c43649d3"
+    },
+    "product-landings/_images/w-hospital-hero.prompt.md": {
+      "bytes": 788,
+      "sha256": "33dd397e73e815c4eae9d52850f8e7bd82e6d19d2fa27d5bb540a4dc07c00547"
+    },
+    "product-landings/_images/w-hospital-overview.jpg": {
+      "bytes": 92946,
+      "sha256": "04e39be8aaac310d586b6ac63434c14fae42f3b4e8860b99c3521155725e55cf"
+    },
+    "product-landings/_images/w-hospital-overview.prompt.md": {
+      "bytes": 804,
+      "sha256": "d37e3878b075bbe5cb746ba54779c9d41449851d37a4915e5b48684b013e7f9e"
+    },
+    "product-landings/_images/w-hospital-s1.jpg": {
+      "bytes": 182427,
+      "sha256": "5c4f0c4dc397124cb923a6f41c8949714bb0b0a61ea8cd876e5f1c56c1da6e87"
+    },
+    "product-landings/_images/w-hospital-s1.prompt.md": {
+      "bytes": 803,
+      "sha256": "d15f9544bec21eee539d1b33ce7dea39b7429bacfa63424582fc1e19645673b2"
+    },
+    "product-landings/_images/w-hospital-s2.jpg": {
+      "bytes": 92713,
+      "sha256": "75ae5f815613a6607af0e89184aa232e9e864e25cc6a2951f883c1061f6187b3"
+    },
+    "product-landings/_images/w-hospital-s2.prompt.md": {
+      "bytes": 803,
+      "sha256": "d8e66c3f3884ef01ed02ce96a71f5acf1656313925ab172c3e8f81edb6a1005a"
+    },
+    "product-landings/_images/w-hospital-s3.jpg": {
+      "bytes": 150748,
+      "sha256": "795f38ed1496a4910812c84621a2c0becc5f561fe9a48371e5a5a1d454f15915"
+    },
+    "product-landings/_images/w-hospital-s3.prompt.md": {
+      "bytes": 799,
+      "sha256": "ebcaed36f24a908d52aad4d484e5557c31334eed20aad39c1ae7eb8f704e7f83"
+    },
+    "product-landings/_images/w-id-hero.jpg": {
+      "bytes": 106522,
+      "sha256": "5065bd6d9bcaf4a9f9a770a8c47a3a75a0730146b81dc6c04fb44e5f5561759a"
+    },
+    "product-landings/_images/w-id-hero.prompt.md": {
+      "bytes": 758,
+      "sha256": "f4e733c7efade0eeb89469a6bf8f14c9a3455bbc21047290b7563f914c202268"
+    },
+    "product-landings/_images/w-id-overview.jpg": {
+      "bytes": 80779,
+      "sha256": "7912f97e95532b404dc83ab37ab807af2d21b7388289cc9ef000fa5e1c61d792"
+    },
+    "product-landings/_images/w-id-overview.prompt.md": {
+      "bytes": 774,
+      "sha256": "a9ef2ca50f4bff2e49ff55e32057f4374f6b181638636e8cf7dfa0dc3e318105"
+    },
+    "product-landings/_images/w-id-s1.jpg": {
+      "bytes": 151438,
+      "sha256": "0bae61475c3d330c13faf0ea61d3c2061daaaf651383f9c83a87e8528438c19c"
+    },
+    "product-landings/_images/w-id-s1.prompt.md": {
+      "bytes": 764,
+      "sha256": "9848d4d24025f381369862d41b120f64886a8dc794af66bc3263dbaefed7759d"
+    },
+    "product-landings/_images/w-id-s2.jpg": {
+      "bytes": 81269,
+      "sha256": "dc04734376856f3d23b2f08589fe9842ea77cf16af8aa8cbf83560c4fc478803"
+    },
+    "product-landings/_images/w-id-s2.prompt.md": {
+      "bytes": 760,
+      "sha256": "4e360b5f1d21345edf06aa645207f8f9d00f802c7b12808c2a6ebefa2e376096"
+    },
+    "product-landings/_images/w-id-s3.jpg": {
+      "bytes": 119759,
+      "sha256": "fee162ff4998b91c014417c7e15609cccc81c977d0af1adcebe90fef130eb60e"
+    },
+    "product-landings/_images/w-id-s3.prompt.md": {
+      "bytes": 766,
+      "sha256": "76f4309c33807849cdc0f2c3114594492570f3125bc03a3b54e0ab97337246e0"
+    },
+    "product-landings/_images/w-imagetrace-hero.jpg": {
+      "bytes": 133103,
+      "sha256": "af3b802377fb428e2cdc1a5e6d2f89c985844d486b411493bd3d96c61c2403b6"
+    },
+    "product-landings/_images/w-imagetrace-hero.prompt.md": {
+      "bytes": 798,
+      "sha256": "214b06457ba7f7cc5e6d9c66bcb2139635320b105d4e205123333222d00d218a"
+    },
+    "product-landings/_images/w-imagetrace-overview.jpg": {
+      "bytes": 94373,
+      "sha256": "7f1d0b0a1e01f65dab4708cf0e2d1f56b029440749c15964222e7750fef7a00e"
+    },
+    "product-landings/_images/w-imagetrace-overview.prompt.md": {
+      "bytes": 814,
+      "sha256": "074ea51340f58a73c18481647e951cdf34b35e074389f365dd6935d72e33a978"
+    },
+    "product-landings/_images/w-imagetrace-s1.jpg": {
+      "bytes": 177371,
+      "sha256": "0dae5ab2ffa96dbe22d37d9be32e22cc33143f2d64556f345e0f5f4cf846c6f4"
+    },
+    "product-landings/_images/w-imagetrace-s1.prompt.md": {
+      "bytes": 825,
+      "sha256": "9ff04b08c02d488a761429d69ba7deeb2824d40eaf4b17ae88f30ef920db78cf"
+    },
+    "product-landings/_images/w-imagetrace-s2.jpg": {
+      "bytes": 91562,
+      "sha256": "2876e43ca1d3ebe67d8e93a09cfc8d077916246174e59423cd172fd9c0824a08"
+    },
+    "product-landings/_images/w-imagetrace-s2.prompt.md": {
+      "bytes": 807,
+      "sha256": "db4761254d781ea96a53c8b23c720c7072e3e3d7b58c1690df7f4498bb8d850e"
+    },
+    "product-landings/_images/w-imagetrace-s3.jpg": {
+      "bytes": 140437,
+      "sha256": "57087a16ef3428a71da067600e708da76c1d46dec5195bec12c0a75829614d21"
+    },
+    "product-landings/_images/w-imagetrace-s3.prompt.md": {
+      "bytes": 807,
+      "sha256": "05f069bd37200127ad0a3fd92180065c78f1e097bc14fa9972c06bb1a5e00984"
+    },
+    "product-landings/_images/w-inspector-hero.jpg": {
+      "bytes": 134013,
+      "sha256": "9f00d9bd7a1503bbbd78d74deea3abffd1878a916358b42bfc65417fc3eca97a"
+    },
+    "product-landings/_images/w-inspector-hero.prompt.md": {
+      "bytes": 793,
+      "sha256": "0644eebde4f04195bd5568514627ef9a21b5ae9b52b5f7265b3422143ba5d4c6"
+    },
+    "product-landings/_images/w-inspector-overview.jpg": {
+      "bytes": 95959,
+      "sha256": "2977cbff902238a9070742d8eb4b7257f9b4e516d570f06c399752528d5a9f07"
+    },
+    "product-landings/_images/w-inspector-overview.prompt.md": {
+      "bytes": 809,
+      "sha256": "137da14a8f7db37404bc71ec3ceea1c77518d64ffaca1cb0cf73e966371a41b1"
+    },
+    "product-landings/_images/w-inspector-s1.jpg": {
+      "bytes": 183660,
+      "sha256": "bb9461342d212fab06bdee267bd723df9cfe4d400842eb164fb30e4f6c0b9fc7"
+    },
+    "product-landings/_images/w-inspector-s1.prompt.md": {
+      "bytes": 799,
+      "sha256": "dbe1b08f5e5a6da7d47bb02f7eff3a0c7bf2cc50244f7efbbaddcfcf2add9ee8"
+    },
+    "product-landings/_images/w-inspector-s2.jpg": {
+      "bytes": 92603,
+      "sha256": "36154a54ecb53a9b1e6ab1f70f0512076788f5be143946a12ca3f47b00780466"
+    },
+    "product-landings/_images/w-inspector-s2.prompt.md": {
+      "bytes": 806,
+      "sha256": "dfa810e6d8141e6a9ba2b045b2f329c084228179f3636b4e3b85c6e4e9c645bf"
+    },
+    "product-landings/_images/w-inspector-s3.jpg": {
+      "bytes": 146635,
+      "sha256": "4f08faf5bab4d92eee399c3a446e63b286ba010cc86ed3803e8c30bc83066754"
+    },
+    "product-landings/_images/w-inspector-s3.prompt.md": {
+      "bytes": 795,
+      "sha256": "02bf2610e81c6ee25fedfcf1cfdc98dd75d857179782bdcf0b2330c530ae151d"
+    },
+    "product-landings/_images/w-jcr-hero.jpg": {
+      "bytes": 170538,
+      "sha256": "611405b4e1674fd15b7151100d32e778d0febf21e9702dab1b44baff9c695e4f"
+    },
+    "product-landings/_images/w-jcr-hero.prompt.md": {
+      "bytes": 757,
+      "sha256": "6bdfdaad2c31a81f1024c58bf533d1eaea34c38f5631b593c01732deaf56a1c4"
+    },
+    "product-landings/_images/w-jcr-overview.jpg": {
+      "bytes": 116569,
+      "sha256": "7d4690c4c9a6cff9ecef29fbd695e16a4b75a8ff49f4ce8be439df31c3d12b98"
+    },
+    "product-landings/_images/w-jcr-overview.prompt.md": {
+      "bytes": 773,
+      "sha256": "8666442cf62f2ee54e463203d76c3260308dab7aa085a20ec9f61d701331f5ec"
+    },
+    "product-landings/_images/w-jcr-s1.jpg": {
+      "bytes": 232890,
+      "sha256": "63290a1b3b13297686e4c4841c5bcd0637a324123b14554db8b529fe83854826"
+    },
+    "product-landings/_images/w-jcr-s1.prompt.md": {
+      "bytes": 774,
+      "sha256": "2e5c9553c55538a14b480da4d80aaf31e0e66b156e332a549615b0093cd90b1e"
+    },
+    "product-landings/_images/w-jcr-s2.jpg": {
+      "bytes": 121367,
+      "sha256": "99c2e302a7fec965e815d7c6fd9239806f22e0165caa0433c2aac0d97b87af3a"
+    },
+    "product-landings/_images/w-jcr-s2.prompt.md": {
+      "bytes": 762,
+      "sha256": "614ad1d4e2cb2ded4ff506a0e51c2be41edfd4a957964303128c97cf0cd6462a"
+    },
+    "product-landings/_images/w-jcr-s3.jpg": {
+      "bytes": 195275,
+      "sha256": "1bf81bd820f90296ccf53c2650c0acbd2089cbe96768c540330a17d8ce64a5dc"
+    },
+    "product-landings/_images/w-jcr-s3.prompt.md": {
+      "bytes": 765,
+      "sha256": "1fe4a3f21b3b824530045a0c63fb8acae078ae393faf3d4dd121bebf250d6e49"
+    },
+    "product-landings/_images/w-knowledge-hero.jpg": {
+      "bytes": 123786,
+      "sha256": "17b739a18db702a5aefb49ece3f7d6e694c8f671191aba82ec6be356e960452f"
+    },
+    "product-landings/_images/w-knowledge-hero.prompt.md": {
+      "bytes": 793,
+      "sha256": "b0140bd5a905d0534f8672aaf82b8a5bdd57297dfecc6bf10361a62e4d73534f"
+    },
+    "product-landings/_images/w-knowledge-overview.jpg": {
+      "bytes": 94378,
+      "sha256": "99959d2937a6cfd865f0b773c5a5a6677b590dc406a443c1cf1480d1fec4ba67"
+    },
+    "product-landings/_images/w-knowledge-overview.prompt.md": {
+      "bytes": 809,
+      "sha256": "fbb74a9bcd8e264d2db5c735f95cc59b474a594ed726fc5628ff7c8a3a0aad42"
+    },
+    "product-landings/_images/w-knowledge-s1.jpg": {
+      "bytes": 171944,
+      "sha256": "1b8124533cc9bf153ecd4cbf3b3aa2b94fc150adbb81137b1b1a04268a10293a"
+    },
+    "product-landings/_images/w-knowledge-s1.prompt.md": {
+      "bytes": 799,
+      "sha256": "ff663408671881c330e4c769d05708bdef8b49b1987dc0e4d00d6182a127b393"
+    },
+    "product-landings/_images/w-knowledge-s2.jpg": {
+      "bytes": 93646,
+      "sha256": "db1852284b71a8bdc08abdd874ae9c41f67f67c2b16dfedabaa2520e0dd267e9"
+    },
+    "product-landings/_images/w-knowledge-s2.prompt.md": {
+      "bytes": 823,
+      "sha256": "965818097fb66df0bbcdfae6c3b9e0414ae6f59fdd890a24f71a5ba3caa79721"
+    },
+    "product-landings/_images/w-knowledge-s3.jpg": {
+      "bytes": 137630,
+      "sha256": "f27cd576bb903fecfc6785f874aa162124541d26d416057e7e174adb3b13f3e2"
+    },
+    "product-landings/_images/w-knowledge-s3.prompt.md": {
+      "bytes": 798,
+      "sha256": "28085a41eb401cb9a550a698a942b42190e0850e6eb5f8cc94742eaef5334ffe"
+    },
+    "product-landings/_images/w-maas-hero.jpg": {
+      "bytes": 161121,
+      "sha256": "7f80c42ac7f2a11080ce432f018340fb7e634bd8e85234821ef9f12c63605f8f"
+    },
+    "product-landings/_images/w-maas-hero.prompt.md": {
+      "bytes": 768,
+      "sha256": "ad23106540a862ae7b0396b8e75f1fee5d6d31bb858cf44a3b229c2c5d91c834"
+    },
+    "product-landings/_images/w-maas-overview.jpg": {
+      "bytes": 102019,
+      "sha256": "44e9752242b812e42c046b1b950d64ec456c3a8468e03fed460e5b17fa1b2ce3"
+    },
+    "product-landings/_images/w-maas-overview.prompt.md": {
+      "bytes": 784,
+      "sha256": "dea52e4d3100749c1e71940433c99c1b0b7b3c22f6dc078f74a60185ab825286"
+    },
+    "product-landings/_images/w-maas-s1.jpg": {
+      "bytes": 208521,
+      "sha256": "0fc6daa322b23206fb30cb3380cb9ce3b8ca9196dd5fdaaf9301e8a20e0e3a42"
+    },
+    "product-landings/_images/w-maas-s1.prompt.md": {
+      "bytes": 784,
+      "sha256": "ddedf516a16645b99a0e0cc3829e79936a1d3cccee808c09ee2989d1e32f8578"
+    },
+    "product-landings/_images/w-maas-s2.jpg": {
+      "bytes": 103861,
+      "sha256": "67467a5dfd880df35460176b4e51aee2a5a885ae5ba4bb38ca592317a0102eb0"
+    },
+    "product-landings/_images/w-maas-s2.prompt.md": {
+      "bytes": 779,
+      "sha256": "aca80ec7e299d1d98c83a6f03854ecbed27aaa6b27201a75820e50b014266e7e"
+    },
+    "product-landings/_images/w-maas-s3.jpg": {
+      "bytes": 172609,
+      "sha256": "24feb99be419c5a461fe31fe8aa5ee63021f5eaaf3da75fce24c1f9accb17e1e"
+    },
+    "product-landings/_images/w-maas-s3.prompt.md": {
+      "bytes": 788,
+      "sha256": "c95193362e252959636588631d89c1a8c36b5fe541711d93bddb24b5e0c3d231"
+    },
+    "product-landings/_images/w-medtwin-hero.jpg": {
+      "bytes": 127877,
+      "sha256": "36e9128e67ff843c8aad26e6576f4dcf1c293f5276fb1bc8d70d8ec779f43fa9"
+    },
+    "product-landings/_images/w-medtwin-hero.prompt.md": {
+      "bytes": 783,
+      "sha256": "34b29c37a62bfb9bcecfcd443a3dca6f8b72199ac0f944c43fef4e2aca590d99"
+    },
+    "product-landings/_images/w-medtwin-overview.jpg": {
+      "bytes": 94263,
+      "sha256": "5e1ab63dcef118679b0722005dc7a9d447faab6487724c46f465220eba633ad2"
+    },
+    "product-landings/_images/w-medtwin-overview.prompt.md": {
+      "bytes": 799,
+      "sha256": "884839721bf7431fedd71b7d51a315127a4beb8a320cd47f407da8c9263cd770"
+    },
+    "product-landings/_images/w-medtwin-s1.jpg": {
+      "bytes": 174882,
+      "sha256": "ce092d6a573dfae7fb135169e8fdef55a5af7dc64b40fac30c3a69b609157817"
+    },
+    "product-landings/_images/w-medtwin-s1.prompt.md": {
+      "bytes": 795,
+      "sha256": "46f8d59899a10c0a924f386a39f035f6c97380ff6cbcfb238301060e17a54028"
+    },
+    "product-landings/_images/w-medtwin-s2.jpg": {
+      "bytes": 93254,
+      "sha256": "e3ff7ac53c3df660984f10ab7ff40cf3d389dc53c3ac6065a80a1cf3d037e47a"
+    },
+    "product-landings/_images/w-medtwin-s2.prompt.md": {
+      "bytes": 802,
+      "sha256": "fc966eba0db0eac44ac58cd155cc1071a80a00b9e8cf5c07ec03035c8a424d43"
+    },
+    "product-landings/_images/w-medtwin-s3.jpg": {
+      "bytes": 139941,
+      "sha256": "064964042b71cb61bbf7303cd7f3453439fd7177b865ff6256a093d61703b0cb"
+    },
+    "product-landings/_images/w-medtwin-s3.prompt.md": {
+      "bytes": 812,
+      "sha256": "666aa8cb4e040ccbebdf85b9ec10b43055a8274ef7de595844b9b855751c6a8a"
+    },
+    "product-landings/_images/w-modelgw-hero.jpg": {
+      "bytes": 135168,
+      "sha256": "36ccb6a5e283e6dc6ac906e4fc946ea48d74750cf70f17d78d50ade5717d1417"
+    },
+    "product-landings/_images/w-modelgw-hero.prompt.md": {
+      "bytes": 783,
+      "sha256": "83dbaea3301687451ffb987c435fab8faaaa8c92199c6ae412026398c52ad95d"
+    },
+    "product-landings/_images/w-modelgw-overview.jpg": {
+      "bytes": 91765,
+      "sha256": "13a4f22e3854761dae0ad0d940e75d8cead8e842d62726aa843418f0ed5a7aa0"
+    },
+    "product-landings/_images/w-modelgw-overview.prompt.md": {
+      "bytes": 799,
+      "sha256": "53c543b0248a5c538f5b704c8cb254c2d0969eb3ff48200111d5a7a186850f3b"
+    },
+    "product-landings/_images/w-modelgw-s1.jpg": {
+      "bytes": 180413,
+      "sha256": "af8a0e7221724b75685f388d704f14b686a1ac55a984c7e877e36c275023c092"
+    },
+    "product-landings/_images/w-modelgw-s1.prompt.md": {
+      "bytes": 799,
+      "sha256": "fd1a0c1e397622050ff508688f75abb3334c6032f0034038d12da404027340c2"
+    },
+    "product-landings/_images/w-modelgw-s2.jpg": {
+      "bytes": 92743,
+      "sha256": "c31f84203d6535e26b835509b61e38e6113b32e50e8520b73cdcf1edd8d92d6b"
+    },
+    "product-landings/_images/w-modelgw-s2.prompt.md": {
+      "bytes": 797,
+      "sha256": "79daca395832061312bfa58939a5ae5e6cf5f88c9923e89ca2085952c6018773"
+    },
+    "product-landings/_images/w-modelgw-s3.jpg": {
+      "bytes": 146272,
+      "sha256": "045ebf7aae7ed7306fcd55b5ed548f939108820977af4cac2c3773d4270baebb"
+    },
+    "product-landings/_images/w-modelgw-s3.prompt.md": {
+      "bytes": 807,
+      "sha256": "71a528cd72601bf098dc87b3c51962b32a580246db1923c59cedaeef292c39fa"
+    },
+    "product-landings/_images/w-netsense-hero.jpg": {
+      "bytes": 154899,
+      "sha256": "3da8f13c283eafb37f363aca3ee323cdb13cef58ad99c57486021626ce85e2b8"
+    },
+    "product-landings/_images/w-netsense-hero.prompt.md": {
+      "bytes": 788,
+      "sha256": "e350411873b02e3281b8a5bef3004b6eca4927fdb07e214cc67974242503ec4d"
+    },
+    "product-landings/_images/w-netsense-overview.jpg": {
+      "bytes": 99569,
+      "sha256": "c6526d905fed5c3628731d1f3593ad120e554056f1438c54c71e3a1551cbca6f"
+    },
+    "product-landings/_images/w-netsense-overview.prompt.md": {
+      "bytes": 804,
+      "sha256": "274504fb89d379f173233dda254e2dd973c920dac63a5705cbe8efd41142cba7"
+    },
+    "product-landings/_images/w-netsense-s1.jpg": {
+      "bytes": 209147,
+      "sha256": "7fda1888309bbf3e69e1c2b6500e19c4713e4ef06e2c6e1efad4d7b9037d3d32"
+    },
+    "product-landings/_images/w-netsense-s1.prompt.md": {
+      "bytes": 813,
+      "sha256": "647342f7a44a1805c296c7c441c4cbfdf2b9ead3d42f9ac5a83a25693dd8971b"
+    },
+    "product-landings/_images/w-netsense-s2.jpg": {
+      "bytes": 99496,
+      "sha256": "a326930ba7ef4c169210fb74a69a2f699152fbc308414b30d779bcd79e281ad3"
+    },
+    "product-landings/_images/w-netsense-s2.prompt.md": {
+      "bytes": 801,
+      "sha256": "1c8fd7b18f45ccf0a219b95687c132f5e9ca2bef2f257864d69393232de21241"
+    },
+    "product-landings/_images/w-netsense-s3.jpg": {
+      "bytes": 174494,
+      "sha256": "d335c2359868e26b2063b9bcf154426fcde4a6e7f17efd9b4c91f05abf2554e2"
+    },
+    "product-landings/_images/w-netsense-s3.prompt.md": {
+      "bytes": 810,
+      "sha256": "21e62d7a2235510f75f3ec8f64ce4a61f35374b3947c43fc98fb0dcae968972e"
+    },
+    "product-landings/_images/w-nvr-hero.jpg": {
+      "bytes": 162178,
+      "sha256": "d0d2962a8f22077a4dd9756168925ecedcda96c8ff2a6b8b450f000f31f55de1"
+    },
+    "product-landings/_images/w-nvr-hero.prompt.md": {
+      "bytes": 763,
+      "sha256": "b31885cb5f2c578b334bad3c3c801d56fee0747c346c70e6a6b0108b9a95c1a1"
+    },
+    "product-landings/_images/w-nvr-overview.jpg": {
+      "bytes": 114765,
+      "sha256": "4741ec93f35bc128195c9e255a67837f166d0db2df25155c69e1c0292d4406ed"
+    },
+    "product-landings/_images/w-nvr-overview.prompt.md": {
+      "bytes": 779,
+      "sha256": "45f9c7f6bc941a653b679ba2383200edd2194a849c492663465288c9607dca9b"
+    },
+    "product-landings/_images/w-nvr-s1.jpg": {
+      "bytes": 213226,
+      "sha256": "d83fd8f1283c566c989b8d305f3478172511372c7c440b1fe4ec16ae559c6ca6"
+    },
+    "product-landings/_images/w-nvr-s1.prompt.md": {
+      "bytes": 787,
+      "sha256": "0862dd5e3b4e2408d19a5c6dec15b500e1473e971dce1e5aa8932925c8803f00"
+    },
+    "product-landings/_images/w-nvr-s2.jpg": {
+      "bytes": 113793,
+      "sha256": "c0d922e2c0dfb8d6b36839aeded99040ee154aaf78354139544c4bacac621a0b"
+    },
+    "product-landings/_images/w-nvr-s2.prompt.md": {
+      "bytes": 777,
+      "sha256": "077282ac2f86c8b0428a24ca7b2c50f01c4aef8d3c801727f6b3bf634eac50e1"
+    },
+    "product-landings/_images/w-nvr-s3.jpg": {
+      "bytes": 174057,
+      "sha256": "781085791c1403444028a5f13df62e32eeb7c24addb06466a9723484b59aed61"
+    },
+    "product-landings/_images/w-nvr-s3.prompt.md": {
+      "bytes": 779,
+      "sha256": "89111cde773793e777a00a56c0a069016459ec377f9d8810417deef3db349c3a"
+    },
+    "product-landings/_images/w-omnisense-hero.jpg": {
+      "bytes": 148696,
+      "sha256": "853db3675ffb4d25be9d78d2bb9ca2b8f73a8eb3ee1123f3bd7a4f264d78727b"
+    },
+    "product-landings/_images/w-omnisense-hero.prompt.md": {
+      "bytes": 793,
+      "sha256": "e3398005de87defd096b3b716dff846f59a5639d08a309c45cbf686d240cccd5"
+    },
+    "product-landings/_images/w-omnisense-overview.jpg": {
+      "bytes": 102865,
+      "sha256": "6a802d77aa8c2fb0f54ca9779bcdf41f76e377dce7bad97f939ae37e8d769814"
+    },
+    "product-landings/_images/w-omnisense-overview.prompt.md": {
+      "bytes": 809,
+      "sha256": "3776879313fb35600f4e5e988a27678a9cc51e2fffcfe93c076421285810a50f"
+    },
+    "product-landings/_images/w-omnisense-s1.jpg": {
+      "bytes": 202878,
+      "sha256": "8ffa73f5914ef47cd7bcf982e65e35e98b35c30e9c6c38f0d69bba474c841454"
+    },
+    "product-landings/_images/w-omnisense-s1.prompt.md": {
+      "bytes": 816,
+      "sha256": "a8514961ee65ea683f24d48695eb7dbfac89d2f595e64f52b03492c742dbacc7"
+    },
+    "product-landings/_images/w-omnisense-s2.jpg": {
+      "bytes": 99920,
+      "sha256": "2e8ed9bdbc35edc415b602aec39bfd739e02b152147a1adf350988040c3e6fef"
+    },
+    "product-landings/_images/w-omnisense-s2.prompt.md": {
+      "bytes": 802,
+      "sha256": "8a3d2ca3eb2fd345d4537dfa037804736a7cbe219329534809019ca85e5a2d5d"
+    },
+    "product-landings/_images/w-omnisense-s3.jpg": {
+      "bytes": 162428,
+      "sha256": "5b3f96babc09c02ecf48fa8f96595dee94fc1a11ae4fd8f15982acfba28d0493"
+    },
+    "product-landings/_images/w-omnisense-s3.prompt.md": {
+      "bytes": 808,
+      "sha256": "85032e6fbcbdc09079d33361cc466f241c1500ea3308bcb79dc50b3e8b01b528"
+    },
+    "product-landings/_images/w-quant-hero.jpg": {
+      "bytes": 159780,
+      "sha256": "adf2814e058b47a6eb85fef903b5fd50cf8fce5141b7be583dbe3e5334f776c4"
+    },
+    "product-landings/_images/w-quant-hero.prompt.md": {
+      "bytes": 773,
+      "sha256": "364063170e2695bbcbb97403f750131699d80d85d4919369e0b9541d33873f4d"
+    },
+    "product-landings/_images/w-quant-overview.jpg": {
+      "bytes": 108034,
+      "sha256": "42a8610832a333acf30ac48fc6611150e581a6f2608a42539cef61dc7f7ae227"
+    },
+    "product-landings/_images/w-quant-overview.prompt.md": {
+      "bytes": 789,
+      "sha256": "ff6f6b3ca1c20744cf9d6e1278b338f4e29fb7f3f6b35c213b5e40278b7ff80a"
+    },
+    "product-landings/_images/w-quant-s1.jpg": {
+      "bytes": 210802,
+      "sha256": "b70d494150b34fdb107dd444e381a1ac2eddb32775ba62d93c4105b473f68102"
+    },
+    "product-landings/_images/w-quant-s1.prompt.md": {
+      "bytes": 784,
+      "sha256": "00ff57e0ee24f7b193efde14e26d232d311dc4ce3bb38769b9053f966d55f9d1"
+    },
+    "product-landings/_images/w-quant-s2.jpg": {
+      "bytes": 107393,
+      "sha256": "1f13b1e0c168035313563ed3e001a9e154bb96414a96aa9f07c33ccea52ba94f"
+    },
+    "product-landings/_images/w-quant-s2.prompt.md": {
+      "bytes": 794,
+      "sha256": "69eb3fe8657a7626a61fd5ca7d093ab84c4d43aa8dd81497339facca132db82c"
+    },
+    "product-landings/_images/w-quant-s3.jpg": {
+      "bytes": 172538,
+      "sha256": "c83f5cb78ee863302a15129490993895152688a0ba635489c616001ebcec1f79"
+    },
+    "product-landings/_images/w-quant-s3.prompt.md": {
+      "bytes": 780,
+      "sha256": "7f0dd7a80cc8771c3cc50407d9bd758706d2dce8c4117a28588a4912f3810ff1"
+    },
+    "product-landings/_images/w-radar-hero.jpg": {
+      "bytes": 154326,
+      "sha256": "f180fadc4b92ebf22652d83818655c1908fdf2024f60cd37ea087f6f9a3fb6f9"
+    },
+    "product-landings/_images/w-radar-hero.prompt.md": {
+      "bytes": 773,
+      "sha256": "aeb1e5ff144e76bc18eedf0b53a5e8d2c73e34f7f7af8fe7de03aa90e680047e"
+    },
+    "product-landings/_images/w-radar-overview.jpg": {
+      "bytes": 103481,
+      "sha256": "0f1517e4686a48b506cb4e96fea2aee42657b264217b23874791249d151b1c90"
+    },
+    "product-landings/_images/w-radar-overview.prompt.md": {
+      "bytes": 789,
+      "sha256": "404fa3283cac29e3f1d8d5c8550dc4485fd21c8b63fa68a9959e14f087d3f596"
+    },
+    "product-landings/_images/w-radar-s1.jpg": {
+      "bytes": 202471,
+      "sha256": "57e2f40d5d45b0fdfb1f80eeae1bbc965907a28303b20ec0777b02684b9c4545"
+    },
+    "product-landings/_images/w-radar-s1.prompt.md": {
+      "bytes": 790,
+      "sha256": "75ae77c78f3cbb26b74622aa748e6a5dd0555d176bfdfb05b3591588ed594f27"
+    },
+    "product-landings/_images/w-radar-s2.jpg": {
+      "bytes": 104941,
+      "sha256": "43c17b1c4fa4a6de729de9c0bac0cb65af2142a9c256e14e3a57d669e71185f3"
+    },
+    "product-landings/_images/w-radar-s2.prompt.md": {
+      "bytes": 789,
+      "sha256": "74d228f52505f96baefd81054a22181dda5098134de2027f291877e9f7c552c3"
+    },
+    "product-landings/_images/w-radar-s3.jpg": {
+      "bytes": 170055,
+      "sha256": "205c91c5b4e95468eea2563086e73b23e46087ef1d4665c9c39a2476acfe7ff8"
+    },
+    "product-landings/_images/w-radar-s3.prompt.md": {
+      "bytes": 789,
+      "sha256": "4de5e9e3d70bbf8503ab865b6f61babfb2988c603dfcaeec31fc5454f0606153"
+    },
+    "product-landings/_images/w-search-hero.jpg": {
+      "bytes": 135443,
+      "sha256": "40b920c3882be6eda3c43c49aefb5f88cec9d88a8e678a3b953016e130209783"
+    },
+    "product-landings/_images/w-search-hero.prompt.md": {
+      "bytes": 778,
+      "sha256": "d1bf3abe80f838edde8818dfb1e1d4b40deb85245af78e9bc7b6afa8dfafb04c"
+    },
+    "product-landings/_images/w-search-overview.jpg": {
+      "bytes": 91549,
+      "sha256": "669cb56f5d9203588f71025a669b526985eb41a6108049fe5268575bcbc583f4"
+    },
+    "product-landings/_images/w-search-overview.prompt.md": {
+      "bytes": 794,
+      "sha256": "f018cbf91aa3e1119bc30004072a0df9e45b5d5fa0bf501cdcb68248a997f841"
+    },
+    "product-landings/_images/w-search-s1.jpg": {
+      "bytes": 176422,
+      "sha256": "1fdeadc936de770c0328f35b39ef012ef0a54165389c6c8d2abb7f8c5f5ede85"
+    },
+    "product-landings/_images/w-search-s1.prompt.md": {
+      "bytes": 800,
+      "sha256": "f5d35b259d9270def9d9b9fe2efbe0c160f4a496f8ce9a37767a21168753bb22"
+    },
+    "product-landings/_images/w-search-s2.jpg": {
+      "bytes": 90531,
+      "sha256": "d42db328f9ada7f3b1db5096cfb6eca68c2fd4f1ae1db8f81ec1c4bcfb66a9af"
+    },
+    "product-landings/_images/w-search-s2.prompt.md": {
+      "bytes": 802,
+      "sha256": "82e2de56dfc049c9dea7a5677ee69bfff7b35534b9c8b111b5dc20d19aa9595b"
+    },
+    "product-landings/_images/w-search-s3.jpg": {
+      "bytes": 138354,
+      "sha256": "b7c7029875a070f351540796c226ceadd782eec0498bd096945b67f19e5e128f"
+    },
+    "product-landings/_images/w-search-s3.prompt.md": {
+      "bytes": 791,
+      "sha256": "f475d533217ede333b87eb6aae991361a1e8c93e4542e7ee0c48b7180e243daf"
+    },
+    "product-landings/_images/w-transfer-hero.jpg": {
+      "bytes": 156397,
+      "sha256": "cfa1f768389884a01becd8e650af739d1da69d0be2a2d7ce0d3c54ea6dfca01c"
+    },
+    "product-landings/_images/w-transfer-hero.prompt.md": {
+      "bytes": 782,
+      "sha256": "bc2cadc3d638bdaec338b9ae2b2bdefea1ab728010d3a2b82593094cf9e5f233"
+    },
+    "product-landings/_images/w-transfer-overview.jpg": {
+      "bytes": 116198,
+      "sha256": "fef25fb6da53a7857a35afea329e0e8ad5b98a4a6f1a85ca3ad9623873630c5d"
+    },
+    "product-landings/_images/w-transfer-overview.prompt.md": {
+      "bytes": 798,
+      "sha256": "535987fed3d09c8e3cf701ff59d216e5f97fa20b0191455545d5bd3dcbe3d731"
+    },
+    "product-landings/_images/w-transfer-s1.jpg": {
+      "bytes": 219748,
+      "sha256": "b6e78f6eb580b56e97a95e55fb5be3dbe0aa6ca1ea2dad37ce2492c062128e0f"
+    },
+    "product-landings/_images/w-transfer-s1.prompt.md": {
+      "bytes": 788,
+      "sha256": "1287509e0e62938fd102ae8d1e75bdd16538040f6e70ee29bed328f5dfcfc288"
+    },
+    "product-landings/_images/w-transfer-s2.jpg": {
+      "bytes": 119179,
+      "sha256": "5b0cbc46331de38507920536483589868dacf0f03b4d46919b047b7e0dab5275"
+    },
+    "product-landings/_images/w-transfer-s2.prompt.md": {
+      "bytes": 784,
+      "sha256": "1c383c1da6c0cd39d5fd564c74bb84632632095a266c8780fa395e09d0dfd23b"
+    },
+    "product-landings/_images/w-transfer-s3.jpg": {
+      "bytes": 183289,
+      "sha256": "533db26761106a0e723ce951c2cb3f96c6ac6407ea6ed9d5ac501c123be4dc4d"
+    },
+    "product-landings/_images/w-transfer-s3.prompt.md": {
+      "bytes": 788,
+      "sha256": "b5fd907f8b2f775d9ef63732f982c7b5501f2b8be623cbbc8d5d2ad81dd29236"
+    },
+    "product-landings/_images/w-translate-hero.jpg": {
+      "bytes": 150252,
+      "sha256": "ffebaa516b25f8ecf071c43122264be506cf2c2d652e4161808b70ec18839a01"
+    },
+    "product-landings/_images/w-translate-hero.prompt.md": {
+      "bytes": 787,
+      "sha256": "c9b97d89af32868b485bdf6eb9f7bf289fa2d3f419d4e148c353d2c38591ea35"
+    },
+    "product-landings/_images/w-translate-overview.jpg": {
+      "bytes": 109681,
+      "sha256": "04fa285aa0c9a9dcd1bd88e926837c5b8547f7205af82df98c97cd10ad37b45e"
+    },
+    "product-landings/_images/w-translate-overview.prompt.md": {
+      "bytes": 803,
+      "sha256": "57b417a2226657ce379595a9bbdea3b964c675c5bf75c6fd7655d2e6dec86cec"
+    },
+    "product-landings/_images/w-translate-s1.jpg": {
+      "bytes": 206960,
+      "sha256": "cd9470dd249a040a7ebd2923e288c24ce955c80c4299bc2f5e6b299a0f9947cb"
+    },
+    "product-landings/_images/w-translate-s1.prompt.md": {
+      "bytes": 797,
+      "sha256": "6c208cb9f93af9729de8dd5623c92f659050698f32c77bccad617154df1477b0"
+    },
+    "product-landings/_images/w-translate-s2.jpg": {
+      "bytes": 113908,
+      "sha256": "ede53fbe7f2afef2666efe181151c81125318c67b241db465726dbfb75da4cc7"
+    },
+    "product-landings/_images/w-translate-s2.prompt.md": {
+      "bytes": 797,
+      "sha256": "3728f7ada5e4cca80e31864ec6c835a23bcd281d968709f859a322ff07cf3120"
+    },
+    "product-landings/_images/w-translate-s3.jpg": {
+      "bytes": 170077,
+      "sha256": "460b40af052245e4fe28fabcc8c739ffc5b6be41d0636cafc7e78a4284bea176"
+    },
+    "product-landings/_images/w-translate-s3.prompt.md": {
+      "bytes": 802,
+      "sha256": "979787c02e56e767657344d0a4e7bc544b3d8ad98fb5450ea4be9917f04c3fb1"
+    },
+    "product-landings/_products.json": {
+      "bytes": 60323,
+      "sha256": "e4e3452edf03b3e0993da314c3866450db1e963b466ab258e4a24cb24d138e3c"
+    },
+    "product-landings/_render_batch.py": {
+      "bytes": 13860,
+      "sha256": "01559207888a40f54d4787ea71959f25725f7f26f4fe0ef400e405400b1132d1"
+    },
+    "product-landings/_render_product_ui_assets.py": {
+      "bytes": 27021,
+      "sha256": "02e9c66f2d93a1ad5022283a69c112ccef1432f56d3b8952e94209255d0bad2d"
+    },
+    "product-landings/_stage_four.py": {
+      "bytes": 13079,
+      "sha256": "599be3aeafec0019ce8b3a4bc14cc90f5c032bb278930456eb054721ea32c7e6"
+    },
+    "product-landings/tests/test_hero_background_css.py": {
+      "bytes": 524,
+      "sha256": "bb66817f9027a4da511259e4eb3e0ade33829087ffbe32f78af7a1daa0967261"
+    },
+    "product-landings/tests/test_image_connection.py": {
+      "bytes": 1017,
+      "sha256": "a5a1356570bba9453c65299e507f067c96a21f7954782f5177259baaef3dd4dc"
+    },
+    "product-landings/tests/test_product_ui_assets.py": {
+      "bytes": 1204,
+      "sha256": "3379e1c870d87c580c66627bc75eeaa9ec7ffdd76599d700e3aadf016b7e5600"
+    },
+    "product-landings/w-collect/index.html": {
+      "bytes": 17154,
+      "sha256": "960f3c86bcc1b0bdd0e78e0dfb2d70924c25e0b03c0a04e2527c7e2b534f7132"
+    },
+    "product-landings/w-daas/index.html": {
+      "bytes": 17345,
+      "sha256": "35acab46ef32812feab4ac508410425d5ade2925bf88ce02c3215114628ea070"
+    },
+    "product-landings/w-design/index.html": {
+      "bytes": 17216,
+      "sha256": "994a3fe4a1aea4cdbe76d6b2b2ba2ee75fc240c1fca4dc5ba52b2c66b6a9c3f8"
+    },
+    "product-landings/w-domain/index.html": {
+      "bytes": 17312,
+      "sha256": "94ea667828efc7260e3123afa1e21cf503ac8237c4175b7b2d7b4eb146ef8851"
+    },
+    "product-landings/w-erp/index.html": {
+      "bytes": 16968,
+      "sha256": "490071e753a4dc948b0a046794262b5c307c29b6d5b566bd8044ade0dd81689b"
+    },
+    "product-landings/w-hospital/index.html": {
+      "bytes": 17149,
+      "sha256": "fcd82275a89f3358a67711ed1f8827f247a85ac8d2557fb57b7023bd8f5f5592"
+    },
+    "product-landings/w-id/index.html": {
+      "bytes": 16972,
+      "sha256": "2ca3bb8cce1a3e765e2b4b46598e00e6da2f266df487ab6200297f3e5787a23a"
+    },
+    "product-landings/w-imagetrace/index.html": {
+      "bytes": 17478,
+      "sha256": "77c34a9720c4db5a0adc6951374c937c7ab834ab03bb361e037c5fa8cb19b6ce"
+    },
+    "product-landings/w-inspector/index.html": {
+      "bytes": 17376,
+      "sha256": "0246ca59e95108c500a7cbfef851e86893878e1c6d25aeb39ed044208f716a0d"
+    },
+    "product-landings/w-jcr/index.html": {
+      "bytes": 17080,
+      "sha256": "37fadf46b4ca9e767756fc5fddbc0a79ff87a601355d6932c090116654d877f8"
+    },
+    "product-landings/w-knowledge/index.html": {
+      "bytes": 17703,
+      "sha256": "edcdeb7830b773da4008178e615a6191729137df4229f7ec8726f95aaad6e7fe"
+    },
+    "product-landings/w-maas/index.html": {
+      "bytes": 17129,
+      "sha256": "e755bf9576966a3b40f7a78883140086e9d0d79e617eb72dd5d7c566a53489e1"
+    },
+    "product-landings/w-medtwin/index.html": {
+      "bytes": 17322,
+      "sha256": "3245df10a8c36691a245c82cbebb3df13431c7e25e55aa5f7e2e391073681421"
+    },
+    "product-landings/w-modelgw/index.html": {
+      "bytes": 17534,
+      "sha256": "fbea5acafc9707c6c5e07325c1fb2ad5782cdcb21aebc61814ef26dbee1b52d3"
+    },
+    "product-landings/w-netsense/index.html": {
+      "bytes": 17152,
+      "sha256": "f9c9e8c36bf464c87ef7aaa1ef2bff27ef6f447ba43d9dbae36fd1dc74b783ce"
+    },
+    "product-landings/w-nvr/index.html": {
+      "bytes": 17176,
+      "sha256": "b91a9ae12b6be2fc58ad7af4e89633ff5d2d4cc04f8a35c77732adf1fa941fcb"
+    },
+    "product-landings/w-omnisense/index.html": {
+      "bytes": 17391,
+      "sha256": "007611c1ff52480b942effb2e9306d74e76885958c179e025bfb3ede685ea9b0"
+    },
+    "product-landings/w-quant/index.html": {
+      "bytes": 17368,
+      "sha256": "bfcce30b250ea04b14eada9f498e026e06d083c1713c3e403570cb9e03df5c76"
+    },
+    "product-landings/w-radar/index.html": {
+      "bytes": 17283,
+      "sha256": "cf818f28c90d295a93a85515890f9f266225d396640a6ee2eb8263c17d4ad7cf"
+    },
+    "product-landings/w-search/index.html": {
+      "bytes": 17460,
+      "sha256": "165c8e67c920ced61341f1481ca6c1a032cd9687dc0ed66fac226a3b2bd7cd1a"
+    },
+    "product-landings/w-transfer/index.html": {
+      "bytes": 17155,
+      "sha256": "b3f05175d6e60090a6e0602ba0b1401bb49ecc2c5616f757429669ee0c5c8e65"
+    },
+    "product-landings/w-translate/index.html": {
+      "bytes": 17222,
+      "sha256": "bb475ccd524ecad49530be5bbe726aa24293e9309bf76956d386553684d609e9"
+    },
+    "public/favicon.svg": {
+      "bytes": 9522,
+      "sha256": "61bc9a161de58248288e6905425d7180f0624c2865007b97d763fdac12043a66"
+    },
+    "scripts/audit-sensitive-files.mjs": {
+      "bytes": 2589,
+      "sha256": "b752731255dd788c6a27dbcc3516caea0261b91a64af636ff732ceb0b955584a"
+    },
+    "scripts/build-provenance.mjs": {
+      "bytes": 1740,
+      "sha256": "0f6c55cdf61300c9d1d070206b9ce023f98b29d1a7c738d01f0d0be7c5489e73"
+    },
+    "scripts/check-bundle-budget.mjs": {
+      "bytes": 2590,
+      "sha256": "a8698ac3e2d5478f35d9c2c91f5c351a7b6a68d70729cbc614b46e6d02f0b1cd"
+    },
+    "scripts/check-generated-html.mjs": {
+      "bytes": 1693,
+      "sha256": "ca0c9e9e8a213de8acd6381615c97fd11b8b3eaba62a144f378bb0e8499c3c66"
+    },
+    "scripts/check-i18n.mjs": {
+      "bytes": 1106,
+      "sha256": "f145220181125d72e880cc59e2d86f768b3a1212e029e3de57bfe2e226cdc95b"
+    },
+    "scripts/check-platform-comparison-ui.mjs": {
+      "bytes": 5330,
+      "sha256": "ceb90e833edd7310430a8864391cb0f769d16032c28bdab9581c21fa838565e4"
+    },
+    "scripts/check-product-catalog-ui.mjs": {
+      "bytes": 4534,
+      "sha256": "9f84e66c16b5489056f1b267373022bab0c1d54effba56c01165cce2f5e1e7a7"
+    },
+    "scripts/check-product-ctas.mjs": {
+      "bytes": 1861,
+      "sha256": "cc5f45c4b9dcd5a7736e9679b2d2c014f873d8e777f6507da378bb67094d7178"
+    },
+    "scripts/check-product-images.mjs": {
+      "bytes": 1700,
+      "sha256": "3b029f0cbca84fb1078d0a211fc0b79dca62a450c2f0ca0aea6c99e6dc0b1ae2"
+    },
+    "scripts/check-products-radar.mjs": {
+      "bytes": 3477,
+      "sha256": "8365fa5bb865e7d52afbfb0592eb0d5fe7ba8b41fc2b5ac8b004e3c5161bf489"
+    },
+    "scripts/check-project-console-ui.mjs": {
+      "bytes": 468081,
+      "sha256": "f574e79ae6b71a51a0c2279995c0ff98caf35c0561c3a922aa4c3943ce4c5e78"
+    },
+    "scripts/check-public-source.py": {
+      "bytes": 2029,
+      "sha256": "f8c72472d05213d0a3916720944cb6cfc644d5f04918f12c488c31148065af77"
+    },
+    "scripts/check-radar-code.mjs": {
+      "bytes": 5329,
+      "sha256": "63c88cabaf4dced5d485eca327756c0b6f9599831331a8cff49e78550a1c01f3"
+    },
+    "scripts/check-reference-hermetic-pins.mjs": {
+      "bytes": 3993,
+      "sha256": "c06c82ccc11f5bc7b379171c73f8d1eb809585cae1c338c3020ed2837096cee0"
+    },
+    "scripts/check-reference-saas.mjs": {
+      "bytes": 8875,
+      "sha256": "6ec3abac5a269774a69c4bf2858ea96c8e38768ae6cd6a500f17e738bc686f40"
+    },
+    "scripts/check-routes.mjs": {
+      "bytes": 1420,
+      "sha256": "3f7abb381e641a55b85067d958bd5a32af69a27a7c0b6a48c8e8b20dc76e9b40"
+    },
+    "scripts/check-ssg.mjs": {
+      "bytes": 6395,
+      "sha256": "f74724e8336206e6e1755b21872e5d89c17653020168366c05ad3d2e6bc50802"
+    },
+    "scripts/export-products.mjs": {
+      "bytes": 724,
+      "sha256": "9a197142d1852333df5c855234e364a10b83537f288e87fb0d7297bc753aafea"
+    },
+    "scripts/prepare-public-images.mjs": {
+      "bytes": 965,
+      "sha256": "0690272c41ff97b4ebd1e2d84f8b3a1dac4f29b81eced6f4fbe9a2e38268d093"
+    },
+    "scripts/prepare-reference-hermetic-fixture.mjs": {
+      "bytes": 6465,
+      "sha256": "3d942efc172ade2028f24325f63fa9c0808a51f38af8757c13842d76191360b1"
+    },
+    "scripts/prerender.mjs": {
+      "bytes": 2652,
+      "sha256": "39ddb33a9dfec1858afbc9cb02aa40249cd9fa88be34384ebea2686779417a70"
+    },
+    "scripts/radar-product-map.json": {
+      "bytes": 1651,
+      "sha256": "dcdbfa307385ce6fa64e00bc24d0f534330e0a052d90b0d7dbf0df9d3ad7db8d"
+    },
+    "scripts/reference-fixture-adapter.mjs": {
+      "bytes": 35598,
+      "sha256": "b8f374f1958314e06244bdab27cc0f0c25c43a70661e159dbf77f2b52b3b46f3"
+    },
+    "scripts/reference-fixture-adapter.test.mjs": {
+      "bytes": 20262,
+      "sha256": "545bef0e16a33210c15c1d8ce5275469d23c7235c3e33f607cbf090d0640f418"
+    },
+    "scripts/run-reference-production.mjs": {
+      "bytes": 27305,
+      "sha256": "e760dc2fc8733ad04ab1d87aba1b406642b6c7e19377043b132d24d6a9dc1d94"
+    },
+    "scripts/verify-production.mjs": {
+      "bytes": 3135,
+      "sha256": "9673f6050919e8b799b33b45f3b60b5599e73f39a2662c1c2f66dab6fe582e5c"
+    },
+    "src/App.tsx": {
+      "bytes": 1771,
+      "sha256": "53696f84e2562607a2d44c6519ae75134be4cd5e0c3b2eb14fbf63dca0d4b53f"
+    },
+    "src/components/FAQ.tsx": {
+      "bytes": 909,
+      "sha256": "8eac2b0f9daeb555fe0775168a930336b6e47499f55fc71386a6ae5103ffc490"
+    },
+    "src/components/FleetFramework.tsx": {
+      "bytes": 32850,
+      "sha256": "a92ce28a79f6f14b040faaf6a2e2aab8c0dbe04046b0daa520b65134dc2be71b"
+    },
+    "src/components/Hero.tsx": {
+      "bytes": 3135,
+      "sha256": "1fdeeb6563edfc6cf186b86bb10f75390518e0cbd6da447333cf3cd47c440948"
+    },
+    "src/components/HomePage.tsx": {
+      "bytes": 2410,
+      "sha256": "044673dc5afff45b67d98d81fbfd3cffa8c449ec55c51f741773bd36a4cb5821"
+    },
+    "src/components/Layout.tsx": {
+      "bytes": 6711,
+      "sha256": "8ec25b76f10975ded32dbe6bbe548c1b75526e74eb044c4e9f2d8ce7989880cd"
+    },
+    "src/components/NotFound.tsx": {
+      "bytes": 821,
+      "sha256": "51fcf485fe4504c58c650feb97d0215e35268333f550bca6d7a9322ba617999c"
+    },
+    "src/components/PlatformComparisonPage.tsx": {
+      "bytes": 13857,
+      "sha256": "1f8749519c63f67800089b097b1a157e529d4697878e54f2d138b8e39220b41a"
+    },
+    "src/components/Pricing.tsx": {
+      "bytes": 4773,
+      "sha256": "7f4536a6a24eb8a67d2a0740fe8827112e573cbdef01deaebd4e7aaaef30d111"
+    },
+    "src/components/ProductCard.tsx": {
+      "bytes": 1206,
+      "sha256": "ff6f9f94a39fb2bd995e6bd8c992deb18cd60c040a70fb52bc4ef4ac61e207d6"
+    },
+    "src/components/ProductCatalog.tsx": {
+      "bytes": 4446,
+      "sha256": "f37734f977198e69a2bdbaec320e884166061edf1adec37775ccc15ee27dd454"
+    },
+    "src/components/ProductImage.tsx": {
+      "bytes": 1713,
+      "sha256": "8d9d8a7876f607d82f39df4e71e7cfa93633cae62edb28755df8eda55665ace7"
+    },
+    "src/components/ProductPage.tsx": {
+      "bytes": 7224,
+      "sha256": "1cf4f5641e666a9a31a980c9845ab8ed2952a08481eadba54a623ffc996b72c9"
+    },
+    "src/components/ProductUsageDashboard.tsx": {
+      "bytes": 9703,
+      "sha256": "be4e3af0dc33baf1ea284f09d1b3c887c90339b70e20dfa3285a7f331e549646"
+    },
+    "src/components/ProjectAuthConsole.tsx": {
+      "bytes": 25227,
+      "sha256": "e6e714d0f8479b8b1e20888c80b1394625f591a52c9434285623f764f4cd6772"
+    },
+    "src/components/ProjectBackupsConsole.tsx": {
+      "bytes": 22198,
+      "sha256": "19a8504c35d28205230768514c11ff64532cf6c5edbbb93110124937aca35a8c"
+    },
+    "src/components/ProjectConnectConsole.tsx": {
+      "bytes": 19971,
+      "sha256": "f189809f892024c68fd361747938ae38a79c4436698489ea23d8efa48c3d219b"
+    },
+    "src/components/ProjectDatabaseConsole.tsx": {
+      "bytes": 41369,
+      "sha256": "4a59f3cca74868818b3416215d020f357d48414a88e9b817baf57aa6723eb56c"
+    },
+    "src/components/ProjectDatabaseOperations.tsx": {
+      "bytes": 14279,
+      "sha256": "ea98252c4bcb269597f94b4e534e862e44591074dacfde914a049e540ad0e7ad"
+    },
+    "src/components/ProjectFunctionsConsole.tsx": {
+      "bytes": 63646,
+      "sha256": "226bf3ed8a6822912d886751ec0e0f615c520a6ee60d6b00f1e151bab5c0a4d6"
+    },
+    "src/components/ProjectObservabilityConsole.tsx": {
+      "bytes": 28593,
+      "sha256": "b2d51e1af88f77e9649946d93c2a49d4eb4f4b33aa5d06ff2f95d3c0823d9dec"
+    },
+    "src/components/ProjectRealtimeConsole.tsx": {
+      "bytes": 31269,
+      "sha256": "2c3905e6f17cc676ca7ee52479d6e47b13f01aac9f1f9712c57254dce4ad1c6e"
+    },
+    "src/components/ProjectRowValueEditor.tsx": {
+      "bytes": 4530,
+      "sha256": "2638c9da7edbf716bfb6a757dc2717d96e614d7560e9253ad78e535816394167"
+    },
+    "src/components/ProjectSitesConsole.tsx": {
+      "bytes": 33572,
+      "sha256": "f2137716c6988032c1789d10d269918e92355c26c5adffa0e6a440a3444a7b0f"
+    },
+    "src/components/ProjectStorageConsole.tsx": {
+      "bytes": 77840,
+      "sha256": "465a387488ba362c8217da5ff758884cc54ee1ce5abc0cecee6c972eef74f23d"
+    },
+    "src/components/ProjectTableDefinition.tsx": {
+      "bytes": 11717,
+      "sha256": "47603cb0d953ec462563da350e3c602875c93446e75f53dff490c6a323668485"
+    },
+    "src/components/ProjectTableImport.tsx": {
+      "bytes": 9309,
+      "sha256": "771bd5d0b8fb417a1899b79fe66e0ac20124cde6bf0bfd22ca3b71d604c91311"
+    },
+    "src/components/ProjectTablePublication.tsx": {
+      "bytes": 12324,
+      "sha256": "061f2a1e10596a8f2649e07287f9cf0e9fb28896aed97be59e8a7a4f133a3531"
+    },
+    "src/components/ProjectTableQuery.tsx": {
+      "bytes": 8144,
+      "sha256": "a53b304f8eeaa189fc6d72b132cb8d22916f4090f49349f8fa515cdfacfa01e3"
+    },
+    "src/components/ProjectTableRealtime.tsx": {
+      "bytes": 7752,
+      "sha256": "de1360ccb614ecbc4896f3db4a6cd542c7701bd63d12c629fd85568ea577108f"
+    },
+    "src/components/SaasConsolePage.tsx": {
+      "bytes": 49976,
+      "sha256": "56a975df0a13cc313a66501254a315e514fc86ccc5636d4e728b172d921dd7f7"
+    },
+    "src/components/Trust.tsx": {
+      "bytes": 1270,
+      "sha256": "dbb434e3effa6d72b0a6d300aeccbec36af345d96addc82ff8d6856b99fabe75"
+    },
+    "src/components/WorkspaceLifecycleConsole.tsx": {
+      "bytes": 41731,
+      "sha256": "691ba932be1b91bf944d6c881c34ec4db617f92841906c4c2896f5384ba54be8"
+    },
+    "src/components/fleetPlatformExtras.ts": {
+      "bytes": 10011,
+      "sha256": "ad758dd14d82cc4dc9db3842532807571408330678031230e1adabc60c2cf836"
+    },
+    "src/components/fleetPlatformTypes.ts": {
+      "bytes": 384,
+      "sha256": "1b814a329a17683130150297679c5f75f195681026d3f4d48aeb49a0545f95b9"
+    },
+    "src/data/localized.ts": {
+      "bytes": 750,
+      "sha256": "36e63fcffae80e58a186f6d96c5b83a0e8a814e9ace458dc8333a1f6ff5c58ef"
+    },
+    "src/data/platform-comparison.json": {
+      "bytes": 92430,
+      "sha256": "d6b81fcf570f522fe4125f3ae35d60a77261cb28e4fc2044ed941a02c0be9d56"
+    },
+    "src/data/products.ts": {
+      "bytes": 88857,
+      "sha256": "5e0a8d877df3da71d558bf953dac9d3d9530cbae08a403656808ec236e32384c"
+    },
+    "src/data/products.zh.ts": {
+      "bytes": 75889,
+      "sha256": "0c229923a673fc108fe4d326f931979544ca5e2b7dbc13452215b3e1bec09650"
+    },
+    "src/entry-client.tsx": {
+      "bytes": 1358,
+      "sha256": "722b7b9ed8fd16a9b92e23f815df52e073321b339535bfde0755739002150ec1"
+    },
+    "src/entry-server.tsx": {
+      "bytes": 1535,
+      "sha256": "377a37dd66c0f092cc8bf111c6301851d6deb42eeb4a85a6a46ae83729fdf95a"
+    },
+    "src/global.d.ts": {
+      "bytes": 175,
+      "sha256": "cc1691f29f137627bafa462bf6411be69119d7f992cacdcc006dc56f80594acc"
+    },
+    "src/i18n.ts": {
+      "bytes": 57198,
+      "sha256": "caa2f5dc0219a0261759b59b1f7b4350b4c5cb18dbc1cfc49d95bf16fca8dda4"
+    },
+    "src/index.css": {
+      "bytes": 37874,
+      "sha256": "560e3b5efeb6c47d5e4613cb3b20fa02a86256b79dae36e62f0ba7a1a6a8a909"
+    },
+    "src/lib/analytics.ts": {
+      "bytes": 929,
+      "sha256": "6e64b3faea0eb3a79d9127fbf0ce7f213d50c16fbaacdb767df26c9ae525a93a"
+    },
+    "src/lib/auth.ts": {
+      "bytes": 3992,
+      "sha256": "f35cec5d0c9f35e76e6e34edad833b8a41b9de8d6e7278b3da87b2054602fb53"
+    },
+    "src/lib/clientRouting.test.ts": {
+      "bytes": 2161,
+      "sha256": "04e271c9cbe47efadc6b6836d5ff712c5963c2621a9bdfc907f4f948410baaaa"
+    },
+    "src/lib/clientRouting.ts": {
+      "bytes": 915,
+      "sha256": "c2b002f3c23d22a49b06b45acb2336a224af4c50a156457a78a81d64a72c3a98"
+    },
+    "src/lib/languagePreference.test.ts": {
+      "bytes": 841,
+      "sha256": "c2169c3ec1563b2d65824e51b745a2a59aa719d49a432dfdfc85ddb3d4916255"
+    },
+    "src/lib/languagePreference.ts": {
+      "bytes": 746,
+      "sha256": "c35f73e9496b3f0d766d01967bdd805570c19f40ae12c38a36909eb150e636c3"
+    },
+    "src/lib/productUsage.ts": {
+      "bytes": 1549,
+      "sha256": "363ae99040c68bd8d4d873cb3f6ad10bc32e14e4d09d7fcae6eb9f6803c4bdc0"
+    },
+    "src/lib/projectConsoleNavigation.test.ts": {
+      "bytes": 1731,
+      "sha256": "bd03372c9ad73b2ce14f8a170f5bf8c689726a12c5a52b60ef50a76ec1fc7cfb"
+    },
+    "src/lib/projectConsoleNavigation.ts": {
+      "bytes": 3037,
+      "sha256": "f82b30e0d826e11dfde0c8f978175508b0b590613b547ddb66ae3b248025d044"
+    },
+    "src/lib/projectFunctionSource.test.ts": {
+      "bytes": 2034,
+      "sha256": "c27c91aeb78d0bc9810a01f6d006097735971d05e77fd8905587e8121c350db3"
+    },
+    "src/lib/projectRealtimeHistory.test.ts": {
+      "bytes": 5693,
+      "sha256": "c4c75fe899fef6028d64f1e025f529742a921cb6e0419450bc0d609f34fb1fc4"
+    },
+    "src/lib/projectRowEditor.test.ts": {
+      "bytes": 6340,
+      "sha256": "f30ce087cdf4c012e0b6686dfe40e140524d8d7fa5365a081ab62cac08d05d55"
+    },
+    "src/lib/projectRowEditor.ts": {
+      "bytes": 5045,
+      "sha256": "716540e151600919e7eb218c10a47262f93cdc43aeef79dfb87e52a3c9794eff"
+    },
+    "src/lib/projectSites.test.ts": {
+      "bytes": 15805,
+      "sha256": "020d977384aa9a050b6e7351584f270c933af46f032e5fff448e498840edca21"
+    },
+    "src/lib/projectSites.ts": {
+      "bytes": 19489,
+      "sha256": "9dff42b0c0671f3905b3a34a5659091a649c42829bfb8b8d7c2f2415ede9ef9e"
+    },
+    "src/lib/projectStorageExport.test.ts": {
+      "bytes": 3744,
+      "sha256": "9dcb35bd9d61a7cef0c3e558b59d6381c7e159a181b5a71c2feee35c86aa5b22"
+    },
+    "src/lib/projectTableDefinition.test.ts": {
+      "bytes": 12486,
+      "sha256": "274aae39820e50c476806a81fddc12acb088b52c593593b44bf1208bb10510dd"
+    },
+    "src/lib/projectTableDefinition.ts": {
+      "bytes": 7681,
+      "sha256": "a6fe4b57cd0c20ea76456d4ccd07f8c3b771d0f8e6a9bc3c2fe524e9b57d75d8"
+    },
+    "src/lib/projectTableImport.test.ts": {
+      "bytes": 4818,
+      "sha256": "06c5ef21d2dd3b4a4edd2133b57682964d237eca82c25ef15a821cc437bd8507"
+    },
+    "src/lib/projectTableImport.ts": {
+      "bytes": 3511,
+      "sha256": "91f1a92fbd32d2e7e05d71f42885dd3d10aa53427e5110b36f6c4937022f394f"
+    },
+    "src/lib/projectTablePublication.test.ts": {
+      "bytes": 8802,
+      "sha256": "4b1b4d0bb29c7d42893eaad87f3500826164347bb7475d0e74430009d0526634"
+    },
+    "src/lib/projectTablePublication.ts": {
+      "bytes": 5171,
+      "sha256": "8d969907ad113fb6fbcad1a5098e2aff6ea56f6aea21b62085eea3ab520994f1"
+    },
+    "src/lib/projectTableQuery.test.ts": {
+      "bytes": 2651,
+      "sha256": "dd035daa7f894dd577d3c0390460bb64e132d19be1c3307b469ba926f6cb85d2"
+    },
+    "src/lib/projectTableQuery.ts": {
+      "bytes": 2719,
+      "sha256": "ebcd0ce7bc9af79d2ab6238ae7a174e04374fd7b51984eb916973f2e71171776"
+    },
+    "src/lib/projectTableRealtime.test.ts": {
+      "bytes": 5777,
+      "sha256": "73d7c40af772af31866577c733bf19ce19932804904e5d78d8deefb26d276993"
+    },
+    "src/lib/projectTableRealtime.ts": {
+      "bytes": 1471,
+      "sha256": "d5a7812291b6c83cd8bd5b81b3afc020599fbd40e59ada30347d1b8c8cf8ec47"
+    },
+    "src/lib/saasConsole.test.ts": {
+      "bytes": 259824,
+      "sha256": "d66cd494240feec1c79a775d0a22b1fa47fd73827b2469e8dd3175ff48518bac"
+    },
+    "src/lib/saasConsole.ts": {
+      "bytes": 216461,
+      "sha256": "2989c2edc9264ccce66f402ccf7f3c39d3d30dbc0e9c42ef5640075a99a3db8a"
+    },
+    "src/lib/workspaceLifecycle.test.ts": {
+      "bytes": 24533,
+      "sha256": "e80e23a9ef940ac5e2770e2bb29570ed84f1ce16c8829a8229931d87024e77d1"
+    },
+    "src/lib/workspaceLifecycle.ts": {
+      "bytes": 30515,
+      "sha256": "8a9de7358dec7c17a77607ba5e391e47ae00c12c8ef5111063ae5cceb46d5eff"
+    },
+    "src/meta.ts": {
+      "bytes": 4682,
+      "sha256": "9dec0b802c26e8f5d6f00b3b6f93978e64c548ee99ed61dfeef9a0aa67a070e9"
+    },
+    "src/routes.ts": {
+      "bytes": 4142,
+      "sha256": "2d5d8d3bb45a14ca8a35471ffdb853bfde4a1693e7e98cb05861d3fc8032cabf"
+    },
+    "tests/reference-saas/acceptance.spec.ts": {
+      "bytes": 11985,
+      "sha256": "c4ba2972c86a115d6d0cb944913698d4413a64573e8f012564a01a08e7dbab1e"
+    },
+    "tests/reference-saas/index.html": {
+      "bytes": 253,
+      "sha256": "835f159a137a5a6ec00c8075f5f435e025362da96113bc0faf6768cad7a76a36"
+    },
+    "tests/reference-saas/main.ts": {
+      "bytes": 43519,
+      "sha256": "7be2b54bde31e69bc4984ae193915f08fae0559c294af3580cd4228d67d07330"
+    },
+    "tests/reference-saas/orchestration.ts": {
+      "bytes": 13260,
+      "sha256": "425556e33af330f683758551ccf534f9a777de1943340ddb5dd5c5abc65e20d9"
+    },
+    "tests/reference-saas/playwright.config.ts": {
+      "bytes": 801,
+      "sha256": "cb58090df6ada5b6d447db88b67f60cfcb945b09d606ece3a33f7836fc9ab965"
+    },
+    "tests/reference-saas/redacted-reporter.ts": {
+      "bytes": 1085,
+      "sha256": "8406fb4b9e758e96a4bfb51130b0399aa642cf25eee148a35cd7553d3a2b8401"
+    },
+    "tests/reference-saas/style.css": {
+      "bytes": 722,
+      "sha256": "637b7e7e926eaa7228de01bc0f6a3f4f05ee66ec40d1e3697298456aa8093f76"
+    },
+    "tests/reference-saas/tsconfig.json": {
+      "bytes": 252,
+      "sha256": "5e788bbaf9ce14ee4459affc07043dac2126e947708e2a87ea7c3f4e45a8475d"
+    },
+    "tests/reference-saas/vite.config.ts": {
+      "bytes": 651,
+      "sha256": "602fa940bc26621ef7bc0e50ac289661d1968479481b7a9ee7692c89569a3f2f"
+    },
+    "tsconfig.app.json": {
+      "bytes": 617,
+      "sha256": "b1eac9ba6cd1c01d59ebca159805e052c798d9d4ab904680b79ce3e306ea0bbd"
+    },
+    "tsconfig.json": {
+      "bytes": 119,
+      "sha256": "770b4140bbb581e2dfd9ea9946ffc9c75a1d86ba7d2db5f77c83e37cbdf9d808"
+    },
+    "tsconfig.node.json": {
+      "bytes": 591,
+      "sha256": "90a22c920cbc14624fb4658b58f15c875abf3234224f3933f211849c3ada3242"
+    },
+    "vite.config.ts": {
+      "bytes": 246,
+      "sha256": "a265ddfc1fcbf92f7bbbe3555fc55e4e9988c5f16e7d61d7a1e9159ab9e0cd3b"
+    }
+  }
+}

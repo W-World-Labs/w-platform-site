@@ -1,0 +1,1709 @@
+export type Category = 'Platform' | 'Analysis' | 'Sensing' | 'Apps';
+
+export interface ProductContent {
+  overview: string;
+  sections: { title: string; body: string }[];
+  useCases?: string[];
+}
+
+export interface Product {
+  slug: string;
+  name: string;
+  tagline: string;
+  category: Category;
+  domain: string;
+  features: string[];
+  content?: ProductContent;
+  visual?: 'identity';
+}
+
+export const PRODUCTS: Product[] = [
+  {
+    slug: 'w-id',
+    name: 'W-ID',
+    tagline: 'Single sign-on & identity for the entire suite.',
+    category: 'Platform',
+    domain: 'auth.myfastools.com',
+    features: [
+      'OAuth2 / OpenID Connect SSO',
+      'Multi-provider social login',
+      'Workspaces, scopes & quotas',
+      'Full audit logging',
+    ],
+    content: {
+      overview:
+        'W-ID is the identity backbone of the entire W Platform — one account unlocks every product via standards-based OAuth2 / OpenID Connect. It handles authentication, authorization, workspaces, and quotas so each individual service never has to. Built for developers and teams who need trustworthy, auditable access control without standing up their own auth infrastructure.',
+      sections: [
+        {
+          title: 'Key capabilities',
+          body: 'W-ID issues OIDC tokens accepted by every W service, supports PKCE-secured authorization flows for browser clients, and lets users connect social providers alongside their W credentials. Workspace scoping means a single identity can carry different permission sets across multiple projects or organizations.',
+        },
+        {
+          title: 'How it works',
+          body: 'Apps redirect to the W-ID authorization endpoint, the user authenticates once, and a signed JWT is returned to the app. Downstream services verify the token locally — no round-trips required. Quota and scope metadata travels inside the token so enforcement is fast and consistent.',
+        },
+        {
+          title: 'Audit & compliance',
+          body: 'Every login, token issuance, and permission change is written to a tamper-evident audit log. Teams can export logs for compliance reviews or pipe them into W-Radar for real-time alerting. Session revocation propagates immediately across the fleet.',
+        },
+        {
+          title: 'Why teams use it',
+          body: 'Rather than wiring up auth for each microservice, teams delegate the entire identity layer to W-ID and ship faster. The shared token format means a user logged into the W Platform landing page is automatically recognized by W-Radar, W-Domain, and every other product — zero extra sign-ins.',
+        },
+      ],
+      useCases: [
+        'Unified SSO across all W Platform products with one set of credentials',
+        'Secure browser apps with PKCE flows — no client secrets exposed',
+        'Per-workspace role assignment for multi-tenant SaaS products',
+        'Audit trail export for SOC-2 and internal compliance reviews',
+        'Social login (GitHub, Google, etc.) alongside W-native accounts',
+      ],
+    },
+  },
+  {
+    slug: 'w-radar',
+    name: 'W-Radar',
+    tagline: 'Fleet observability & the platform control plane.',
+    category: 'Platform',
+    domain: 'radar.myfastools.com',
+    features: [
+      'Real-time service telemetry',
+      'Project & release registry',
+      'Quota and runtime tracking',
+      'Live status dashboards',
+    ],
+    content: {
+      overview:
+        'W-Radar is the central control plane for the entire W Platform fleet — giving operators a single pane of glass over every running service, release, and quota. It streams real-time telemetry from every product, tracks the project and release registry, and surfaces live status dashboards so issues are visible the moment they occur. If you manage infrastructure or own reliability for any W product, W-Radar is where you start every shift.',
+      sections: [
+        {
+          title: 'Real-time service telemetry',
+          body: 'W-Radar ingests health beats, error rates, latency percentiles, and resource utilization from every service in the fleet and visualises them on live dashboards with sub-second refresh. Threshold-based alerting fires before users notice an issue, and historical sparklines let you spot trends without leaving the dashboard.',
+        },
+        {
+          title: 'Project & release registry',
+          body: 'Every W product registers its project metadata, current release version, and deployment history in W-Radar. The registry gives the team a single authoritative source of truth for what is running where — no more digging through deployment scripts or asking teammates which version is in production.',
+        },
+        {
+          title: 'Quota and runtime tracking',
+          body: 'W-Radar tracks per-product and per-user quota consumption in real time, so you can see approaching limits before they trigger hard failures. Runtime tracking records uptime, restart events, and crash history, making it easy to correlate quota exhaustion with service instability.',
+        },
+        {
+          title: 'Why operators rely on it',
+          body: 'A fleet of 20+ products is impossible to operate without a shared observability layer. W-Radar replaces a patchwork of per-service dashboards with a unified view authenticated through W-ID, so any team member with the right scope can investigate an incident without hunting for credentials or switching tools.',
+        },
+      ],
+      useCases: [
+        'Monitor all W Platform services from a single dashboard during an incident',
+        'Verify a new release is healthy immediately after deployment',
+        'Track quota consumption trends to plan capacity before limits are hit',
+        'Audit the deployment history of any product for post-mortem analysis',
+        'Set up alerting thresholds so on-call engineers are paged before users are affected',
+      ],
+    },
+  },
+  {
+    slug: 'w-domain',
+    name: 'W-Domain',
+    tagline: 'Self-serve subdomains, DNS & automatic SSL.',
+    category: 'Platform',
+    domain: 'wdomain.myfastools.com',
+    features: [
+      'Self-service subdomain claims',
+      'Cloudflare DNS automation',
+      'Wildcard SSL issuance',
+      'Out-of-band abuse detection',
+    ],
+    content: {
+      overview:
+        'W-Domain lets developers and teams claim subdomains, configure DNS records, and receive automatically provisioned SSL certificates — all without touching a Cloudflare dashboard or waiting for an ops ticket. It automates the entire lifecycle from subdomain claim to HTTPS-ready deployment, and monitors claims out-of-band for abuse so the namespace stays clean. For any W Platform product that needs a live public URL, W-Domain is the fastest path from zero to secure.',
+      sections: [
+        {
+          title: 'Self-service subdomain claims',
+          body: 'Authenticated W-ID users can claim a subdomain in seconds through the W-Domain interface or API. Claims are validated against naming policies, reserved word lists, and existing registrations in real time, so conflicts are caught before they are committed. Once claimed, the subdomain is immediately live and pointing at your target.',
+        },
+        {
+          title: 'Cloudflare DNS automation',
+          body: 'W-Domain talks directly to the Cloudflare API to create, update, and delete DNS records on your behalf. No manual zone editing, no propagation guesswork — changes are applied at the edge within seconds and you receive confirmation once the record is live. CNAME, A, AAAA, and TXT records are all supported.',
+        },
+        {
+          title: 'Wildcard SSL issuance',
+          body: 'Every claimed subdomain receives a TLS certificate automatically — including wildcard certificates for teams that run multiple sub-paths under a single domain. Certificates are renewed before expiry without any intervention required, so you never face a surprise HTTPS warning in production.',
+        },
+        {
+          title: 'Out-of-band abuse detection',
+          body: 'W-Domain continuously monitors active subdomains for abuse signals — phishing patterns, unexpected content changes, and dangling DNS records that could be hijacked. When a risk is detected, the claim is flagged for review and the owner is notified, keeping the shared namespace trustworthy for everyone.',
+        },
+      ],
+      useCases: [
+        'Spin up a staging subdomain for a new W Platform product in under a minute',
+        'Issue wildcard SSL for a customer-facing multi-tenant SaaS deployment',
+        'Automate subdomain provisioning for each new user workspace via the API',
+        'Clean up dangling DNS records after a product is retired',
+        'Monitor the shared namespace for subdomain takeover or phishing attempts',
+      ],
+    },
+  },
+  {
+    slug: 'w-search',
+    name: 'W-Search',
+    tagline: 'A unified multi-source search engine.',
+    category: 'Platform',
+    domain: 'search.myfastools.com',
+    features: [
+      'Web, news & image search',
+      'Self-hosted + API engines',
+      'Corpus full-text search',
+      'One simple API',
+    ],
+    content: {
+      overview:
+        'W-Search consolidates web, news, image, and corpus full-text search behind a single clean API — so products and developers stop managing multiple search provider integrations and get consistent, high-quality results from one endpoint. It can route queries to self-hosted search engines or external API providers based on your configuration, and supports indexed full-text search over private corpora alongside public web results. Any W Platform product that needs search capability plugs into W-Search and gets everything at once.',
+      sections: [
+        {
+          title: 'Multi-source results in one call',
+          body: 'A single W-Search API request can return blended results from web indices, news feeds, image collections, and your own private corpus simultaneously. Response merging and deduplication happen server-side, so the caller receives a clean ranked list rather than having to fan out and reconcile multiple upstream responses.',
+        },
+        {
+          title: 'Self-hosted and API engine support',
+          body: 'W-Search supports both self-hosted search backends (SearXNG, Meilisearch, Elasticsearch) and external API providers, configurable per query type. This means you can keep sensitive corpus searches entirely on-premise while still routing general web queries to a public index — with the same API surface throughout.',
+        },
+        {
+          title: 'Corpus full-text search',
+          body: 'Index your own documents, logs, knowledge bases, or product data and search them alongside live web results. W-Search handles tokenization, stemming, and relevance scoring, returning structured hits with excerpt highlights. Corpus indices are managed through the W-Search admin interface and accessible to any authorized W-ID client.',
+        },
+        {
+          title: 'Why developers integrate it',
+          body: 'Standing up a reliable multi-source search stack is weeks of work — integrating APIs, normalizing result schemas, handling rate limits, and building fallback logic. W-Search does all of that once, centrally, and exposes one simple authenticated endpoint. Other W Platform products like W-Knowledge use W-Search under the hood for exactly this reason.',
+        },
+      ],
+      useCases: [
+        'Add web + corpus search to a product feature with a single API integration',
+        'Power an internal knowledge-base search that blends private docs with live web results',
+        'Index product documentation for natural-language search in a help widget',
+        'Route image search queries through W-Search to surface visually similar content',
+        'Use W-Search as the retrieval layer for a retrieval-augmented generation (RAG) pipeline',
+      ],
+    },
+  },
+  {
+    slug: 'w-maas',
+    name: 'W-MaaS',
+    tagline: 'Model-as-a-service inference endpoints.',
+    category: 'Platform',
+    domain: 'maas.myfastools.com',
+    features: [
+      'Hosted model endpoints',
+      'OpenAI-compatible API',
+      'Usage metering',
+      'Multiple models',
+    ],
+    content: {
+      overview:
+        'W-MaaS gives developers and teams instant access to hosted AI model inference without managing GPUs, containers, or scaling infrastructure. Drop in your API key and start calling models through a fully OpenAI-compatible interface — your existing SDKs and tooling work unchanged. Built for builders who need reliable, metered inference as a platform primitive rather than a separate vendor relationship.',
+      sections: [
+        {
+          title: 'Hosted inference, zero ops',
+          body: 'W-MaaS runs model endpoints on managed infrastructure so you never provision a GPU node or worry about cold-start latency. Each endpoint is always-on and accessible over HTTPS with consistent response times. Your team ships features, not infrastructure tickets.',
+        },
+        {
+          title: 'OpenAI-compatible API',
+          body: 'Every endpoint speaks the OpenAI Chat Completions format, so any library or tool that already works with OpenAI works with W-MaaS — no adapter code required. Swap the base URL, keep your existing prompts and client code, and gain access to the full model roster available on the W platform.',
+        },
+        {
+          title: 'Usage metering & quota control',
+          body: 'Token consumption is tracked per request and surfaced in real time through W-Radar. Set per-workspace quotas to prevent runaway costs, inspect usage history, and allocate capacity across teams. Billing integrates directly with your W membership so there is no separate invoice to reconcile.',
+        },
+        {
+          title: 'Multiple models, one endpoint surface',
+          body: 'Choose from a curated roster of open and proprietary models through a single API surface. Switch models by changing a single parameter — no new credentials, no new SDK, no new deployment. As new models are added to the platform, they become immediately available to your existing integration.',
+        },
+      ],
+      useCases: [
+        'Add LLM-powered features to a product without managing model hosting',
+        'Run internal AI tools under a shared quota controlled by your organization',
+        'Prototype with multiple models and switch without changing client code',
+        'Meter per-team AI usage for internal chargeback or governance reporting',
+        'Back a W-ModelGW route with a private, rate-limited inference endpoint',
+      ],
+    },
+  },
+  {
+    slug: 'w-modelgw',
+    name: 'W-ModelGW',
+    tagline: 'A unified AI model gateway.',
+    category: 'Platform',
+    domain: 'ai-gateway.workspaces.workers.dev',
+    features: [
+      'One API for many providers',
+      'Smart routing',
+      'Rate limiting & keys',
+      'Edge-deployed',
+    ],
+    content: {
+      overview:
+        'W-ModelGW is a lightweight, edge-deployed AI model gateway that sits in front of every provider you use — OpenAI, Anthropic, open-weight endpoints, W-MaaS, and more — and exposes them all through a single unified API. Teams stop hard-coding provider credentials into every service and instead route all model traffic through one controllable chokepoint with rate limiting, API key management, and smart fallback routing. Deployed at the edge, it adds minimal latency while providing maximum visibility and control.',
+      sections: [
+        {
+          title: 'One API for every provider',
+          body: 'W-ModelGW normalizes the request and response format across providers so application code never needs to branch on which backend is serving a request. Add a new provider or swap an underlying model without touching the calling service — just update the gateway route configuration and traffic shifts automatically.',
+        },
+        {
+          title: 'Smart routing & fallback',
+          body: 'Define routing rules by model name, cost threshold, latency target, or request metadata. W-ModelGW can round-robin across providers for load distribution, fail over to a secondary when a primary is degraded, or shadow-route a percentage of traffic to a new model for A/B evaluation — all without redeploying application code.',
+        },
+        {
+          title: 'Rate limiting & API key management',
+          body: 'Issue scoped API keys to teams, services, or external partners and apply per-key rate limits and quota caps. W-ModelGW enforces limits at the edge before requests reach the upstream provider, protecting your cost ceiling and preventing abuse. All key activity is logged so you can audit usage down to the individual caller.',
+        },
+        {
+          title: 'Edge-deployed for low latency',
+          body: 'Running at the edge rather than in a centralized data center means W-ModelGW adds single-digit milliseconds of overhead even for latency-sensitive interactive applications. Stateless architecture means horizontal scaling requires no coordination — traffic spikes are absorbed without configuration changes.',
+        },
+      ],
+      useCases: [
+        'Centralize all LLM provider credentials behind one internal gateway instead of scattering them across services',
+        'Automatically fall back to a secondary model provider when the primary is experiencing an outage',
+        'Issue rate-limited API keys to external partners who need model access without exposing upstream credentials',
+        'A/B test two models by shadow-routing a slice of production traffic to each',
+        'Enforce per-team cost budgets on model usage without modifying application code',
+      ],
+    },
+  },
+  {
+    slug: 'w-inspector',
+    name: 'W-Inspector',
+    tagline: 'Server quality inspection & online reports.',
+    category: 'Analysis',
+    domain: 'oms.myfastools.com',
+    features: [
+      'CPU / memory / disk / network checks',
+      'Lightweight benchmarks',
+      'JSON + Markdown reports',
+      'Shareable public reports',
+    ],
+    content: {
+      overview:
+        "W-Inspector gives you a clear, instant picture of any server's health — CPU load, memory pressure, disk utilization, and network throughput — in one lightweight run. It produces structured JSON and human-readable Markdown reports you can share with teammates or embed in runbooks without any extra tooling. Built for DevOps engineers and infrastructure teams who need fast, trustworthy diagnostics without heavyweight monitoring agents.",
+      sections: [
+        {
+          title: 'Key capabilities',
+          body: 'Inspector collects CPU idle/usage, memory available and swap, per-disk I/O and free space, and live network throughput across all interfaces in a single pass. Lightweight micro-benchmarks measure disk sequential speed and CPU compute, giving you a performance baseline you can track over time. Every result is timestamped and versioned so you always know exactly when data was gathered.',
+        },
+        {
+          title: 'Flexible report formats',
+          body: 'Results are emitted as clean JSON for machine consumption and as Markdown for human review — paste directly into a GitHub issue, Notion doc, or incident ticket. Public shareable links let you hand off a live report URL to a vendor or colleague without granting them server access. Export is instant; no account required on the receiving end.',
+        },
+        {
+          title: 'How it works',
+          body: 'Inspector runs a single stateless binary on your host — no persistent daemon, no telemetry phone-home. It reads /proc and /sys on Linux and equivalent syscalls on other platforms, runs the micro-benchmarks, then uploads or prints the report. You control where the output goes: stdout, a local file, or the W platform report store.',
+        },
+        {
+          title: 'Why teams use it',
+          body: 'Incident response moves faster when everyone looks at the same snapshot. Shareable report URLs replace ad-hoc requests to paste terminal output into chat. Because W-Inspector is stateless and lightweight, you can embed it in CI pipelines to catch regressions in cloud instance performance before deploying workloads.',
+        },
+      ],
+      useCases: [
+        'Pre-deployment server acceptance checks for new cloud instances',
+        'Incident triage: share a live snapshot URL in the team chat',
+        'Periodic cron-driven health reports stored in W-DaaS for trending',
+        'Vendor handoff reports proving SLA-grade hardware was delivered',
+        'CI pipeline stage to detect unexpected performance regressions',
+      ],
+    },
+  },
+  {
+    slug: 'w-quant',
+    name: 'W-Quant',
+    tagline: 'Quantitative market research & analysis.',
+    category: 'Analysis',
+    domain: 'quanta.myfastools.com',
+    features: [
+      'Market data ingestion',
+      'Strategy research',
+      'Backtesting',
+      'Signal generation',
+    ],
+    content: {
+      overview:
+        'W-Quant is a quantitative research and analysis platform for traders, portfolio managers, and data-driven investors who want to move from raw market data to backtested strategies without stitching together a dozen disparate tools. Ingest price feeds, alternative data, and corporate fundamentals, then research, code, and validate strategies in one cohesive environment. Signal generation pipelines keep your models live and actionable once research is complete.',
+      sections: [
+        {
+          title: 'Market data ingestion',
+          body: 'Connect to equity, futures, crypto, and alternative data sources through a unified ingestion layer that normalizes tick, OHLCV, and fundamental data into a consistent schema. Data is stored with full provenance so every backtest references the exact historical snapshot it ran against — no look-ahead bias creeping in from adjusted data.',
+        },
+        {
+          title: 'Strategy research & backtesting',
+          body: 'Write strategies in a structured research environment with access to a rich library of technical indicators, statistical transforms, and risk metrics. Backtesting runs against your ingested historical data with realistic slippage and commission modeling, returning equity curves, Sharpe ratio, max drawdown, and per-trade breakdowns. Iterate quickly and compare strategy variants side by side.',
+        },
+        {
+          title: 'Signal generation',
+          body: 'Promote a validated strategy to a live signal pipeline that runs on fresh market data and emits structured signals your execution layer can consume. Signals carry confidence scores, timestamps, and the exact feature values that triggered them — full auditability from raw data to trade decision.',
+        },
+        {
+          title: 'Why quant teams use it',
+          body: 'Most quant workflows are fragile pipelines of Jupyter notebooks, shell scripts, and ad-hoc databases. W-Quant replaces that fragility with a managed, auditable environment where research and production use the same data and code paths. Your W membership covers full access — no per-model or per-signal seat fees.',
+        },
+      ],
+      useCases: [
+        'Research and backtest systematic equity strategies against 10+ years of history',
+        'Build factor models and validate alpha decay before committing capital',
+        'Generate daily rebalancing signals consumed by an automated execution system',
+        'Analyze crypto market microstructure with tick-level data ingestion',
+        'Compare multiple strategy variants with consistent risk-adjusted metrics',
+      ],
+    },
+  },
+  {
+    slug: 'w-daas',
+    name: 'W-DaaS',
+    tagline: 'A data-asset platform with full audit.',
+    category: 'Analysis',
+    domain: 'data.myfastools.com',
+    features: [
+      'Dataset management',
+      'Lineage & audit trail',
+      'S3/MinIO object storage',
+      'Fine-grained access',
+    ],
+    content: {
+      overview:
+        'W-DaaS is a governed data-asset platform that treats datasets as first-class managed objects — versioned, lineage-tracked, and access-controlled from the moment they land. Teams building ML pipelines, analytics workflows, or compliance-sensitive products can store raw and derived data in S3/MinIO-compatible object storage while maintaining a complete audit trail of who accessed, transformed, or published each asset. Fine-grained access policies mean the right people see the right data, nothing more.',
+      sections: [
+        {
+          title: 'Dataset management',
+          body: 'Register datasets with rich metadata — schema, source system, owner, tags, and retention policy — and version them automatically on each write. Browse the catalog to discover existing assets before creating duplicates, and link derived datasets back to their parents so downstream consumers always know what they depend on.',
+        },
+        {
+          title: 'Lineage & audit trail',
+          body: 'Every read, write, transform, and publish event is recorded in an immutable audit log tied to the authenticated W-ID user who triggered it. Lineage graphs show the full upstream provenance of any dataset — from raw ingestion through each transformation step — so you can answer compliance questions and debug data quality issues with confidence.',
+        },
+        {
+          title: 'S3/MinIO object storage',
+          body: 'Data lives in S3-compatible object storage, meaning any existing tool that speaks S3 — Spark, DuckDB, pandas, AWS SDK — works with W-DaaS without modification. Pre-signed URLs let you grant time-limited, scoped access to external collaborators without exposing long-lived credentials.',
+        },
+        {
+          title: 'Fine-grained access control',
+          body: 'Access policies attach to individual datasets or folders and evaluate the requesting W-ID identity, workspace membership, and declared purpose. Row-level and column-level filters are supported for sensitive datasets, so PII can remain in the same store as aggregate tables without exposing it to analysts who only need the aggregates.',
+        },
+      ],
+      useCases: [
+        'Govern training datasets for ML models with versioning and lineage tracking',
+        'Audit who accessed sensitive customer data for GDPR and SOC 2 compliance',
+        'Share datasets with external partners via scoped, expiring pre-signed URLs',
+        'Discover and reuse existing data assets before building new ingestion pipelines',
+        'Track data quality regressions by comparing schema and statistics across versions',
+      ],
+    },
+  },
+  {
+    slug: 'w-imagetrace',
+    name: 'W-ImageTrace',
+    tagline: 'Image provenance & tracing.',
+    category: 'Analysis',
+    domain: 'image-trace.myfastools.com',
+    features: [
+      'Reverse image search',
+      'Origin tracing',
+      'Similarity matching',
+      'Metadata inspection',
+    ],
+    content: {
+      overview:
+        'W-ImageTrace helps investigators, content teams, and brand protection analysts establish where an image came from, where it has appeared, and whether modified versions are circulating across the web. Submit any image — screenshot, upload, or URL — and get a ranked list of matching sources, visual similarity clusters, and extracted EXIF/XMP metadata in seconds. It is the fastest way to answer "is this image genuine, and where did it originate?"',
+      sections: [
+        {
+          title: 'Reverse image search & origin tracing',
+          body: 'W-ImageTrace queries multiple reverse-image indexes simultaneously and deduplicate results into a ranked source list showing the earliest known appearance of the image. For each match you get the source URL, publication date, and a perceptual similarity score — enough to establish a reliable provenance chain without manual searching across individual search engines.',
+        },
+        {
+          title: 'Similarity matching',
+          body: 'Perceptual hashing and embedding-based similarity find visually related images even after cropping, recoloring, adding watermarks, or overlaying text — the common manipulations used to evade exact-match detection. Results are grouped into similarity clusters so you can immediately see the full family of derivative versions alongside the likely original.',
+        },
+        {
+          title: 'Metadata inspection',
+          body: 'Every submitted image is parsed for EXIF, XMP, IPTC, and ICC metadata — including GPS coordinates, camera model, creation timestamps, software editing history, and embedded copyright notices. Metadata is displayed in a structured, searchable table and can be exported as JSON for integration with your own evidence management system.',
+        },
+        {
+          title: 'Why trust and safety teams use it',
+          body: 'Manually investigating a single viral image can take hours of cross-referencing search engines and metadata tools. W-ImageTrace collapses that to under a minute and produces a structured report you can attach to a content moderation decision, a DMCA notice, or a disinformation research dossier — all within your W membership, no extra subscriptions needed.',
+        },
+      ],
+      useCases: [
+        'Verify whether a news photograph is genuine or has been manipulated and re-published',
+        'Identify the original source of an image before licensing or republishing it',
+        'Detect unauthorized use of branded or copyrighted images across the web',
+        'Investigate disinformation campaigns by tracing image spread and modifications',
+        'Extract GPS and timestamp metadata from user-submitted images for incident investigation',
+      ],
+    },
+  },
+  {
+    slug: 'w-knowledge',
+    name: 'W-Knowledge',
+    tagline: 'Document & knowledge extraction graph.',
+    category: 'Analysis',
+    domain: 'techgraph.myfastools.com',
+    features: [
+      'Document parsing',
+      'Entity extraction',
+      'Knowledge graph',
+      'Natural-language Q&A',
+    ],
+    content: {
+      overview:
+        'W-Knowledge transforms unstructured documents — PDFs, Word files, web pages, research papers — into a structured knowledge graph you can query in natural language. It parses documents, extracts entities and relationships, links them into a traversable graph, and then lets you ask questions and get cited answers grounded in your own corpus. Built for research teams, knowledge management practitioners, and organizations drowning in documents they cannot effectively search.',
+      sections: [
+        {
+          title: 'Document parsing',
+          body: 'W-Knowledge handles PDFs, DOCX, HTML, plain text, and scanned images (via OCR) in a single ingestion pipeline. Tables, figures, footnotes, and section hierarchy are preserved in the parsed output so extracted entities carry accurate positional context. Bulk ingest entire document repositories and let the pipeline run asynchronously — results appear in the graph as each document completes.',
+        },
+        {
+          title: 'Entity extraction & relationship mapping',
+          body: 'Named entity recognition identifies people, organizations, locations, dates, technical terms, and domain-specific concepts. Relationship extraction then maps how entities relate — "authored by", "subsidiary of", "mentions", "contradicts" — building a rich, traversable graph rather than a flat list of keywords. Custom entity types and relationship schemas let you tailor extraction to your domain.',
+        },
+        {
+          title: 'Knowledge graph',
+          body: 'All extracted entities and relationships are stored in a queryable graph database. Traverse the graph to discover connections across documents that would be invisible in a keyword search — find every document that mentions a specific organization in the context of a particular regulation, or surface all authors who have written about a topic and the papers that cite each other.',
+        },
+        {
+          title: 'Natural-language Q&A',
+          body: 'Ask questions in plain language and receive answers synthesized from the graph and the underlying document text, with citations linking back to the exact passages that informed the answer. The Q&A layer stays grounded in your corpus — it will not confabulate facts from outside your documents — making it suitable for high-stakes research and compliance use cases.',
+        },
+      ],
+      useCases: [
+        'Build a searchable knowledge base from thousands of internal policy and procedure documents',
+        'Extract competitor mentions and product relationships from a corpus of industry reports',
+        'Answer regulatory compliance questions grounded in your own policy library',
+        'Map research literature by surfacing entity co-occurrences and citation relationships',
+        'Onboard new team members by letting them ask questions answered from institutional documentation',
+      ],
+    },
+  },
+  {
+    slug: 'w-netsense',
+    name: 'W-NetSense',
+    tagline: 'Cyberspace sensing & CT monitoring.',
+    category: 'Sensing',
+    domain: 'ct.myfastools.com',
+    features: [
+      'Certificate-transparency monitoring',
+      'Network & asset mapping',
+      'Threat intelligence',
+      'DHT crawling',
+    ],
+    content: {
+      overview:
+        'W-NetSense is a continuous cyberspace sensing platform that watches certificate-transparency logs, crawls the DHT, and maps internet-exposed assets in real time. Security teams and researchers use it to discover shadow IT, track certificate issuance for their domains, and surface emerging threats before attackers exploit them.',
+      sections: [
+        {
+          title: 'Certificate-transparency monitoring',
+          body: 'W-NetSense subscribes to all major CT log streams and alerts you the moment a certificate is issued for any domain you monitor — including wildcards and subdomains you did not provision yourself. Catch typosquatting, phishing infrastructure, and unauthorized cert issuance within minutes of log entry.',
+        },
+        {
+          title: 'Network & asset mapping',
+          body: 'Passive and active scanning techniques build a continuously updated map of your internet-facing assets: open ports, running services, banner versions, and TLS fingerprints. Correlate findings with threat-intelligence feeds to prioritize remediation across your entire external attack surface.',
+        },
+        {
+          title: 'DHT crawling & peer intelligence',
+          body: 'A purpose-built DHT crawler harvests peer announcements and infohash metadata from BitTorrent and IPFS networks, giving threat hunters early warning of data leaks, pirated software bundles, and C2 infrastructure that communicates over decentralized channels.',
+        },
+        {
+          title: 'Why security teams choose W-NetSense',
+          body: 'Unlike point-in-time scanners, W-NetSense runs 24/7 so your visibility never goes stale. Findings are enriched with WHOIS, ASN, and geolocation context and delivered via the W Platform unified dashboard — no separate toolchain to maintain.',
+        },
+      ],
+      useCases: [
+        'Detect unauthorized subdomains and rogue certificates the moment they are issued',
+        'Map external attack surface before a penetration test or audit',
+        'Monitor for domain squatting and phishing infrastructure targeting your brand',
+        'Hunt C2 channels and malware distribution nodes over DHT networks',
+        'Track third-party vendor exposure across shared infrastructure',
+      ],
+    },
+  },
+  {
+    slug: 'w-nvr',
+    name: 'W-NVR',
+    tagline: 'Smart video recording & analysis.',
+    category: 'Sensing',
+    domain: 'omninvr.myfastools.com',
+    features: [
+      'Multi-camera NVR',
+      'Motion & event detection',
+      'Clip & snapshot storage',
+      'Live view',
+    ],
+    content: {
+      overview:
+        'W-NVR is a smart network video recorder that unifies multiple camera feeds into a single, searchable system — combining continuous recording with AI-driven motion and event detection. Operations and security teams can monitor live streams, review flagged clips, and pull snapshots without managing a tangle of manufacturer-specific software.',
+      sections: [
+        {
+          title: 'Multi-camera recording & live view',
+          body: 'Connect IP cameras from any ONVIF-compatible manufacturer and W-NVR handles the rest: continuous recording, adaptive bitrate storage, and a unified live grid view accessible from any browser. Add or remove cameras without reconfiguring storage backends — the system scales horizontally as your camera count grows.',
+        },
+        {
+          title: 'Motion & event detection',
+          body: 'Built-in motion detection triggers clip capture and push notifications the moment activity occurs in a defined zone. Configurable sensitivity and schedule rules eliminate alert fatigue while ensuring nothing important is missed. Each event is timestamped and indexed for instant retrieval.',
+        },
+        {
+          title: 'Clip & snapshot management',
+          body: 'Every flagged event is saved as a discrete clip alongside a keyframe snapshot, stored with configurable retention policies. Search by camera, time range, or event type to surface exactly the footage you need. Export clips in standard formats for incident reports or legal holds.',
+        },
+        {
+          title: 'Why teams choose W-NVR',
+          body: 'Proprietary NVR appliances lock you into expensive hardware refresh cycles and siloed management consoles. W-NVR runs as a software service and authenticates through W-ID, so your entire camera estate is managed from the same account that governs the rest of your W Platform tools — no separate vendor logins.',
+        },
+      ],
+      useCases: [
+        'Centralize camera feeds from multiple physical sites into a single management console',
+        'Automatically clip and store motion events for retail loss-prevention review',
+        'Monitor access-controlled entry points and receive instant alerts on unauthorized motion',
+        'Pull time-stamped evidence clips quickly for security incident investigations',
+        'Replace aging DVR hardware with a software NVR that works with existing IP cameras',
+      ],
+    },
+  },
+  {
+    slug: 'w-omnisense',
+    name: 'W-OmniSense',
+    tagline: 'A vision reasoning & perception engine.',
+    category: 'Sensing',
+    domain: 'omnisense.myfastools.com',
+    features: [
+      'Object detection',
+      'Scene understanding',
+      'Visual question answering',
+      'Custom pipelines',
+    ],
+    content: {
+      overview:
+        'W-OmniSense is a vision reasoning and perception engine that turns raw image and video streams into structured, queryable intelligence. Product teams, researchers, and operations engineers use it to build object detection pipelines, answer natural-language questions about scenes, and extract meaning from visual data without managing their own model infrastructure.',
+      sections: [
+        {
+          title: 'Object detection & classification',
+          body: 'Run state-of-the-art detection models against images or video frames to locate, label, and count objects with bounding-box precision. W-OmniSense supports both general-purpose COCO-class detection and domain-specific fine-tuned models, so you get production-quality accuracy whether you are counting vehicles on a road or defects on a production line.',
+        },
+        {
+          title: 'Scene understanding',
+          body: 'Beyond individual objects, W-OmniSense reasons about the full scene: spatial relationships, activity recognition, scene category, and ambient conditions. Submit an image and receive a structured description that can feed downstream decision logic, alert rules, or search indexes — no prompt engineering required.',
+        },
+        {
+          title: 'Visual question answering',
+          body: 'Ask plain-language questions about any image and receive grounded, accurate answers. "How many people are in the frame?", "Is the protective gear being worn correctly?", "What brand of product is on shelf three?" — W-OmniSense combines vision encoders with language models to answer questions that would otherwise require manual review.',
+        },
+        {
+          title: 'Custom pipelines',
+          body: 'Chain detection, classification, VQA, and custom post-processing steps into reusable pipelines via a simple JSON definition. Pipelines run on W-OmniSense managed infrastructure, scale automatically with request volume, and integrate with the rest of the W Platform through standard REST callbacks.',
+        },
+      ],
+      useCases: [
+        'Automate quality-control inspection on a manufacturing line using object detection',
+        'Build a visual search feature that lets users find products by uploading a photo',
+        'Extract structured data from scanned forms, receipts, or handwritten documents',
+        'Monitor live camera feeds for safety-compliance violations in industrial settings',
+        'Power a retail shelf-analytics system that tracks stock levels and planogram compliance',
+      ],
+    },
+  },
+  {
+    slug: 'w-erp',
+    name: 'W-ERP',
+    tagline: 'One-person ERP & business operations.',
+    category: 'Apps',
+    domain: 'opc.myfastools.com',
+    features: [
+      'Invoicing',
+      'Inventory',
+      'Lightweight CRM',
+      'Reports',
+    ],
+    content: {
+      overview:
+        'W-ERP is a lean business-operations hub built for solo founders, freelancers, and micro-teams who need real ERP power without the enterprise overhead. It covers the full revenue cycle — from quoting to invoicing to cash — alongside inventory control and a built-in CRM, all in one W-ID authenticated workspace.',
+      sections: [
+        {
+          title: 'Key capabilities',
+          body: 'Create professional invoices in seconds, track line-item inventory across locations, and manage client relationships with a lightweight CRM that keeps deal history, contacts, and follow-up tasks in a single view. Every action is timestamped and audit-logged so you always know the state of your business.',
+        },
+        {
+          title: 'How it works',
+          body: 'Connect your W-ID account and the onboarding wizard walks you through your product catalog, tax settings, and payment details in under ten minutes. From there, invoices flow automatically into the revenue report, stock movements update inventory in real time, and the CRM timeline surfaces the next action for each client.',
+        },
+        {
+          title: 'Why teams use it',
+          body: 'Unlike spreadsheet-based workarounds, W-ERP links invoices, inventory, and contacts so a single paid invoice automatically reduces stock and closes the CRM deal — no double entry. Shareable report links mean your accountant or stakeholder can see the numbers without needing a seat.',
+        },
+        {
+          title: 'Reports & insights',
+          body: 'Built-in revenue, expense, and inventory reports update live and can be exported as PDF or CSV. Filter by date range, client, or product category to pinpoint exactly where your business is growing or where margin is leaking.',
+        },
+      ],
+      useCases: [
+        'Freelancers billing clients and tracking time against projects',
+        'Small product businesses managing purchase orders and stock levels',
+        'Consultants running a lightweight CRM alongside their invoicing',
+        'Early-stage startups that need audit-ready financials without full-blown accounting software',
+        'Solo operators wanting a single dashboard for their entire business operation',
+      ],
+    },
+  },
+  {
+    slug: 'w-hospital',
+    name: 'W-Hospital',
+    tagline: 'Clinical & hospital workflows.',
+    category: 'Apps',
+    domain: 'omnihospital.myfastools.com',
+    features: [
+      'Patient records',
+      'Scheduling',
+      'Clinical data capture',
+      'Operational dashboards',
+    ],
+    content: {
+      overview:
+        'W-Hospital digitises the core workflows of clinics and small hospitals — patient registration, appointment scheduling, clinical note capture, and operational reporting — in a single, browser-based system that requires no local installation. Built for mid-size facilities and multi-department clinics, it keeps patient data structured and accessible to the right staff at the right time.',
+      sections: [
+        {
+          title: 'Patient records & history',
+          body: 'Each patient gets a longitudinal record that accumulates visit notes, diagnoses, prescriptions, and uploaded documents over time. Role-based access ensures attending physicians see the full chart while reception staff see only the scheduling and demographic data they need.',
+        },
+        {
+          title: 'Scheduling & appointments',
+          body: 'A calendar-centric scheduling module handles multi-doctor, multi-room bookings with conflict detection and patient SMS/email reminders. Walk-in queue management sits alongside the appointment calendar so front-desk staff always see real-time capacity across every department.',
+        },
+        {
+          title: 'Clinical data capture',
+          body: 'Structured clinical forms capture vitals, chief complaints, SOAP notes, and diagnostic codes in a consistent format that makes downstream reporting reliable. Templates per specialty — general practice, outpatient, emergency — reduce documentation time without sacrificing completeness.',
+        },
+        {
+          title: 'Operational dashboards',
+          body: 'Department heads and administrators get live dashboards covering daily patient volume, average wait times, bed or room occupancy, and revenue per visit. Export any view to PDF or CSV for board reports or accreditation submissions.',
+        },
+      ],
+      useCases: [
+        'Multi-department outpatient clinics replacing paper-based patient registration',
+        'Small private hospitals that need scheduling and clinical records in one system',
+        'Specialist practices tracking patient outcomes across repeated visits',
+        'Administrative teams generating occupancy and revenue reports for management review',
+        'Emergency departments managing walk-in queue flow alongside booked appointments',
+      ],
+    },
+  },
+  {
+    slug: 'w-medtwin',
+    name: 'W-MedTwin',
+    tagline: 'Medical digital-twin quality.',
+    category: 'Apps',
+    domain: 'medtwin-quality.myfastools.com',
+    features: [
+      'Digital twins',
+      'Quality metrics',
+      'Simulation',
+      'Validation',
+    ],
+    content: {
+      overview:
+        'W-MedTwin applies digital-twin methodology to medical device and clinical-process quality management. Teams build parameterised virtual models of devices or care pathways, run simulations against real-world measurement inputs, and continuously validate that physical performance stays within specification — all without waiting for physical test cycles.',
+      sections: [
+        {
+          title: 'Digital twin modelling',
+          body: 'Define a device or process as a structured digital twin: parameters, tolerances, sensor mappings, and failure modes. W-MedTwin stores versioned twin definitions so you can compare how a device behaves across firmware releases, manufacturing batches, or protocol revisions without losing historical baselines.',
+        },
+        {
+          title: 'Simulation & what-if analysis',
+          body: "Feed real measurement data or synthetic inputs into a twin and run forward simulations to predict performance under edge conditions. What happens to device accuracy when temperature drifts 10 °C? How does changing a dosing interval affect patient-outcome distributions? W-MedTwin answers these questions before physical testing begins.",
+        },
+        {
+          title: 'Quality metrics & continuous validation',
+          body: "Automated quality checks compare live telemetry from deployed devices against the twin's expected envelope. Drift, degradation, or out-of-spec readings surface as quality alerts with traceability back to the specific twin parameter, enabling rapid root-cause analysis rather than broad recalls.",
+        },
+        {
+          title: 'Regulatory-ready validation records',
+          body: 'Every simulation run, validation check, and quality event is logged with a full audit trail — timestamps, operator, input data, and outcomes. Validation reports can be exported in structured formats suitable for FDA 21 CFR Part 11 or ISO 13485 submissions, reducing the documentation burden during audits.',
+        },
+      ],
+      useCases: [
+        'Medical device manufacturers validating firmware updates against certified performance envelopes',
+        'Quality engineers detecting early degradation in deployed device fleets before patient impact',
+        'Clinical engineering teams simulating protocol changes before rolling them out across a hospital',
+        'Regulatory affairs teams generating audit-ready validation documentation for submissions',
+        'R&D teams using digital twins to accelerate design iterations without physical prototype cycles',
+      ],
+    },
+  },
+  {
+    slug: 'w-collect',
+    name: 'W-Collect',
+    tagline: 'File collection & organized intake.',
+    category: 'Apps',
+    domain: 'wetransfer.myfastools.com',
+    features: [
+      'Upload portals',
+      'Large-file support',
+      'Organized intake',
+      'Easy sharing',
+    ],
+    content: {
+      overview:
+        'W-Collect turns the chaos of collecting files from clients, collaborators, or applicants into a structured, trackable intake process. Create a branded upload portal in seconds, share the link with anyone — no account required on their end — and watch submissions land in organized folders tied to your W-ID workspace.',
+      sections: [
+        {
+          title: 'Upload portals in seconds',
+          body: 'Configure a named intake portal with a description, allowed file types, and an optional deadline. Share the URL via email, embed it in a form, or drop it in a message. Submitters drag and drop files in any browser — no login, no app install, no file-size friction.',
+        },
+        {
+          title: 'Large-file support',
+          body: 'W-Collect handles multi-gigabyte uploads with chunked, resumable transfers so a stalled connection never loses progress. Video rushes from a film crew, raw survey data from fieldwork, or high-res design assets from a vendor — everything arrives complete and intact regardless of file size.',
+        },
+        {
+          title: 'Organized intake & tracking',
+          body: 'Every submission is automatically tagged with the portal it came from, the submission timestamp, and optional metadata fields you define (project code, submitter name, reference number). Browse, search, and filter all received files from a single inbox, or route them automatically into sub-folders per portal.',
+        },
+        {
+          title: 'Easy sharing & access control',
+          body: 'Grant download access to teammates via W-ID role assignments, or generate time-limited download links for external stakeholders. Revoke access at any time without touching the underlying files, giving you precise control over who can retrieve collected assets after intake closes.',
+        },
+      ],
+      useCases: [
+        'Agencies collecting creative assets or briefs from clients without email attachment limits',
+        'HR teams receiving CV and document submissions from job applicants through a single portal',
+        'Event organizers gathering speaker slide decks or media assets before a conference',
+        'Research teams collecting field data, photos, or sensor logs from distributed contributors',
+        'Procurement departments receiving vendor quotes and supporting documents in one organized inbox',
+      ],
+    },
+  },
+  {
+    slug: 'w-transfer',
+    name: 'W-Transfer',
+    tagline: 'Fast, secure file transfer.',
+    category: 'Apps',
+    domain: 'transfer.myfastools.com',
+    features: [
+      'Direct & relay transfer',
+      'End-to-end encryption',
+      'Resumable uploads',
+      'Share links',
+    ],
+    content: {
+      overview:
+        'W-Transfer makes it effortless to send files of any size — from quick documents to multi-gigabyte archives — with end-to-end encryption and no file-size anxiety. Whether you need a direct peer-to-peer channel or a relay-assisted transfer for recipients behind NAT, W-Transfer picks the fastest path automatically. Teams and individuals who move sensitive data regularly get one-click share links that expire on your schedule.',
+      sections: [
+        {
+          title: 'Key capabilities',
+          body: 'Direct and relay transfer modes ensure files always arrive, regardless of network topology. Every transfer is encrypted in transit and at rest, so sensitive data never travels in the clear. Resumable uploads mean a dropped connection never means starting over, even for large files.',
+        },
+        {
+          title: 'How it works',
+          body: 'After authenticating with W-ID, drag files into the upload zone or paste a folder path. W-Transfer negotiates the best channel (direct WebRTC or server relay) and begins streaming immediately. When the transfer completes, a share link is generated that you can send via any channel — the recipient needs no account to download.',
+        },
+        {
+          title: 'Why teams use it',
+          body: 'Unlike email attachments or consumer file-sharing services, W-Transfer keeps files inside your membership account with audit-ready transfer logs. Configurable link expiry and one-click revocation give security-conscious teams the control they need without adding friction for senders.',
+        },
+        {
+          title: 'Designed for everyday use',
+          body: 'A clean, minimal interface means anyone on the team can send or receive without training. W-Transfer is accessible from any browser — no client software required — and integrates with the rest of the W Platform via W-ID single sign-on.',
+        },
+      ],
+      useCases: [
+        'Send large design assets or video files to clients without email size limits',
+        'Securely share confidential documents with external partners using expiring links',
+        'Transfer database dumps or build artifacts between servers and local machines',
+        'Deliver final deliverables to customers with a branded, professional share link',
+        'Move files across devices without cloud-storage sync delays',
+      ],
+    },
+  },
+  {
+    slug: 'w-jcr',
+    name: 'W-JCR',
+    tagline: 'Academic journal & citation lookup.',
+    category: 'Apps',
+    domain: 'jcr.myfastools.com',
+    features: [
+      'Journal metrics',
+      'Citation search',
+      'Impact factors',
+      'Export',
+    ],
+    content: {
+      overview:
+        'W-JCR is a fast, no-friction reference tool for researchers, academics, and students who need reliable journal metrics and citation data without wrestling with institutional library portals. Look up any journal by name, ISSN, or subject area and instantly see impact factors, quartile rankings, and citation counts. Export results to BibTeX, CSV, or JSON for seamless integration with your writing workflow.',
+      sections: [
+        {
+          title: 'Journal metrics at a glance',
+          body: 'Search across thousands of journals to surface impact factors, h-index, CiteScore, and quartile rankings side by side. W-JCR aggregates data from multiple authoritative sources so you can compare journals within a field without switching tabs or subscribing to expensive database services.',
+        },
+        {
+          title: 'Citation search',
+          body: 'Find papers by author, title fragment, DOI, or keyword and trace forward and backward citations in seconds. The citation graph helps you map the intellectual lineage of an idea, discover seminal works you may have missed, and identify the most influential recent papers in a research area.',
+        },
+        {
+          title: 'Export & integrate',
+          body: 'One-click export to BibTeX, RIS, CSV, or plain JSON means your reference manager, spreadsheet, or custom pipeline always has clean, structured data. Batch export a full journal query or a curated citation list — W-JCR never locks your research inside a proprietary format.',
+        },
+        {
+          title: 'Why researchers use it',
+          body: 'Institutional databases are slow, gated behind VPNs, and designed for librarians rather than daily researcher use. W-JCR surfaces the same underlying data through a modern interface accessible from any browser with your W-ID account, so the right metrics are one search away whether you are on campus or not.',
+        },
+      ],
+      useCases: [
+        'Identify target journals ranked by impact factor before manuscript submission',
+        'Verify journal quartile for grant applications that require Q1/Q2 publication records',
+        'Compile a comprehensive reference list for a literature review section',
+        'Track how often a paper or author has been cited across the field',
+        'Compare journals across disciplines when writing an interdisciplinary paper',
+      ],
+    },
+  },
+  {
+    slug: 'w-translate',
+    name: 'W-Translate',
+    tagline: 'Multi-engine translation.',
+    category: 'Apps',
+    domain: 'translate.myfastools.com',
+    features: [
+      '100+ languages',
+      'Multiple engines',
+      'Document translation',
+      'API access',
+    ],
+    content: {
+      overview:
+        'W-Translate routes your text and documents through multiple best-in-class translation engines — giving you the highest-quality output for each language pair rather than locking you into a single provider. With support for 100+ languages, inline document translation that preserves formatting, and a clean REST API, it handles everything from quick message translations to high-volume localization pipelines. Sign in once with W-ID and your membership covers all usage under your plan quota.',
+      sections: [
+        {
+          title: 'Multi-engine quality',
+          body: 'Instead of committing to one translation provider, W-Translate evaluates multiple engines and surfaces the best result for your specific language pair. You can also pin a preferred engine when consistency across a project matters more than chasing marginal quality gains.',
+        },
+        {
+          title: 'Document translation',
+          body: 'Upload DOCX, PDF, TXT, or HTML files and receive a translated version that preserves the original layout, heading hierarchy, and inline formatting. No more copy-pasting paragraphs one at a time — W-Translate handles entire documents in a single operation and returns a downloadable file.',
+        },
+        {
+          title: 'API access for developers',
+          body: 'A straightforward REST API lets you integrate W-Translate into any application, CI pipeline, or data workflow. Authenticate with your W-ID token, POST your text or document, and receive a translated result. Rate limits are tied to your membership quota with no per-character surprise charges.',
+        },
+        {
+          title: 'Why teams use it',
+          body: 'Content, product, and support teams need reliable translations without managing API keys for every provider or routing sensitive text through consumer tools. W-Translate centralises multi-language output under one account with full audit logging, so you always know what was translated, when, and by whom.',
+        },
+      ],
+      useCases: [
+        'Localize product UI strings and marketing copy into 10+ languages in one batch job',
+        'Translate incoming support tickets to route them to the correct regional team',
+        'Convert technical documentation uploaded as DOCX into multiple target languages',
+        'Use the API to auto-translate user-generated content before moderation review',
+        'Compare engine outputs side-by-side before choosing a translation for publication',
+      ],
+    },
+  },
+  {
+      slug: 'w-db',
+      name: 'W-DB',
+      tagline: 'Project databases and application data APIs.',
+      category: 'Platform',
+      domain: 'db.myfastools.com',
+      visual: 'identity',
+      features: [
+          'PostgreSQL projects',
+          'Data APIs',
+          'Native Functions'
+      ],
+      content: {
+          overview: 'Project databases and application data APIs.',
+          sections: [
+              {
+                  title: 'What you can do',
+                  body: 'Use postgresql projects, data apis, native functions in the product workspace. Open the product to explore its available tools.'
+              },
+              {
+                  title: 'Getting started',
+                  body: 'Open the product, sign in when required, and select a workspace you have permission to access. Available features and access are shown in the product.'
+              }
+          ],
+          useCases: [
+              'PostgreSQL projects',
+              'Data APIs',
+              'Native Functions'
+          ]
+      }
+  },
+  {
+      slug: 'w-opendrop',
+      name: 'OpenDrop',
+      tagline: 'Publish websites and versioned Workers.',
+      category: 'Platform',
+      domain: 'opendrop.myfastools.com',
+      visual: 'identity',
+      features: [
+          'Pages publishing',
+          'Worker deployments',
+          'Version management'
+      ],
+      content: {
+          overview: 'Publish websites and versioned Workers.',
+          sections: [
+              {
+                  title: 'What you can do',
+                  body: 'Use pages publishing, worker deployments, version management in the product workspace. Open the product to explore its available tools.'
+              },
+              {
+                  title: 'Getting started',
+                  body: 'Open the product, sign in when required, and select a workspace you have permission to access. Available features and access are shown in the product.'
+              }
+          ],
+          useCases: [
+              'Pages publishing',
+              'Worker deployments',
+              'Version management'
+          ]
+      }
+  },
+  {
+      slug: 'w-papers',
+      name: 'W-Papers',
+      tagline: 'Discover papers and organize your research library.',
+      category: 'Analysis',
+      domain: 'papers.hzct.obscura.work',
+      visual: 'identity',
+      features: [
+          'Paper discovery',
+          'Reading workspace',
+          'Personal library'
+      ],
+      content: {
+          overview: 'Discover papers and organize your research library.',
+          sections: [
+              {
+                  title: 'What you can do',
+                  body: 'Use paper discovery, reading workspace, personal library in the product workspace. Open the product to explore its available tools.'
+              },
+              {
+                  title: 'Getting started',
+                  body: 'Open the product, sign in when required, and select a workspace you have permission to access. Available features and access are shown in the product.'
+              }
+          ],
+          useCases: [
+              'Paper discovery',
+              'Reading workspace',
+              'Personal library'
+          ]
+      }
+  },
+  {
+      slug: 'w-arxiv',
+      name: 'W-arXiv',
+      tagline: 'Find arXiv records and retrieve research sources.',
+      category: 'Analysis',
+      domain: 'arxiv.hzct.obscura.work',
+      visual: 'identity',
+      features: [
+          'arXiv records',
+          'Source retrieval',
+          'Research provenance'
+      ],
+      content: {
+          overview: 'Find arXiv records and retrieve research sources.',
+          sections: [
+              {
+                  title: 'What you can do',
+                  body: 'Use arxiv records, source retrieval, research provenance in the product workspace. Open the product to explore its available tools.'
+              },
+              {
+                  title: 'Getting started',
+                  body: 'Open the product, sign in when required, and select a workspace you have permission to access. Available features and access are shown in the product.'
+              }
+          ],
+          useCases: [
+              'arXiv records',
+              'Source retrieval',
+              'Research provenance'
+          ]
+      }
+  },
+  {
+      slug: 'w-patent',
+      name: 'Patent Atlas',
+      tagline: 'Explore patents alongside scholarly research.',
+      category: 'Analysis',
+      domain: 'patent.hzct.obscura.work',
+      visual: 'identity',
+      features: [
+          'Patent discovery',
+          'Research documents',
+          'Technical evidence'
+      ],
+      content: {
+          overview: 'Explore patents alongside scholarly research.',
+          sections: [
+              {
+                  title: 'What you can do',
+                  body: 'Use patent discovery, research documents, technical evidence in the product workspace. Open the product to explore its available tools.'
+              },
+              {
+                  title: 'Getting started',
+                  body: 'Open the product, sign in when required, and select a workspace you have permission to access. Available features and access are shown in the product.'
+              }
+          ],
+          useCases: [
+              'Patent discovery',
+              'Research documents',
+              'Technical evidence'
+          ]
+      }
+  },
+  {
+      slug: 'w-craw',
+      name: 'W-Craw',
+      tagline: 'Collect web sources for research workflows.',
+      category: 'Analysis',
+      domain: 'craw.myfastools.com',
+      visual: 'identity',
+      features: [
+          'Web collection',
+          'Source organization',
+          'Research workflows'
+      ],
+      content: {
+          overview: 'Collect web sources for research workflows.',
+          sections: [
+              {
+                  title: 'What you can do',
+                  body: 'Use web collection, source organization, research workflows in the product workspace. Open the product to explore its available tools.'
+              },
+              {
+                  title: 'Getting started',
+                  body: 'Open the product, sign in when required, and select a workspace you have permission to access. Available features and access are shown in the product.'
+              }
+          ],
+          useCases: [
+              'Web collection',
+              'Source organization',
+              'Research workflows'
+          ]
+      }
+  },
+  {
+      slug: 'w-bench',
+      name: 'GPULLMBench',
+      tagline: 'Explore model benchmarks and performance comparisons.',
+      category: 'Analysis',
+      domain: 'ai.0.af',
+      visual: 'identity',
+      features: [
+          'Model benchmarks',
+          'Performance comparison',
+          'Research results'
+      ],
+      content: {
+          overview: 'Explore model benchmarks and performance comparisons.',
+          sections: [
+              {
+                  title: 'What you can do',
+                  body: 'Use model benchmarks, performance comparison, research results in the product workspace. Open the product to explore its available tools.'
+              },
+              {
+                  title: 'Getting started',
+                  body: 'Open the product, sign in when required, and select a workspace you have permission to access. Available features and access are shown in the product.'
+              }
+          ],
+          useCases: [
+              'Model benchmarks',
+              'Performance comparison',
+              'Research results'
+          ]
+      }
+  },
+  {
+      slug: 'w-presentation',
+      name: 'Presentation',
+      tagline: 'Turn ideas into presentations.',
+      category: 'Apps',
+      domain: 'ppt.auto.ml',
+      visual: 'identity',
+      features: [
+          'Presentation creation',
+          'Slide workspace',
+          'Content organization'
+      ],
+      content: {
+          overview: 'Turn ideas into presentations.',
+          sections: [
+              {
+                  title: 'What you can do',
+                  body: 'Use presentation creation, slide workspace, content organization in the product workspace. Open the product to explore its available tools.'
+              },
+              {
+                  title: 'Getting started',
+                  body: 'Open the product, sign in when required, and select a workspace you have permission to access. Available features and access are shown in the product.'
+              }
+          ],
+          useCases: [
+              'Presentation creation',
+              'Slide workspace',
+              'Content organization'
+          ]
+      }
+  },
+  {
+      slug: 'w-lingolearn',
+      name: 'LingoLearn',
+      tagline: 'Build a language-learning routine.',
+      category: 'Apps',
+      domain: 'llearn.myfastools.com',
+      visual: 'identity',
+      features: [
+          'Language practice',
+          'Learning activities',
+          'Study workspace'
+      ],
+      content: {
+          overview: 'Build a language-learning routine.',
+          sections: [
+              {
+                  title: 'What you can do',
+                  body: 'Use language practice, learning activities, study workspace in the product workspace. Open the product to explore its available tools.'
+              },
+              {
+                  title: 'Getting started',
+                  body: 'Open the product, sign in when required, and select a workspace you have permission to access. Available features and access are shown in the product.'
+              }
+          ],
+          useCases: [
+              'Language practice',
+              'Learning activities',
+              'Study workspace'
+          ]
+      }
+  },
+  {
+      slug: 'w-tinyimage',
+      name: 'TinyImage',
+      tagline: 'A focused toolbox for working with images.',
+      category: 'Apps',
+      domain: 'tinyimage-884.pages.dev',
+      visual: 'identity',
+      features: [
+          'Image utilities',
+          'Browser workflow',
+          'Image preparation'
+      ],
+      content: {
+          overview: 'A focused toolbox for working with images.',
+          sections: [
+              {
+                  title: 'What you can do',
+                  body: 'Use image utilities, browser workflow, image preparation in the product workspace. Open the product to explore its available tools.'
+              },
+              {
+                  title: 'Getting started',
+                  body: 'Open the product, sign in when required, and select a workspace you have permission to access. Available features and access are shown in the product.'
+              }
+          ],
+          useCases: [
+              'Image utilities',
+              'Browser workflow',
+              'Image preparation'
+          ]
+      }
+  },
+  {
+      slug: 'w-worldmonitor',
+      name: 'WorldMonitor',
+      tagline: 'Follow global events with a shared situational view.',
+      category: 'Sensing',
+      domain: 'worldmonitor.myfastools.com',
+      visual: 'identity',
+      features: [
+          'Global events',
+          'News context',
+          'Situational awareness'
+      ],
+      content: {
+          overview: 'Follow global events with a shared situational view.',
+          sections: [
+              {
+                  title: 'What you can do',
+                  body: 'Use global events, news context, situational awareness in the product workspace. Open the product to explore its available tools.'
+              },
+              {
+                  title: 'Getting started',
+                  body: 'Open the product, sign in when required, and select a workspace you have permission to access. Available features and access are shown in the product.'
+              }
+          ],
+          useCases: [
+              'Global events',
+              'News context',
+              'Situational awareness'
+          ]
+      }
+  },
+  {
+      slug: 'w-waveworld',
+      name: 'WaveWorld',
+      tagline: 'Explore interactive worlds and simulations.',
+      category: 'Apps',
+      domain: 'labs.auto.ml',
+      visual: 'identity',
+      features: [
+          'Interactive worlds',
+          'Simulation experiences',
+          'Exploration'
+      ],
+      content: {
+          overview: 'Explore interactive worlds and simulations.',
+          sections: [
+              {
+                  title: 'What you can do',
+                  body: 'Use interactive worlds, simulation experiences, exploration in the product workspace. Open the product to explore its available tools.'
+              },
+              {
+                  title: 'Getting started',
+                  body: 'Open the product, sign in when required, and select a workspace you have permission to access. Available features and access are shown in the product.'
+              }
+          ],
+          useCases: [
+              'Interactive worlds',
+              'Simulation experiences',
+              'Exploration'
+          ]
+      }
+  },
+  {
+      slug: 'w-myworld',
+      name: 'MyWorld',
+      tagline: 'A workspace for exploring virtual worlds.',
+      category: 'Apps',
+      domain: 'myworld.myfastools.com',
+      visual: 'identity',
+      features: [
+          'Virtual worlds',
+          'Interactive experiences',
+          'World exploration'
+      ],
+      content: {
+          overview: 'A workspace for exploring virtual worlds.',
+          sections: [
+              {
+                  title: 'What you can do',
+                  body: 'Use virtual worlds, interactive experiences, world exploration in the product workspace. Open the product to explore its available tools.'
+              },
+              {
+                  title: 'Getting started',
+                  body: 'Open the product, sign in when required, and select a workspace you have permission to access. Available features and access are shown in the product.'
+              }
+          ],
+          useCases: [
+              'Virtual worlds',
+              'Interactive experiences',
+              'World exploration'
+          ]
+      }
+  },
+  {
+      slug: 'w-nonoise',
+      name: 'NoNoise',
+      tagline: 'Tools for reducing unwanted audio noise.',
+      category: 'Apps',
+      domain: 'nonoise.myfastools.com',
+      visual: 'identity',
+      features: [
+          'Audio processing',
+          'Noise reduction',
+          'Audio preparation'
+      ],
+      content: {
+          overview: 'Tools for reducing unwanted audio noise.',
+          sections: [
+              {
+                  title: 'What you can do',
+                  body: 'Use audio processing, noise reduction, audio preparation in the product workspace. Open the product to explore its available tools.'
+              },
+              {
+                  title: 'Getting started',
+                  body: 'Open the product, sign in when required, and select a workspace you have permission to access. Available features and access are shown in the product.'
+              }
+          ],
+          useCases: [
+              'Audio processing',
+              'Noise reduction',
+              'Audio preparation'
+          ]
+      }
+  },
+  {
+      slug: 'w-fingerprint',
+      name: 'W-Fingerprint',
+      tagline: 'Inspect browser and network fingerprint signals.',
+      category: 'Sensing',
+      domain: 'fingerprint.myfastools.com',
+      visual: 'identity',
+      features: [
+          'Fingerprint inspection',
+          'Browser signals',
+          'Network signals'
+      ],
+      content: {
+          overview: 'Inspect browser and network fingerprint signals.',
+          sections: [
+              {
+                  title: 'What you can do',
+                  body: 'Use fingerprint inspection, browser signals, network signals in the product workspace. Open the product to explore its available tools.'
+              },
+              {
+                  title: 'Getting started',
+                  body: 'Open the product, sign in when required, and select a workspace you have permission to access. Available features and access are shown in the product.'
+              }
+          ],
+          useCases: [
+              'Fingerprint inspection',
+              'Browser signals',
+              'Network signals'
+          ]
+      }
+  },
+  {
+      slug: 'w-honeynet',
+      name: 'Honeynet',
+      tagline: 'Explore honeypot observations for security research.',
+      category: 'Sensing',
+      domain: 'honey.myfastools.com',
+      visual: 'identity',
+      features: [
+          'Honeypot observations',
+          'Security signals',
+          'Research view'
+      ],
+      content: {
+          overview: 'Explore honeypot observations for security research.',
+          sections: [
+              {
+                  title: 'What you can do',
+                  body: 'Use honeypot observations, security signals, research view in the product workspace. Open the product to explore its available tools.'
+              },
+              {
+                  title: 'Getting started',
+                  body: 'Open the product, sign in when required, and select a workspace you have permission to access. Available features and access are shown in the product.'
+              }
+          ],
+          useCases: [
+              'Honeypot observations',
+              'Security signals',
+              'Research view'
+          ]
+      }
+  },
+  {
+      slug: 'w-dht',
+      name: 'DHT Intelligence',
+      tagline: 'Inspect DHT observations for network research.',
+      category: 'Sensing',
+      domain: 'dht.myfastools.com',
+      visual: 'identity',
+      features: [
+          'DHT observations',
+          'Network research',
+          'Signal exploration'
+      ],
+      content: {
+          overview: 'Inspect DHT observations for network research.',
+          sections: [
+              {
+                  title: 'What you can do',
+                  body: 'Use dht observations, network research, signal exploration in the product workspace. Open the product to explore its available tools.'
+              },
+              {
+                  title: 'Getting started',
+                  body: 'Open the product, sign in when required, and select a workspace you have permission to access. Available features and access are shown in the product.'
+              }
+          ],
+          useCases: [
+              'DHT observations',
+              'Network research',
+              'Signal exploration'
+          ]
+      }
+  },
+  {
+      slug: 'w-compute',
+      name: 'W-Compute',
+      tagline: 'Manage compute through a dedicated workspace.',
+      category: 'Platform',
+      domain: 'compute.myfastools.com',
+      visual: 'identity',
+      features: [
+          'Compute workspace',
+          'Runtime management',
+          'Project access'
+      ],
+      content: {
+          overview: 'Manage compute through a dedicated workspace.',
+          sections: [
+              {
+                  title: 'What you can do',
+                  body: 'Use compute workspace, runtime management, project access in the product workspace. Open the product to explore its available tools.'
+              },
+              {
+                  title: 'Getting started',
+                  body: 'Open the product, sign in when required, and select a workspace you have permission to access. Available features and access are shown in the product.'
+              }
+          ],
+          useCases: [
+              'Compute workspace',
+              'Runtime management',
+              'Project access'
+          ]
+      }
+  },
+  {
+      slug: 'w-monitor',
+      name: 'Infra Monitor',
+      tagline: 'Infrastructure visibility for authorized operators.',
+      category: 'Platform',
+      domain: 'serverstatus-rs.myfastools.com',
+      visual: 'identity',
+      features: [
+          'Infrastructure status',
+          'Service monitoring',
+          'Operator dashboards'
+      ],
+      content: {
+          overview: 'Infrastructure visibility for authorized operators.',
+          sections: [
+              {
+                  title: 'What you can do',
+                  body: 'Use infrastructure status, service monitoring, operator dashboards in the product workspace. Open the product to explore its available tools.'
+              },
+              {
+                  title: 'Getting started',
+                  body: 'Open the product, sign in when required, and select a workspace you have permission to access. Available features and access are shown in the product.'
+              }
+          ],
+          useCases: [
+              'Infrastructure status',
+              'Service monitoring',
+              'Operator dashboards'
+          ]
+      }
+  },
+  {
+      slug: 'w-activities',
+      name: 'Activities',
+      tagline: 'Organize activities in a shared workspace.',
+      category: 'Platform',
+      domain: 'activities.myfastools.com',
+      visual: 'identity',
+      features: [
+          'Activity workspace',
+          'Coordination',
+          'Shared access'
+      ],
+      content: {
+          overview: 'Organize activities in a shared workspace.',
+          sections: [
+              {
+                  title: 'What you can do',
+                  body: 'Use activity workspace, coordination, shared access in the product workspace. Open the product to explore its available tools.'
+              },
+              {
+                  title: 'Getting started',
+                  body: 'Open the product, sign in when required, and select a workspace you have permission to access. Available features and access are shown in the product.'
+              }
+          ],
+          useCases: [
+              'Activity workspace',
+              'Coordination',
+              'Shared access'
+          ]
+      }
+  },
+  {
+      slug: 'w-automl',
+      name: 'W-AutoML',
+      tagline: 'Explore machine-learning workflows.',
+      category: 'Analysis',
+      domain: 'auto.ml',
+      visual: 'identity',
+      features: [
+          'ML workflows',
+          'Experiment workspace',
+          'Model exploration'
+      ],
+      content: {
+          overview: 'Explore machine-learning workflows.',
+          sections: [
+              {
+                  title: 'What you can do',
+                  body: 'Use ml workflows, experiment workspace, model exploration in the product workspace. Open the product to explore its available tools.'
+              },
+              {
+                  title: 'Getting started',
+                  body: 'Open the product, sign in when required, and select a workspace you have permission to access. Available features and access are shown in the product.'
+              }
+          ],
+          useCases: [
+              'ML workflows',
+              'Experiment workspace',
+              'Model exploration'
+          ]
+      }
+  },
+  {
+      slug: 'w-star',
+      name: 'Star',
+      tagline: 'Connectivity tools for reaching your services.',
+      category: 'Platform',
+      domain: 'http.vg',
+      visual: 'identity',
+      features: [
+          'Service connectivity',
+          'Tunnel workflows',
+          'Developer access'
+      ],
+      content: {
+          overview: 'Connectivity tools for reaching your services.',
+          sections: [
+              {
+                  title: 'What you can do',
+                  body: 'Use service connectivity, tunnel workflows, developer access in the product workspace. Open the product to explore its available tools.'
+              },
+              {
+                  title: 'Getting started',
+                  body: 'Open the product, sign in when required, and select a workspace you have permission to access. Available features and access are shown in the product.'
+              }
+          ],
+          useCases: [
+              'Service connectivity',
+              'Tunnel workflows',
+              'Developer access'
+          ]
+      }
+  },
+  {
+      slug: 'w-license',
+      name: 'W-License Demo',
+      tagline: 'Explore the licensing workflow in a demo environment.',
+      category: 'Platform',
+      domain: 'license-demo.obscura.cn',
+      visual: 'identity',
+      features: [
+          'Demo environment',
+          'License workflows',
+          'Integration exploration'
+      ],
+      content: {
+          overview: 'Explore the licensing workflow in a demo environment.',
+          sections: [
+              {
+                  title: 'What you can do',
+                  body: 'Use demo environment, license workflows, integration exploration in the product workspace. Open the product to explore its available tools.'
+              },
+              {
+                  title: 'Getting started',
+                  body: 'Open the product, sign in when required, and select a workspace you have permission to access. Available features and access are shown in the product.'
+              }
+          ],
+          useCases: [
+              'Demo environment',
+              'License workflows',
+              'Integration exploration'
+          ]
+      }
+  },
+  {
+      slug: 'w-netsense-suite',
+      name: 'NetSense Suite',
+      tagline: 'Explore the NetSense family of sensing tools.',
+      category: 'Sensing',
+      domain: 'netsense.myfastools.com',
+      visual: 'identity',
+      features: [
+          'Sensing tools',
+          'Network observations',
+          'Product family'
+      ],
+      content: {
+          overview: 'Explore the NetSense family of sensing tools.',
+          sections: [
+              {
+                  title: 'What you can do',
+                  body: 'Use sensing tools, network observations, product family in the product workspace. Open the product to explore its available tools.'
+              },
+              {
+                  title: 'Getting started',
+                  body: 'Open the product, sign in when required, and select a workspace you have permission to access. Available features and access are shown in the product.'
+              }
+          ],
+          useCases: [
+              'Sensing tools',
+              'Network observations',
+              'Product family'
+          ]
+      }
+  },
+  {
+      slug: 'w-earth-defense',
+      name: 'Earth Defense',
+      tagline: 'Explore an interactive Earth-defense simulation.',
+      category: 'Apps',
+      domain: 'earth-defense.myfastools.com',
+      visual: 'identity',
+      features: [
+          'Interactive simulation',
+          'Scenario exploration',
+          'World experience'
+      ],
+      content: {
+          overview: 'Explore an interactive Earth-defense simulation.',
+          sections: [
+              {
+                  title: 'What you can do',
+                  body: 'Use interactive simulation, scenario exploration, world experience in the product workspace. Open the product to explore its available tools.'
+              },
+              {
+                  title: 'Getting started',
+                  body: 'Open the product, sign in when required, and select a workspace you have permission to access. Available features and access are shown in the product.'
+              }
+          ],
+          useCases: [
+              'Interactive simulation',
+              'Scenario exploration',
+              'World experience'
+          ]
+      }
+  },
+];
+
+export const CATEGORIES: Category[] = ['Platform', 'Analysis', 'Sensing', 'Apps'];
+
+/**
+ * Absolute URL of the live product app (not the marketing page on myfastools.com).
+ * Used so hub cards/CTAs leave the landing site and stay on the product origin.
+ */
+export function productAppUrl(product: Pick<Product, 'domain'>, path = '/'): string {
+  const domain = product.domain.trim().replace(/^https?:\/\//i, '').replace(/\/+$/, '');
+  let p = path.trim() || '/';
+  if (!p.startsWith('/')) p = `/${p}`;
+  if (p !== '/' && p.endsWith('/')) p = p.slice(0, -1);
+  return p === '/' ? `https://${domain}/` : `https://${domain}${p}`;
+}
+
+export function getProduct(slug: string): Product | undefined {
+  return PRODUCTS.find((p) => p.slug === slug);
+}
+
+/** Replicates the gen.py grad() function using MD5-like hue derivation via Web Crypto */
+export function slugGradient(slug: string): string {
+  // Simple deterministic hash for consistent colors (matches gen.py md5 approach)
+  let h = 0;
+  for (let i = 0; i < slug.length; i++) {
+    h = (h * 31 + slug.charCodeAt(i)) >>> 0;
+  }
+  const byte0 = h & 0xff;
+  const a = Math.round((byte0 * 360) / 255);
+  const b = (a + 60) % 360;
+  return `linear-gradient(135deg, hsl(${a}, 75%, 55%), hsl(${b}, 70%, 45%))`;
+}
