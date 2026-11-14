@@ -15,8 +15,8 @@
       "sha256": "640e9c2788c9e1a8652298551fa9ce5ec9a0660eae48ccdbf630bfe723cc96fd"
     },
     "DEPENDENCIES.json": {
-      "bytes": 93338,
-      "sha256": "1c4aad4496d1c3a3e25bd4b72742f0b6a931bb0af6eb62e38ededc81b740594e"
+      "bytes": 93727,
+      "sha256": "bcd8836ed3f5d3b83bc66629d341c0782b2e4945b25b20782c1df2cadb6e2262"
     },
     "LICENSE": {
       "bytes": 1104,
@@ -67,12 +67,12 @@
       "sha256": "7956543e20166a8084af668c27435fedecefa6120138f5edb3baba2efee8d823"
     },
     "package-lock.json": {
-      "bytes": 168494,
-      "sha256": "d81b46dda139e099ee8e5958da7402a8171a10510f010ba7a1966b4e59dcd3a2"
+      "bytes": 168930,
+      "sha256": "36aed0d4ac7bd8e395fea614276de20bca4d1775703b22f86dbc207ce649b069"
     },
     "package.json": {
-      "bytes": 4550,
-      "sha256": "5b1229002b33b161bbd3ecd46bcdbbb45858e10a8919d79a4f60ce022a1f5aab"
+      "bytes": 4655,
+      "sha256": "32572cca9ec9d664a062ba53c764a7219c42ac26a64d9a0c4f3e2b1d75c75159"
     },
     "product-landings/.gitignore": {
       "bytes": 31,

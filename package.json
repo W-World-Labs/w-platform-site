@@ -36,7 +36,7 @@
         "build:provenance": "node scripts/build-provenance.mjs",
         "test:comparison-ui": "node scripts/check-platform-comparison-ui.mjs",
         "test:dist": "npm run test:ssg && npm run test:comparison-ui && npm run test:catalog-ui && npm run test:bundle && node scripts/check-generated-html.mjs && npm run build:provenance && npm run audit:dist",
-        "ci": "npm run audit:sensitive && npm test && npm run typecheck && npm run lint && npm run build && npm run test:dist",
+        "ci": "npm run audit:sensitive && npm audit --audit-level=moderate --registry=https://registry.npmjs.org && npm test && npm run typecheck && npm run lint && npm run build && npm run test:dist",
         "verify:production": "node scripts/verify-production.mjs",
         "export:landings": "npm run export:products -- > product-landings/_products.json",
         "test:catalog-ui": "node scripts/check-product-catalog-ui.mjs"
@@ -71,7 +71,8 @@
         "vitest": "^4.1.12"
     },
     "overrides": {
-        "brace-expansion": "5.0.12"
+        "brace-expansion": "5.0.12",
+        "minimatch": "11.0.1"
     },
     "license": "MIT"
 }

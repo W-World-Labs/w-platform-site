@@ -1,7 +1,7 @@
 {
   "schema": "w-public-source-dependencies/v1",
   "scope": "lockfile metadata only; dependencies and compiled bundles are not shipped",
-  "package_lock_sha256": "d81b46dda139e099ee8e5958da7402a8171a10510f010ba7a1966b4e59dcd3a2",
+  "package_lock_sha256": "36aed0d4ac7bd8e395fea614276de20bca4d1775703b22f86dbc207ce649b069",
   "packages": [
     {
       "path": "node_modules/@axe-core/playwright",
@@ -1606,10 +1606,10 @@
     },
     {
       "path": "node_modules/minimatch",
-      "version": "10.2.5",
+      "version": "11.0.1",
       "license": "BlueOak-1.0.0",
-      "resolved": "https://registry.npmjs.org/minimatch/-/minimatch-10.2.5.tgz",
-      "integrity": "sha512-MULkVLfKGYDFYejP07QOurDLLQpcjk7Fw+7jXS2R2czRQzR56yHRveU5NDJEOviH+hETZKSkIk5c+T23GjFUMg==",
+      "resolved": "https://registry.npmjs.org/minimatch/-/minimatch-11.0.1.tgz",
+      "integrity": "sha512-t+Vn6DX4wPCxS23y03C0uhF7S1jpi1GfqPrnlEipCJaA2ykiNbMkVlDutZtmvLfRcUN6R8AYVlzTsQrT4RZoLQ==",
       "dev": true
     },
     {
@@ -1812,10 +1812,10 @@
     },
     {
       "path": "node_modules/seroval",
-      "version": "1.6.9",
+      "version": "1.6.11",
       "license": "MIT",
-      "resolved": "https://registry.npmjs.org/seroval/-/seroval-1.6.9.tgz",
-      "integrity": "sha512-UeEzHwAK+yl0YLbsvROV1t5yMYEwZZ0CfKYxDvUgS2fO9Vxdf8djqVIB+OuVpuawRNPqw68LE1Du/GMsW2ZPqA=="
+      "resolved": "https://registry.npmjs.org/seroval/-/seroval-1.6.11.tgz",
+      "integrity": "sha512-hpb6XnMCGN/A+79Uf8V7/iTGkyyyazNn5X0CoCAp7Uy9vT3RT8jZ9GLcnxGoVjg3P8AArbe4ZVHq6C8oT2a0kA=="
     },
     {
       "path": "node_modules/seroval-plugins",
@@ -2136,10 +2136,10 @@
     },
     {
       "path": "node_modules/zod",
-      "version": "4.4.3",
+      "version": "4.6.6",
       "license": "MIT",
-      "resolved": "https://registry.npmjs.org/zod/-/zod-4.4.3.tgz",
-      "integrity": "sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==",
+      "resolved": "https://registry.npmjs.org/zod/-/zod-4.6.6.tgz",
+      "integrity": "sha512-4UmzQUF5fxvfcYHlbjBmejU+w+hbDnWFx4aS8kBx7nPBHcO2SqPbpAG8snbdg+Xse4pRefR98hgjFgIMCI/UhA==",
       "dev": true
     },
     {
@@ -2148,6 +2148,14 @@
       "license": "MIT",
       "resolved": "https://registry.npmjs.org/zod-validation-error/-/zod-validation-error-4.0.2.tgz",
       "integrity": "sha512-Q6/nZLe6jxuU80qb/4uJ4t5v2VEZ44lzQjPDhYJNztRQ4wyWc6VF3D3Kb/fAuPetZQnhS3hnajCf9CsWesghLQ==",
+      "dev": true
+    },
+    {
+      "path": "node_modules/@isaacs/nonrecursive-glob-match",
+      "version": "1.0.1",
+      "license": "BlueOak-1.0.0",
+      "resolved": "https://registry.npmjs.org/@isaacs/nonrecursive-glob-match/-/nonrecursive-glob-match-1.0.1.tgz",
+      "integrity": "sha512-rNKPuTXBacPpn5+CP+S3/UI6uq/0jHZjPpaBLaRE3blpgX+E+ZUIrGfViPvUjUnQG6W1+3OTFUiVRCjTffs2+Q==",
       "dev": true
     }
   ]
