@@ -3,8 +3,8 @@
   "scope": "complete reviewed source-only snapshot; self excluded from hash inventory",
   "files": {
     ".github/workflows/ci.yml": {
-      "bytes": 2261,
-      "sha256": "36767ba47ad7794359b2da0d4adda8e5975cfbe2148de4a05a94f65c80eed2a5"
+      "bytes": 2228,
+      "sha256": "74fbda35a1a69af4e2e318282835b30b05a978381dead16abe009b9f58ad8bb4"
     },
     ".gitignore": {
       "bytes": 375,
